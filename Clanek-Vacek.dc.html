@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #F6F1E4; font-family: 'Karla', sans-serif; }
+    a { color: #C96A4E; text-decoration: none; }
+    a:hover { color: #2D5F4C; }
+    ::selection { background: #E0A83E; color: #2B241C; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid #C7D3B6; font-size: 15px; }
+    th { font-family: 'Space Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: #2D5F4C; }
+  </style>
+</helmet>
+
+<div style="background:#F6F1E4; color:#2B241C; overflow-x:hidden;">
+
+  <!-- NAV -->
+  <nav style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:20px clamp(20px,5vw,64px); flex-wrap:wrap;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:22px; color:#2B241C;">
+      <svg width="30" height="30" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#2D5F4C"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#2D5F4C"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#2D5F4C"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#2D5F4C"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; align-items:center; gap:clamp(12px,3vw,32px); flex-wrap:wrap; font-size:16px; font-weight:600;">
+      <a href="Vychova.dc.html" style="color:#2B241C;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#2B241C;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#2B241C;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#2B241C;">O nás</a>
+    </div>
+  </nav>
+
+  <article style="max-width:760px; margin:0 auto; padding:clamp(16px,3vw,24px) clamp(20px,5vw,64px) clamp(64px,8vw,96px);">
+
+    <a href="Checklist.dc.html" style="font-family:'Space Mono',monospace; font-size:14px; color:#2D5F4C; display:inline-block; margin-bottom:20px;">← Zpět na checklist</a>
+
+    <p style="font-family:'Space Mono',monospace; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; color:#C96A4E; margin:0 0 14px;">Vybavení</p>
+    <h1 style="font-family:'Fraunces',serif; font-weight:700; font-style:italic; font-size:clamp(32px,5vw,48px); line-height:1.1; margin:0 0 24px;">Váček na pamlsky</h1>
+    <p style="font-size:19px; line-height:1.65; margin:0 0 40px; color:#2B241C;">Ve výcviku rozhoduje zlomek vteřiny. Pes propojí odměnu s chováním jen tehdy, dostane-li ji do dvou vteřin od provedení cviku. Váček na pamlsky není módní doplněk — je to nástroj, který vám ty dvě vteřiny umožní dodržet i při procházce, u vody nebo uprostřed psí louky.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Proč na timingu záleží</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Mozek psa přiřazuje odměnu k chování, které přímo předcházelo jejímu příjmu. Jakmile uplyne více než dvě vteřiny, šance na správné propojení rapidně klesá — pes si třeba vzpomene, že se právě rozhlédl za holubem, ne že sedl.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Praktický dopad: pokud lovíte pamlsek v kapse bundy, taštičce nebo sáčku v batohu, ztrácíte tuto okno úplně. Váček na pamlsky visel na opasku a je vždy otevřený — sáhnete jedním pohybem bez přemýšlení.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Srovnání: stejně jako fotograf nosí fotoaparát na krku a nepátrá po něm v batohu, cvičitel nosí pamlsky na těle — vždy připravené na okamžik, který stojí za odměnu.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Typy váčků — jak se liší</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 16px;">Váčků je na trhu desítky. Tři parametry rozhodují o tom, jestli vám bude váček vyhovovat nebo skončí v šuplíku:</p>
+
+    <table>
+      <tr><th>Parametr</th><th>Varianta</th><th>Pro koho</th></tr>
+      <tr>
+        <td><strong>Zavírání</strong></td>
+        <td>Bez zavírání (otevřený vršek)</td>
+        <td>Nejrychlejší přístup; vhodné pro trénink na místě, kdy nehrozí vysypání</td>
+      </tr>
+      <tr>
+        <td><strong>Zavírání</strong></td>
+        <td>Magnetické klapky</td>
+        <td>Dobrý kompromis — jedna ruka, rychlé; při běhu nebo aportování se pamlsky nevysypou</td>
+      </tr>
+      <tr>
+        <td><strong>Zavírání</strong></td>
+        <td>Zip / stahovací šňůra</td>
+        <td>Nejbezpečnější obsah; pomalejší, vhodné spíše na přepravu pamlsků než aktivní trénink</td>
+      </tr>
+      <tr>
+        <td><strong>Uchycení</strong></td>
+        <td>Klip na opasek</td>
+        <td>Stabilní, váček se nepohybuje; ideální pro každodenní použití</td>
+      </tr>
+      <tr>
+        <td><strong>Uchycení</strong></td>
+        <td>Karabina</td>
+        <td>Rychlé připnutí na vodítko, kšandy nebo řemen batohu; flexibilnější</td>
+      </tr>
+      <tr>
+        <td><strong>Uchycení</strong></td>
+        <td>Vlastní opasek (součástí váčku)</td>
+        <td>Nejstabilnější řešení; nehodí se ke každému oblečení</td>
+      </tr>
+    </table>
+
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:16px 0 0;">Doporučení pro začátečníky: váček s magnetickým zavíráním a klipem na opasek. Zvládnete ho obsloužit jednou rukou i tehdy, když druhou držíte vodítko.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Co dát do váčku — a co rozhodně ne</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Tréninkový pamlsek musí splnit jeden klíčový požadavek: pes ho spolkne okamžitě a chce hned další. To znamená:</p>
+    <ul style="font-size:17px; line-height:1.85; padding-left:22px; margin:0 0 20px;">
+      <li><strong>Měkká textura</strong> — pes nekouše, polyká. Trénink plyne bez přerušení.</li>
+      <li><strong>Malá velikost</strong> — ideálně jako hrášek nebo menší. Za půlhodinovou session sní pes klidně 30–50 kousků; velké pamlsky by přesáhly denní kalorický limit.</li>
+      <li><strong>Silná vůně</strong> — čím více ruší okolí (jiní psi, lidé, auta), tím aromatičtější pamlsek potřebujete.</li>
+    </ul>
+
+    <p style="font-size:17px; line-height:1.7; margin:0 0 10px;"><strong>Konkrétní tipy na obsah váčku:</strong></p>
+    <ul style="font-size:17px; line-height:1.85; padding-left:22px; margin:0 0 20px;">
+      <li>Vařená kuřecí prsa nakrájená na drobné kostičky — levná, zdravá, vysoká motivační hodnota</li>
+      <li>Kousíčky tvrdého sýru (eidam, gouda) — výborně voní, pes je miluje; při teple se nekazí tak rychle jako maso</li>
+      <li>Vařená hovězí nebo kuřecí játra — pro obtížné situace (přivolání u rušení, nový cvik)</li>
+      <li>Komerční měkké pamlsky — Brit Training Snacks, Happy Dog Soft Snack, Trixie Soft Snack Dots; pohodlné na cesty</li>
+      <li>Sušené maso ve formě malých kousků — kachna, krůta, jehněčí; stačí i jedno balení na týden</li>
+    </ul>
+
+    <p style="font-size:17px; line-height:1.7; margin:0 0 10px;"><strong>Co do váčku nepatří:</strong></p>
+    <ul style="font-size:17px; line-height:1.85; padding-left:22px; margin:0 0 16px;">
+      <li><strong>Tvrdé suché sušenky</strong> — pes žvýká příliš dlouho, tempo tréninku klesá a propojení odměna–chování se ztrácí</li>
+      <li><strong>Velké kusy</strong> — pes je rozžvýká, vy čekáte, motivace klesá</li>
+      <li>Cokoli s xylitolom (pozor na některá arašídová másla a diabetické produkty)</li>
+    </ul>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0;">Tip: připravte si zásobu pamlsků doma — uvařte kuřecí prsa, nakrájejte na malé kostičky a zmrazte v sáčcích po porcích. Každý den vezmete jednu porci z mrazáku, dáte do váčku a máte vyřešeno.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Hygiena a čištění</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Váček přichází do styku s masem, sýrem a vlhkostí — bez pravidelného čištění se stane zdrojem bakterií a zápachu. Základní pravidla:</p>
+    <ul style="font-size:17px; line-height:1.85; padding-left:22px; margin:0 0 20px;">
+      <li><strong>Po každém použití</strong> — vysypte zbytky, nechte váček otevřený a vyvětraný. Nikdy neskladujte zavřený s pamlsky uvnitř.</li>
+      <li><strong>Jednou týdně</strong> — vyperte ručně v teplé vodě s trochou saponátu nebo vložte do pračky na šetrný program (30–40 °C). Většina kvalitních váčků to snese.</li>
+      <li><strong>Vnitřní vložka</strong> — pokud má váček odnímatelnou vložku nebo silikonový zásobník, vyjměte ho a umyjte zvlášť pod tekoucí vodou.</li>
+      <li><strong>Sušení</strong> — vždy sušte venku nebo při pokojové teplotě; do sušičky ne. Plastové klíčky a magnety se mohou poškodit.</li>
+      <li><strong>Výměna</strong> — pokud se váček trvale provoní nebo se začne rozpadat šev, je čas na nový. Průměrná životnost při intenzivním používání je 1–2 roky.</li>
+    </ul>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0;">Na výlety, kde plánujete delší session s masem: vezměte si malý hermeticky uzavíratelný box (přesnídávkový kelímek) na pamlsky a váček nechte na opasek jako "rezervoár" — maso v krabičce vydrží čerstvé déle.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:48px 0 18px;">Doporučené produkty</h2>
+    <p style="font-size:15px; line-height:1.6; color:#5c5648; margin:0 0 20px;">Reálné produkty dostupné na českém trhu — seřazené od nejdostupnějšího po prémiové.</p>
+    <div style="display:flex; flex-direction:column; gap:14px; margin-bottom:8px;">
+
+      <div style="background:#fff; border-radius:20px; padding:20px 24px; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;">
+        <div>
+          <p style="margin:0 0 4px; font-weight:700;">Trixie Dummy Bag — tréninkový váček</p>
+          <p style="margin:0; font-size:14px; color:#5c5648;">Klasika s magnetickým zavíráním a klipem na opasek; rozkládací dno usnadňuje čištění; dostupná za cca 250–350 Kč</p>
+        </div>
+        <a href="https://www.heureka.cz/?h%5Bfraze%5D=trixie+treninkovy+vacek+pamlsky" style="font-family:'Space Mono',monospace; font-weight:700; white-space:nowrap;">Srovnat ceny →</a>
+      </div>
+
+      <div style="background:#fff; border-radius:20px; padding:20px 24px; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;">
+        <div>
+          <p style="margin:0 0 4px; font-weight:700;">PetTech Treat Pouch — výcvikový váček</p>
+          <p style="margin:0; font-size:14px; color:#5c5648;">Oblíbená volba cvičitelů; magnetické zavírání, extra kapsa na telefon a klíče, karabina i klip v balení; cca 400–550 Kč</p>
+        </div>
+        <a href="https://www.heureka.cz/?h%5Bfraze%5D=pettech+treat+pouch+vacek+pamlsky" style="font-family:'Space Mono',monospace; font-weight:700; white-space:nowrap;">Srovnat ceny →</a>
+      </div>
+
+      <div style="background:#fff; border-radius:20px; padding:20px 24px; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;">
+        <div>
+          <p style="margin:0 0 4px; font-weight:700;">Ruffwear Treat Trader — prémiový váček</p>
+          <p style="margin:0; font-size:14px; color:#5c5648;">Odolná konstrukce pro outdoor; odnímatelná silikonová vložka (snadné mytí); oddělená kapsa se zipem; vhodné pro práci v terénu; cca 900–1 200 Kč</p>
+        </div>
+        <a href="https://www.heureka.cz/?h%5Bfraze%5D=ruffwear+treat+trader" style="font-family:'Space Mono',monospace; font-weight:700; white-space:nowrap;">Srovnat ceny →</a>
+      </div>
+
+      <div style="background:#fff; border-radius:20px; padding:20px 24px; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;">
+        <div>
+          <p style="margin:0 0 4px; font-weight:700;">Výcvikový váček — obecné srovnání</p>
+          <p style="margin:0; font-size:14px; color:#5c5648;">Pokud si nejste jisti značkou, projděte srovnávač a filtrujte podle ceny a hodnocení zákazníků</p>
+        </div>
+        <a href="https://www.heureka.cz/?h%5Bfraze%5D=vacek+na+pamlsky+pes" style="font-family:'Space Mono',monospace; font-weight:700; white-space:nowrap;">Všechny váčky →</a>
+      </div>
+
+    </div>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; margin:48px 0 14px;">Zdroje</h2>
+    <p style="font-size:14px; color:#5c5648; margin:0 0 8px;">České zdroje:</p>
+    <ul style="font-size:14px; line-height:1.9; color:#5c5648; padding-left:20px; margin:0 0 16px;">
+      <li><a href="https://www.ifauna.cz/clanky/9352-zdrave-pamlsky-pro-psy-nemusi-stat-jmeni-mnohdy-prave-naopak.html">iFauna.cz — Zdravé pamlsky pro psy nemusí stát jmění, mnohdy právě naopak</a></li>
+    </ul>
+    <p style="font-size:14px; color:#5c5648; margin:0 0 8px;">Zahraniční zdroje:</p>
+    <ul style="font-size:14px; line-height:1.9; color:#5c5648; padding-left:20px; margin:0;">
+      <li><a href="https://www.akc.org/expert-advice/training/dog-training-treats/">AKC — The Right Treats Make the Best Rewards: proč na měkkosti a rychlosti záleží</a></li>
+      <li><a href="https://www.akc.org/expert-advice/nutrition/how-many-treats-can-dog-have/">AKC — How Many Treats Can Your Dog Have: max. 10 % denního kalorického příjmu</a></li>
+    </ul>
+
+  </article>
+
+  <!-- FOOTER -->
+  <footer style="background:#2B241C; padding:clamp(32px,5vw,56px) clamp(20px,5vw,64px); display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between; align-items:center;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:20px; color:#F6F1E4;">
+      <svg width="26" height="26" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#E0A83E"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#E0A83E"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#E0A83E"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#E0A83E"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; gap:24px; flex-wrap:wrap; font-size:15px;">
+      <a href="Vychova.dc.html" style="color:#C7D3B6;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#C7D3B6;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#C7D3B6;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#C7D3B6;">O nás</a>
+    </div>
+    <p style="font-family:'Space Mono',monospace; font-size:13px; color:#C7D3B6; margin:0;">© 2026 Pozitivní pes</p>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>
