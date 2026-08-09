@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./image-slot.js"></script>
+  <style>
+    body { margin: 0; background: #F6F1E4; font-family: 'Karla', sans-serif; }
+    a { color: #C96A4E; text-decoration: none; }
+    a:hover { color: #2D5F4C; }
+    ::selection { background: #E0A83E; color: #2B241C; }
+  </style>
+</helmet>
+
+<div style="background:#F6F1E4; color:#2B241C; overflow-x:hidden; position:relative;">
+
+  <!-- NAV -->
+  <nav style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:20px clamp(20px,5vw,64px); flex-wrap:wrap; position:relative; z-index:5;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:22px; color:#2B241C;">
+      <svg width="30" height="30" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#2D5F4C"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#2D5F4C"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#2D5F4C"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#2D5F4C"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; align-items:center; gap:clamp(12px,3vw,32px); flex-wrap:wrap; font-size:16px; font-weight:600;">
+      <a href="Vychova.dc.html" style="color:#2B241C;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#2B241C;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#2B241C;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#2B241C;">O nás</a>
+      <a href="Checklist.dc.html" style="background:#E0A83E; color:#2B241C; padding:10px 22px; border-radius:999px; font-weight:700;">Checklist pro štěně</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section style="display:grid; grid-template-columns: minmax(280px,1fr) minmax(260px,0.8fr); gap:clamp(24px,5vw,60px); align-items:center; padding:clamp(24px,6vw,72px) clamp(20px,5vw,64px) clamp(40px,6vw,80px); max-width:1280px; margin:0 auto;">
+    <div>
+      <p style="font-family:'Space Mono',monospace; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; color:#C96A4E; margin:0 0 16px;">Průvodce prvními kroky se štěnětem</p>
+      <h1 style="font-family:'Fraunces',serif; font-weight:700; font-style:italic; font-size:clamp(40px,6vw,68px); line-height:1.05; margin:0 0 24px;">Chystáte se<br>na štěně?</h1>
+      <p style="font-size:clamp(18px,2vw,20px); line-height:1.6; color:#2B241C; max-width:52ch; margin:0 0 36px;">Rozcestník, co řešit a v jakém pořadí — od výbavy a zabezpečení domácnosti přes první dny doma až po výchovu. Metody bez strachu a bolesti.</p>
+      <div style="display:flex; gap:16px; flex-wrap:wrap;">
+        <a href="Checklist.dc.html" style="background:#E0A83E; color:#2B241C; padding:16px 32px; border-radius:999px; font-weight:700; font-size:17px;">Vyplnit checklist pro nové štěně</a>
+        <a href="#proc" style="border:2px solid #2D5F4C; color:#2D5F4C; padding:14px 30px; border-radius:999px; font-weight:700; font-size:17px;">Proč pozitivní výchova</a>
+      </div>
+    </div>
+    <div style="position:relative;">
+      <div style="position:absolute; top:-30px; right:-20px; width:110px; height:110px; border-radius:50%; background:#C7D3B6; z-index:0;"></div>
+      <image-slot id="hero-puppy" style="width:100%; aspect-ratio:4/5; position:relative; z-index:1;" shape="rounded" radius="32" placeholder="Fotka štěněte"></image-slot>
+    </div>
+  </section>
+
+  <!-- TRAIL CONNECTOR -->
+  <div style="display:flex; justify-content:center; margin:0 0 8px;">
+    <svg width="40" height="70" viewBox="0 0 40 70" fill="none">
+      <path d="M20 0 V26" stroke="#C96A4E" stroke-width="3" stroke-dasharray="1 10" stroke-linecap="round"/>
+      <circle cx="20" cy="46" r="17" fill="#C7D3B6"/>
+      <g transform="translate(20,46)"><ellipse cx="0" cy="4" rx="7" ry="5.5" fill="#2D5F4C"/><ellipse cx="-6.5" cy="-4" rx="2.8" ry="3.6" fill="#2D5F4C"/><ellipse cx="0" cy="-7" rx="3" ry="3.8" fill="#2D5F4C"/><ellipse cx="6.5" cy="-4" rx="2.8" ry="3.6" fill="#2D5F4C"/></g>
+      <path d="M20 63 V70" stroke="#C96A4E" stroke-width="3" stroke-dasharray="1 10" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- WHY SECTION -->
+  <section id="proc" style="max-width:1180px; margin:0 auto; padding:20px clamp(20px,5vw,64px) clamp(40px,6vw,72px);">
+    <p style="font-family:'Space Mono',monospace; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; color:#C96A4E; margin:0 0 12px;">Proč pozitivní pes</p>
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:clamp(30px,4vw,42px); margin:0 0 20px; max-width:20ch;">Výchova, která funguje, protože psovi rozumí — ne protože ho ovládá.</h2>
+    <p style="font-size:18px; line-height:1.7; max-width:66ch; color:#2B241C; margin:0 0 40px;">Pozitivní výchova znamená bez trestů, bez trhání vodítkem, bez "dominance" jako výmluvy. Znamená pozorovat, co pes potřebuje, a odměňovat to, co chceme vidět víc.</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:24px;">
+      <div style="background:#C7D3B6; border-radius:24px; padding:28px;">
+        <div style="width:44px; height:44px; border-radius:50%; background:#2D5F4C; display:flex; align-items:center; justify-content:center; margin-bottom:18px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F6F1E4" stroke-width="2.5"><path d="M4 12l6 6L20 6"/></svg>
+        </div>
+        <h3 style="font-family:'Fraunces',serif; font-size:20px; margin:0 0 10px;">Krok za krokem</h3>
+        <p style="font-size:16px; line-height:1.6; margin:0; color:#2B241C;">Malé, opakovatelné kroky místo zázračných rychlokurzů.</p>
+      </div>
+      <div style="background:#C7D3B6; border-radius:24px; padding:28px;">
+        <div style="width:44px; height:44px; border-radius:50%; background:#C96A4E; display:flex; align-items:center; justify-content:center; margin-bottom:18px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F6F1E4" stroke-width="2.5"><path d="M12 21s-7-4.6-9.5-9C.6 8.2 2.4 4 6.5 4 9 4 11 5.6 12 7c1-1.4 3-3 5.5-3 4.1 0 5.9 4.2 4 8-2.5 4.4-9.5 9-9.5 9z"/></svg>
+        </div>
+        <h3 style="font-family:'Fraunces',serif; font-size:20px; margin:0 0 10px;">Bez strachu a bolesti</h3>
+        <p style="font-size:16px; line-height:1.6; margin:0; color:#2B241C;">Žádné obojky na "korekce", žádné zastrašování. Jen jasná komunikace.</p>
+      </div>
+      <div style="background:#C7D3B6; border-radius:24px; padding:28px;">
+        <div style="width:44px; height:44px; border-radius:50%; background:#2D5F4C; display:flex; align-items:center; justify-content:center; margin-bottom:18px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F6F1E4" stroke-width="2.5"><path d="M3 3v18h18M7 15l4-4 3 3 5-6"/></svg>
+        </div>
+        <h3 style="font-family:'Fraunces',serif; font-size:20px; margin:0 0 10px;">Trpělivost místo tlaku</h3>
+        <p style="font-size:16px; line-height:1.6; margin:0; color:#2B241C;">Čas a opakování dělají práci za nás — žádné rychlokurzy.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAIL CONNECTOR -->
+  <div style="display:flex; justify-content:center; margin:0 0 8px;">
+    <svg width="40" height="70" viewBox="0 0 40 70" fill="none">
+      <path d="M20 0 V26" stroke="#C96A4E" stroke-width="3" stroke-dasharray="1 10" stroke-linecap="round"/>
+      <circle cx="20" cy="46" r="17" fill="#C7D3B6"/>
+      <g transform="translate(20,46)"><ellipse cx="0" cy="4" rx="7" ry="5.5" fill="#C96A4E"/><ellipse cx="-6.5" cy="-4" rx="2.8" ry="3.6" fill="#C96A4E"/><ellipse cx="0" cy="-7" rx="3" ry="3.8" fill="#C96A4E"/><ellipse cx="6.5" cy="-4" rx="2.8" ry="3.6" fill="#C96A4E"/></g>
+      <path d="M20 63 V70" stroke="#C96A4E" stroke-width="3" stroke-dasharray="1 10" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- CATEGORIES -->
+  <section style="max-width:1180px; margin:0 auto; padding:20px clamp(20px,5vw,64px) clamp(40px,6vw,72px);">
+    <p style="font-family:'Space Mono',monospace; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; color:#C96A4E; margin:0 0 12px;">Rozcestník</p>
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:clamp(30px,4vw,42px); margin:0 0 36px; max-width:20ch;">Co řešit a v jakém pořadí</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:28px; align-items:start;">
+      <a href="Vybaveni-a-recenze.dc.html" style="display:block; height:auto; background:#fff; border-radius:28px; overflow:hidden; box-shadow:0 6px 24px rgba(43,36,28,0.08); position:relative;">
+        <span style="position:absolute; top:16px; left:16px; z-index:1; background:#F6F1E4; color:#2B241C; font-family:'Space Mono',monospace; font-weight:700; font-size:14px; width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center;">1</span>
+        <image-slot id="cat-vybaveni" style="width:100%; aspect-ratio:16/10;" shape="rect" placeholder="Foto: vybavení pro psa"></image-slot>
+        <div style="padding:26px;">
+          <h3 style="font-family:'Fraunces',serif; font-size:22px; margin:0 0 10px; color:#2B241C;">Vybavení a zabezpečení domácnosti</h3>
+          <p style="font-size:16px; line-height:1.6; color:#2B241C; margin:0 0 14px;">Co pořídit dopředu a jak štěněti zabezpečit byt, než ho přivezete domů.</p>
+          <span style="color:#C96A4E; font-weight:700;">Zatím prázdné, brzy přibude →</span>
+        </div>
+      </a>
+      <a href="Checklist.dc.html" style="display:block; height:auto; background:#fff; border-radius:28px; overflow:hidden; box-shadow:0 6px 24px rgba(43,36,28,0.08); position:relative;">
+        <span style="position:absolute; top:16px; left:16px; z-index:1; background:#F6F1E4; color:#2B241C; font-family:'Space Mono',monospace; font-weight:700; font-size:14px; width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center;">2</span>
+        <image-slot id="cat-checklist" style="width:100%; aspect-ratio:16/10;" shape="rect" placeholder="Foto: přípravy na štěně"></image-slot>
+        <div style="padding:26px;">
+          <h3 style="font-family:'Fraunces',serif; font-size:22px; margin:0 0 10px; color:#2B241C;">První dny doma</h3>
+          <p style="font-size:16px; line-height:1.6; color:#2B241C; margin:0 0 14px;">Zdravotní administrativa a checklist na první dny — vyplň si ho přímo na stránce.</p>
+          <span style="color:#2D5F4C; font-weight:700;">Otevřít checklist →</span>
+        </div>
+      </a>
+      <a href="Vychova.dc.html" style="display:block; height:auto; background:#fff; border-radius:28px; overflow:hidden; box-shadow:0 6px 24px rgba(43,36,28,0.08); position:relative;">
+        <span style="position:absolute; top:16px; left:16px; z-index:1; background:#F6F1E4; color:#2B241C; font-family:'Space Mono',monospace; font-weight:700; font-size:14px; width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center;">3</span>
+        <image-slot id="cat-vychova" style="width:100%; aspect-ratio:16/10;" shape="rect" placeholder="Foto: výchova štěněte"></image-slot>
+        <div style="padding:26px;">
+          <h3 style="font-family:'Fraunces',serif; font-size:22px; margin:0 0 10px; color:#2B241C;">Výchova a socializace</h3>
+          <p style="font-size:16px; line-height:1.6; color:#2B241C; margin:0 0 14px;">Základy komunikace, řešení problémového chování, socializace krok za krokem.</p>
+          <span style="color:#C96A4E; font-weight:700;">Zatím prázdné, brzy přibude →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- CHECKLIST PROMO -->
+  <section style="max-width:1180px; margin:0 auto clamp(40px,6vw,72px); padding:0 clamp(20px,5vw,64px);">
+    <div style="background:#2D5F4C; border-radius:32px; padding:clamp(32px,5vw,56px); display:grid; grid-template-columns:minmax(260px,1fr) auto; gap:32px; align-items:center;">
+      <div>
+        <p style="font-family:'Space Mono',monospace; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; color:#E0A83E; margin:0 0 12px;">Připraveno na první dny</p>
+        <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:clamp(26px,3.4vw,34px); color:#F6F1E4; margin:0 0 14px; max-width:24ch;">Checklist pro nové štěně — vyplň si ho rovnou tady</h2>
+        <p style="font-size:16px; line-height:1.6; color:#C7D3B6; margin:0; max-width:52ch;">Vybavení, zabezpečení domácnosti, zdravotní administrativa a první dny doma — jedna stránka, kterou zaškrtáváš na místě.</p>
+      </div>
+      <a href="Checklist.dc.html" style="background:#E0A83E; color:#2B241C; padding:18px 34px; border-radius:999px; font-weight:700; font-size:17px; white-space:nowrap; justify-self:start;">Otevřít checklist</a>
+    </div>
+  </section>
+
+  <!-- TRAIL CONNECTOR -->
+  <div style="display:flex; justify-content:center; margin:0 0 8px;">
+    <svg width="40" height="70" viewBox="0 0 40 70" fill="none">
+      <path d="M20 0 V26" stroke="#C96A4E" stroke-width="3" stroke-dasharray="1 10" stroke-linecap="round"/>
+      <circle cx="20" cy="46" r="17" fill="#C7D3B6"/>
+      <g transform="translate(20,46)"><ellipse cx="0" cy="4" rx="7" ry="5.5" fill="#2D5F4C"/><ellipse cx="-6.5" cy="-4" rx="2.8" ry="3.6" fill="#2D5F4C"/><ellipse cx="0" cy="-7" rx="3" ry="3.8" fill="#2D5F4C"/><ellipse cx="6.5" cy="-4" rx="2.8" ry="3.6" fill="#2D5F4C"/></g>
+      <path d="M20 63 V70" stroke="#C96A4E" stroke-width="3" stroke-dasharray="1 10" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- FOOTER -->
+  <footer style="background:#2B241C; padding:clamp(32px,5vw,56px) clamp(20px,5vw,64px); display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between; align-items:center;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:20px; color:#F6F1E4;">
+      <svg width="26" height="26" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#E0A83E"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#E0A83E"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#E0A83E"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#E0A83E"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; gap:24px; flex-wrap:wrap; font-size:15px;">
+      <a href="Vychova.dc.html" style="color:#C7D3B6;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#C7D3B6;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#C7D3B6;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#C7D3B6;">O nás</a>
+    </div>
+    <p style="font-family:'Space Mono',monospace; font-size:13px; color:#C7D3B6; margin:0;">© 2026 Pozitivní pes</p>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>

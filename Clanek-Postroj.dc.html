@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #F6F1E4; font-family: 'Karla', sans-serif; }
+    a { color: #C96A4E; text-decoration: none; }
+    a:hover { color: #2D5F4C; }
+    ::selection { background: #E0A83E; color: #2B241C; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid #C7D3B6; font-size: 15px; }
+    th { font-family: 'Space Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: #2D5F4C; }
+  </style>
+</helmet>
+
+<div style="background:#F6F1E4; color:#2B241C; overflow-x:hidden;">
+
+  <!-- NAV -->
+  <nav style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:20px clamp(20px,5vw,64px); flex-wrap:wrap;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:22px; color:#2B241C;">
+      <svg width="30" height="30" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#2D5F4C"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#2D5F4C"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#2D5F4C"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#2D5F4C"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; align-items:center; gap:clamp(12px,3vw,32px); flex-wrap:wrap; font-size:16px; font-weight:600;">
+      <a href="Vychova.dc.html" style="color:#2B241C;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#2B241C;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#2B241C;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#2B241C;">O nás</a>
+    </div>
+  </nav>
+
+  <article style="max-width:760px; margin:0 auto; padding:clamp(16px,3vw,24px) clamp(20px,5vw,64px) clamp(64px,8vw,96px);">
+
+    <a href="Checklist.dc.html" style="font-family:'Space Mono',monospace; font-size:14px; color:#2D5F4C; display:inline-block; margin-bottom:20px;">← Zpět na checklist</a>
+
+    <p style="font-family:'Space Mono',monospace; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; color:#C96A4E; margin:0 0 14px;">Vybavení</p>
+    <h1 style="font-family:'Fraunces',serif; font-weight:700; font-style:italic; font-size:clamp(32px,5vw,48px); line-height:1.1; margin:0 0 24px;">Postroj</h1>
+    <p style="font-size:19px; line-height:1.65; margin:0 0 40px; color:#2B241C;">Postroj je pro štěně výhodnější volbou než samotný obojek — přenáší sílu ze šíje na hrudník a záda, kde tolik škody nenadělá. Ale ne každý postroj je stejný. Špatně navržený postroj omezuje pohyb ramen, způsobuje svalové dysbalance nebo vede ke špatným pohybovým vzorcům — to je pro rostoucího psa stejně špatné jako tah na obojek.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Proč postroj místo obojku?</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Chůze s tahem na obojku způsobuje dlouhodobě:</p>
+    <ul style="font-size:17px; line-height:1.8; padding-left:22px; margin:0 0 16px;">
+      <li>Tlak na průdušnici, průdušky a jícen.</li>
+      <li>Napětí na štítnou žlázu a přilehlé lymfatické uzliny.</li>
+      <li>Tlak na krční páteř a nervy — u malých plemen přímé riziko poranění.</li>
+      <li>U brachycefalických plemen (mops, francouzský buldok, buldok) zvyšuje jakýkoli tlak na krk dechové obtíže.</li>
+    </ul>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0;">Shodují se na tom veterináři i fyzioterapeuté: pokud pes táhne na vodítku, řešením je trénink chůze — ne silnější zadržování. Postroj dává čas na to trénink zvládnout bez fyzického poškozování.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Typy postrojů: co doporučit a co ne</h2>
+    <table>
+      <tr><th>Typ</th><th>Popis</th><th>Hodnocení</th></tr>
+      <tr><td><strong>Y-postroj (tvar Y)</strong></td><td>Řemen prochází mezi předními nohami ve tvaru Y, D-kroužek na zádech. Neomezuje pohyb lopatky.</td><td>✓ Doporučeno</td></tr>
+      <tr><td><strong>H-postroj</strong></td><td>Dva vodorovné řemeny přes hrudník a záda spojené svislým. Záleží na konkrétním provedení a nastavení.</td><td>✓ Záleží na střihu</td></tr>
+      <tr><td><strong>Stepovací postroj</strong></td><td>Pes do něj vkročí předními nohami — snadné nasazení, oblíbené u malých plemen.</td><td>✓ Pokud neomezuje lopatku</td></tr>
+      <tr><td><strong>Přední D-kroužek (anti-tah)</strong></td><td>D-kroužek na hrudi způsobuje stočení psa — diskutabilní dopad na pohybový vzorec; nevhodné pro tažná a sportovní plemena.</td><td>△ Jen jako přechodné řešení</td></tr>
+      <tr><td><strong>Postroj omezující lopatky</strong></td><td>Řemen přes rameno nebo přes lopatku — omezuje přirozený pohyb předních končetin.</td><td>✗ Nedoporučeno</td></tr>
+    </table>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Jak postroj správně nastavit</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Správně nasazený postroj splňuje pravidlo dvou prstů: pod každý řemen by měly projít dva prsty, ale postroj by se neměl volně posunovat. Kontrolní body:</p>
+    <ul style="font-size:17px; line-height:1.8; padding-left:22px; margin:0;">
+      <li>Hrudní část sedí na hrudní kosti, ne na průdušnici.</li>
+      <li>Řemen za předními nohami nesmí tísnit podpaží — jinak způsobuje oděrky.</li>
+      <li>D-kroužek na zádech leží přibližně uprostřed zad, ne u ocasu ani u krku.</li>
+      <li>Při pohybu se postroj nesmí přesouvat na bok ani se dívat křivě — pokud se to děje, je špatně nastavený nebo nevhodný střih.</li>
+    </ul>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Pozitivní nasazování postroje</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Štěňata postroj někdy ze začátku nesnášejí — cítí tlak a stahování okolo těla jako ohrožení. Řešení je postupné zvykání:</p>
+    <ul style="font-size:17px; line-height:1.8; padding-left:22px; margin:0;">
+      <li>Ukažte postroj a dejte pamlsek — bez nasazování.</li>
+      <li>Přiložte postroj k tělu bez zapínání — odměňte.</li>
+      <li>Nechte štěně samo "vlezout" hlavou do postroje za pamlskem.</li>
+      <li>Zapněte jen hrudní část — odměňte a snímejte. Opakujte, dokud je štěně klidné.</li>
+      <li>Přidejte zadní část. Postupujte v tempu štěněte — ne svém.</li>
+    </ul>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:48px 0 18px;">Doporučené produkty</h2>
+    <p style="font-size:15px; line-height:1.6; color:#5c5648; margin:0 0 20px;">Osvědčené postrojích s Y nebo H střihem bez omezení lopatky — ne placená reklama.</p>
+    <div style="display:flex; flex-direction:column; gap:14px; margin-bottom:8px;">
+      <div style="background:#fff; border-radius:20px; padding:20px 24px; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;">
+        <div><p style="margin:0 0 4px; font-weight:700;">Julius-K9 IDC Powerharness</p><p style="margin:0; font-size:14px; color:#5c5648;">Odolný, nastavitelný, oblíbený u větších plemen, výměnné nápisy</p></div>
+        <a href="https://www.heureka.cz/?h%5Bfraze%5D=julius+k9+postroj" style="font-family:'Space Mono',monospace; font-weight:700; white-space:nowrap;">Zobrazit →</a>
+      </div>
+      <div style="background:#fff; border-radius:20px; padding:20px 24px; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;">
+        <div><p style="margin:0 0 4px; font-weight:700;">Perfect Fit — modulární Y-postroj</p><p style="margin:0; font-size:14px; color:#5c5648;">Skládá se ze tří částí, každá se nastavuje zvlášť — ideální pro nestandardní proporce</p></div>
+        <a href="https://www.heureka.cz/?h%5Bfraze%5D=perfect+fit+postroj+pes" style="font-family:'Space Mono',monospace; font-weight:700; white-space:nowrap;">Srovnat ceny →</a>
+      </div>
+      <div style="background:#fff; border-radius:20px; padding:20px 24px; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;">
+        <div><p style="margin:0 0 4px; font-weight:700;">Ruffwear Front Range Harness</p><p style="margin:0; font-size:14px; color:#5c5648;">Lehký H-postroj na výlety a sport, dva D-kroužky (záda + hruď)</p></div>
+        <a href="https://www.heureka.cz/?h%5Bfraze%5D=ruffwear+front+range+postroj" style="font-family:'Space Mono',monospace; font-weight:700; white-space:nowrap;">Srovnat ceny →</a>
+      </div>
+    </div>
+    <p style="font-size:15px; margin:16px 0 0;"><a href="https://www.heureka.cz/?h%5Bfraze%5D=postroj+pes">Srovnávač cen na Heureka.cz →</a></p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; margin:48px 0 14px;">Zdroje</h2>
+    <p style="font-size:14px; color:#5c5648; margin:0 0 8px;">České zdroje:</p>
+    <ul style="font-size:14px; line-height:1.9; color:#5c5648; padding-left:20px; margin:0 0 16px;">
+      <li><a href="https://www.ifauna.cz/clanky/9121-jak-vybrat-postroj-pro-psa-aby-fungoval-a-neskodil.html">iFauna.cz — Jak vybrat postroj pro psa, aby fungoval a neškodil</a></li>
+    </ul>
+    <p style="font-size:14px; color:#5c5648; margin:0 0 8px;">Zahraniční zdroje:</p>
+    <ul style="font-size:14px; line-height:1.9; color:#5c5648; padding-left:20px; margin:0;">
+      <li><a href="https://www.petmd.com/dog/general-health/collapsing-trachea-dogs-everything-you-need-know">PetMD — Collapsing Trachea in Dogs: veterinární doporučení vyměnit obojek za postroj kvůli tlaku na průdušnici</a></li>
+      <li><a href="https://www.petmd.com/dog/care/surprising-dog-harness-dangers-avoid">PetMD — Surprising Dog Harness Dangers to Avoid: proč záleží na střihu a správném padnutí postroje</a></li>
+    </ul>
+
+  
+
+  </article>
+
+  <!-- FOOTER -->
+  <footer style="background:#2B241C; padding:clamp(32px,5vw,56px) clamp(20px,5vw,64px); display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between; align-items:center;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:20px; color:#F6F1E4;">
+      <svg width="26" height="26" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#E0A83E"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#E0A83E"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#E0A83E"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#E0A83E"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; gap:24px; flex-wrap:wrap; font-size:15px;">
+      <a href="Vychova.dc.html" style="color:#C7D3B6;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#C7D3B6;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#C7D3B6;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#C7D3B6;">O nás</a>
+    </div>
+    <p style="font-family:'Space Mono',monospace; font-size:13px; color:#C7D3B6; margin:0;">© 2026 Pozitivní pes</p>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>
