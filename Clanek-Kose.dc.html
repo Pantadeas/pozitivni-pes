@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #F6F1E4; font-family: 'Karla', sans-serif; }
+    a { color: #C96A4E; text-decoration: none; }
+    a:hover { color: #2D5F4C; }
+    ::selection { background: #E0A83E; color: #2B241C; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid #C7D3B6; font-size: 15px; }
+    th { font-family: 'Space Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: #2D5F4C; }
+  </style>
+</helmet>
+
+<div style="background:#F6F1E4; color:#2B241C; overflow-x:hidden;">
+
+  <!-- NAV -->
+  <nav style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:20px clamp(20px,5vw,64px); flex-wrap:wrap;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:22px; color:#2B241C;">
+      <svg width="30" height="30" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#2D5F4C"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#2D5F4C"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#2D5F4C"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#2D5F4C"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; align-items:center; gap:clamp(12px,3vw,32px); flex-wrap:wrap; font-size:16px; font-weight:600;">
+      <a href="Vychova.dc.html" style="color:#2B241C;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#2B241C;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#2B241C;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#2B241C;">O nás</a>
+    </div>
+  </nav>
+
+  <article style="max-width:760px; margin:0 auto; padding:clamp(16px,3vw,24px) clamp(20px,5vw,64px) clamp(64px,8vw,96px);">
+
+    <a href="Checklist.dc.html" style="font-family:'Space Mono',monospace; font-size:14px; color:#2D5F4C; display:inline-block; margin-bottom:20px;">← Zpět na checklist</a>
+
+    <p style="font-family:'Space Mono',monospace; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; color:#C96A4E; margin:0 0 14px;">Zabezpečení domácnosti</p>
+    <h1 style="font-family:'Fraunces',serif; font-weight:700; font-style:italic; font-size:clamp(32px,5vw,48px); line-height:1.1; margin:0 0 24px;">Zabezpečené odpadkové koše</h1>
+    <p style="font-size:19px; line-height:1.65; margin:0 0 40px; color:#2B241C;">Pro psa je odpadkový koš zlatý důl — směs vůní jídla, obalů a zbytků, které mozek lovce prahnoucího po potravě nedokáže ignorovat. Problém není špatná výchova. Problém je, že obsah koše může psa vážně zranit nebo otrávit. Řešením je fyzické zabezpečení, nikoli spoléhání na to, že pes „ví, co nesmí".</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Proč koše psy tak lákají</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Pes má přibližně 300 milionů čichových receptorů — asi padesátkrát více než člověk. Kuchyňský koš vydává desítky pachů najednou: maso, tuk, fermentující zbytky, sýr, ovocné slupky. Pro psa jde o intenzivní potravinový signál, který aktivuje přirozenou motivaci vyhledávat potravu. Není to neposlušnost — je to evoluce.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Štěňata a mladí psi prozkoumávají svět tlamou, takže jsou zvláště ohroženi. Ale i dospělý, dobře vycvičený pes podlehne, pokud je doma sám, má hlad nebo je koš přeplněný.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Co v kuchyňském koši opravdu ohrožuje zdraví</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 20px;">Nebezpečí se dělí do dvou skupin: jedovaté látky a fyzické hrozby. Obojí vyžaduje návštěvu veterináře.</p>
+
+    <table style="margin-bottom:8px;">
+      <tr><th>Co v koši</th><th>Riziko</th><th>Proč je to nebezpečné</th></tr>
+      <tr>
+        <td><strong>Vařené kosti</strong> (drůbeží, vepřové)</td>
+        <td>Fyzické</td>
+        <td>Vařením se kosti stávají křehkými — v tlamě se štípají na ostré úlomky, které mohou perforovat jícen nebo střeva.</td>
+      </tr>
+      <tr>
+        <td><strong>Cibule a česnek</strong> (i uvařené, i sušené)</td>
+        <td>Toxické</td>
+        <td>Obsahují látky (organické thiosulfáty) ničící červené krvinky — způsobují hemolytickou anémii. Tepelná úprava toxicitu nesnižuje.</td>
+      </tr>
+      <tr>
+        <td><strong>Čokoládové obaly a zbytky</strong></td>
+        <td>Toxické</td>
+        <td>I stopy theobromin a kofeinu v obalech jsou pro malé psy problém. Hořká čokoláda je nebezpečnější než mléčná.</td>
+      </tr>
+      <tr>
+        <td><strong>Avokádové slupky a pecky</strong></td>
+        <td>Toxické</td>
+        <td>Slupka a dřevnatá pecka obsahují persín — toxin způsobující zvracení, průjem a v závažných případech poškození srdce.</td>
+      </tr>
+      <tr>
+        <td><strong>Třešňové a meruňkové pecky</strong></td>
+        <td>Toxické</td>
+        <td>Semena v peckovicích uvolňují při žvýkání kyanovodík. I jedna pecka může u malého psa způsobit otravu.</td>
+      </tr>
+      <tr>
+        <td><strong>Zkažené jídlo</strong></td>
+        <td>Toxické</td>
+        <td>Plísně produkují mykotoxiny, které mohou způsobit třes, záchvaty a selhání orgánů. Zkažené jídlo je pro psa mnohem nebezpečnější než pro člověka.</td>
+      </tr>
+      <tr>
+        <td><strong>Žvýkačky a bonbóny s xylitolerm</strong></td>
+        <td>Toxické</td>
+        <td>Xylitol vyvolává prudký pokles krevního cukru (hypoglykémii) a poškozuje játra. Účinky nastupují během 30–60 minut.</td>
+      </tr>
+      <tr>
+        <td><strong>Žiletky a ostré předměty</strong></td>
+        <td>Fyzické</td>
+        <td>Lacerují sliznici úst, jícnu a žaludku. Stačí minutová nepozornost při vyhazování.</td>
+      </tr>
+      <tr>
+        <td><strong>Tampony, vložky, pleny</strong></td>
+        <td>Fyzické</td>
+        <td>Absorpční materiály bobtnají v gastrointestinálním traktu — mohou způsobit úplné ucpání střev vyžadující operaci.</td>
+      </tr>
+      <tr>
+        <td><strong>Fólie, igelity, obaly</strong></td>
+        <td>Fyzické</td>
+        <td>Psi je lákají kvůli zbytkovým pachům jídla. Po spolknutí hrozí střevní obstrukce.</td>
+      </tr>
+    </table>
+    <p style="font-size:15px; line-height:1.6; color:#5c5648; margin:8px 0 0;">Pokud máte podezření, že pes spolkl cokoli z výše uvedeného, kontaktujte veterináře nebo pohotovost — nečekejte na příznaky.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:48px 0 14px;">Koupelna: druhý nebezpečný koš</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Koupelnový koš bývá přehlíženou hrozbou — stojí nízko, bývá bez víka a obsahuje látky, které mohou psa vážně poškodit.</p>
+    <ul style="font-size:17px; line-height:1.8; padding-left:22px; margin:0 0 16px;">
+      <li><strong>Léky</strong> — i prázdné blistry nebo rozlomené tablety. Ibuprofen, paracetamol, antidepresiva a mnoho dalších volně prodejných léků jsou pro psy smrtelné i v malých dávkách.</li>
+      <li><strong>Žiletky a jednorázové holítka</strong> — rozlomené čepele způsobují vnitřní poranění. Psi je lákají k žvýkání.</li>
+      <li><strong>Tampony a vložky</strong> — totožné riziko jako v kuchyni (bobtnání v GI traktu), navíc intenzivní pach.</li>
+      <li><strong>Knoflíkové baterie</strong> — nacházejí se v odložených hodinkách, slyšátkách nebo hračkách. Po spolknutí způsobují chemické popáleniny jícnu během hodin. Jde o akutní veterinární pohotovost.</li>
+      <li><strong>Zubní nit a párátka</strong> — nitě mohou způsobit tzv. lineární cizí těleso: navinutím kolem střevního obsahu těleso doslova prořezává stěnu střeva.</li>
+      <li><strong>Kosmetika a čisticí prostředky</strong> — alkoholy, peroxidy, silice a detergenty v obalech jsou toxické při pozření.</li>
+    </ul>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 0;">Koupelnu udržujte pro psa trvale uzavřenou nebo instalujte koš s víkem na dětskou pojistku — stejně jako v kuchyni.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:48px 0 14px;">Řešení: fyzické zabezpečení je základ</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 20px;">Klíčové pravidlo: psa nelze přesvědčit čichem, aby ignoroval lákavý koš. Fyzická bariéra je spolehlivější než jakýkoli výcvik.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:20px; margin:0 0 12px;">1. Koše se zámkem nebo pedálovým/senzorovým víkem</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Koš, který pes nedokáže otevřít tlapou ani tlamou, je nejjednodušší řešení. Hledejte:</p>
+    <ul style="font-size:17px; line-height:1.8; padding-left:22px; margin:0 0 16px;">
+      <li><strong>Pedálové koše</strong> s těžkým víkem — pes obvykle nezvládne páku otevřít.</li>
+      <li><strong>Koše s otočným nebo tlačným zámkem</strong> (tzv. child-lock nebo step-lock) — víko se otevírá jen stisknutím dvou bodů zároveň.</li>
+      <li><strong>Kovové koše se skrytým mechanismem</strong> — odolnější vůči psu než lehké plastové modely.</li>
+      <li><strong>Bezdotykové (senzorové) koše</strong> — automaticky se zavřou; pes nemá jak víko podkopnout tlapou.</li>
+    </ul>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:20px; margin:0 0 12px;">2. Koše schované ve skříňce s dětskou pojistkou</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Koš za dvířky pod kuchyňskou linkou je pro psa prakticky nedostupný. Dvířka zabezpečte dětskou pojistkou — magnetické nebo pákové typy jsou spolehlivé a levné.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:20px; margin:0 0 12px;">3. Oddělená místnost nebo brána</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Kuchyni nebo koupelnu s otevřeným košem zavírejte, když pes zůstane sám. Alternativou jsou bezpečnostní dětské zábrany (baby gates) v průchodu — pes se do místnosti nedostane, ale vzduch proudí volně.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:20px; margin:0 0 12px;">4. Nepřeplňujte koše a vynášejte včas</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 8px;">Plný nebo přetékající koš je snazší cíl — víko se nedovírá, pach je intenzivnější. Obaly od masa, rybí zbytky nebo avokádové slupky ideálně ihned zabalte do uzavíratelného igelitu a vyhoďte mimo dosah psa.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:48px 0 14px;">Pozitivní výcvik jako doplněk — ne náhrada</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Příkazy <strong>„nech to"</strong> a <strong>„za mnou"</strong> jsou užitečné — mohou zabránit nehodě v okamžiku, kdy koš omylem skončí na zemi nebo pes narazí na odpad venku. Ale nejsou náhradou za fyzické zabezpečení doma.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Důvod je prostý: výcvik selže v situaci, kdy pes nemá motivaci vás poslechnout — například když je doma sám, je unaven nebo koš voní obzvlášť lákavě. Fyzická bariéra selhat nemůže.</p>
+    <ul style="font-size:17px; line-height:1.8; padding-left:22px; margin:0 0 16px;">
+      <li><strong>„Nech to"</strong> — trénujte s nízkou hodnotou předmětu nejprve, postupně přidávejte lákavější věci. Odměna musí být hodnotnější než to, co pes nechává.</li>
+      <li><strong>„Za mnou" / „pojď"</strong> — spolehlivé přivolání odvede psa od koše dříve, než stihne cos vzít. Trénujte denně v různých situacích.</li>
+    </ul>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 0;">Oba příkazy jsou součástí základní pozitivní výchovy — ale primárním ochranným opatřením zůstává koš, ke kterému se pes nedostane.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:48px 0 14px;">Správná likvidace nebezpečného odpadu</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Některé věci do domácího koše vůbec nepatří — a to nejen kvůli psovi:</p>
+    <ul style="font-size:17px; line-height:1.8; padding-left:22px; margin:0 0 16px;">
+      <li><strong>Léky (prošlé i zbývající)</strong> — odevzdejte do lékárny. Lékárny jsou ze zákona povinny je přijmout zdarma. Nikdy nesplachujte do záchodu ani nevyhazujte volně do koše.</li>
+      <li><strong>Baterie (včetně knoflíkových)</strong> — patří do sběrny nebezpečného odpadu nebo do červených sběrných nádob u obchodů. Alkalické a lithiové baterie v běžném koši jsou nebezpečné jak pro psa, tak pro životní prostředí.</li>
+      <li><strong>Elektronika s bateriemi</strong> (hodinky, sluchátka) — do elektrosběrny nebo sběrných míst v obchodech s elektronikou.</li>
+      <li><strong>Chemikálie a léčiva</strong> — specializovaná sběrná místa; informace poskytne obecní úřad nebo lékárna.</li>
+    </ul>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:48px 0 18px;">Doporučené produkty</h2>
+    <p style="font-size:15px; line-height:1.6; color:#5c5648; margin:0 0 20px;">Příklady košů s bezpečnostními mechanismy — ne placená reklama. Vyhledávání vede na Heureka.cz, kde můžete porovnat aktuální ceny a recenze.</p>
+    <div style="display:flex; flex-direction:column; gap:14px; margin-bottom:8px;">
+      <div style="background:#fff; border-radius:20px; padding:20px 24px; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;">
+        <div><p style="margin:0 0 4px; font-weight:700;">Pedálový koš s těžkým víkem (ocel/nerez)</p><p style="margin:0; font-size:14px; color:#5c5648;">Pes nezvládne páku otevřít tlapou ani tlamou; vhodné pro kuchyni i koupelnu</p></div>
+        <a href="https://www.heureka.cz/?h%5Bfraze%5D=pedalovy+kos+viko+nerez" style="font-family:'Space Mono',monospace; font-weight:700; white-space:nowrap;">Srovnat ceny →</a>
+      </div>
+      <div style="background:#fff; border-radius:20px; padding:20px 24px; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;">
+        <div><p style="margin:0 0 4px; font-weight:700;">Bezdotykový (senzorový) odpadkový koš</p><p style="margin:0; font-size:14px; color:#5c5648;">Víko se zavírá automaticky; pes nemá mechanismus, jak ho otevřít</p></div>
+        <a href="https://www.heureka.cz/?h%5Bfraze%5D=bezdotykovy+senzorovy+odpadkovy+kos" style="font-family:'Space Mono',monospace; font-weight:700; white-space:nowrap;">Srovnat ceny →</a>
+      </div>
+      <div style="background:#fff; border-radius:20px; padding:20px 24px; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;">
+        <div><p style="margin:0 0 4px; font-weight:700;">Odpadkový koš do skříňky pod linku</p><p style="margin:0; font-size:14px; color:#5c5648;">Výsuvný systém za dvířky; kombinujte s dětskou magnetickou pojistkou</p></div>
+        <a href="https://www.heureka.cz/?h%5Bfraze%5D=odpadkovy+kos+do+skrinky+pod+linku" style="font-family:'Space Mono',monospace; font-weight:700; white-space:nowrap;">Srovnat ceny →</a>
+      </div>
+      <div style="background:#fff; border-radius:20px; padding:20px 24px; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;">
+        <div><p style="margin:0 0 4px; font-weight:700;">Dětská bezpečnostní pojistka na dvířka skříňky</p><p style="margin:0; font-size:14px; color:#5c5648;">Magnetická nebo pákový typ; zabezpečí koš i chemikálie ve skříňce</p></div>
+        <a href="https://www.heureka.cz/?h%5Bfraze%5D=detska+pojistka+skrinka+dvere+magneticka" style="font-family:'Space Mono',monospace; font-weight:700; white-space:nowrap;">Srovnat ceny →</a>
+      </div>
+      <div style="background:#fff; border-radius:20px; padding:20px 24px; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;">
+        <div><p style="margin:0 0 4px; font-weight:700;">Bezpečnostní zábrana do průchodu (baby gate)</p><p style="margin:0; font-size:14px; color:#5c5648;">Oddělí psa od kuchyně nebo koupelny bez nutnosti zavírat dveře</p></div>
+        <a href="https://www.heureka.cz/?h%5Bfraze%5D=detska+zabranka+zabrany+pes" style="font-family:'Space Mono',monospace; font-weight:700; white-space:nowrap;">Srovnat ceny →</a>
+      </div>
+    </div>
+    <p style="font-size:15px; margin:16px 0 0;"><a href="https://www.heureka.cz/?h%5Bfraze%5D=odpadkovy+kos+zamek+viko">Koše se zabezpečeným víkem na Heureka.cz →</a></p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; margin:48px 0 14px;">Zdroje</h2>
+    <p style="font-size:14px; color:#5c5648; margin:0 0 8px;">Zahraniční odborné zdroje:</p>
+    <ul style="font-size:14px; line-height:1.9; color:#5c5648; padding-left:20px; margin:0 0 16px;">
+      <li><a href="https://www.akc.org/expert-advice/home-living/household-hazards-poisons-for-dogs/">American Kennel Club — Household Hazards for Dogs: Beware of These Potentially Dangerous Items (přehled jedů a nebezpečných předmětů v domácnosti)</a></li>
+      <li><a href="https://www.petmd.com/dog/emergency/poisoning-toxicity/how-dog-proof-your-trash-can">PetMD — How to Dog-Proof Your Trash Can (konkrétní nebezpečí v koši a praktická řešení)</a></li>
+      <li><a href="https://www.petmd.com/dog/slideshows/5-trash-can-dangers-your-pet">PetMD — 5 Trash Can Dangers for Your Pet (potraviny, bakterie, fyzické hrozby)</a></li>
+    </ul>
+
+  </article>
+
+  <!-- FOOTER -->
+  <footer style="background:#2B241C; padding:clamp(32px,5vw,56px) clamp(20px,5vw,64px); display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between; align-items:center;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:20px; color:#F6F1E4;">
+      <svg width="26" height="26" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#E0A83E"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#E0A83E"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#E0A83E"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#E0A83E"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; gap:24px; flex-wrap:wrap; font-size:15px;">
+      <a href="Vychova.dc.html" style="color:#C7D3B6;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#C7D3B6;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#C7D3B6;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#C7D3B6;">O nás</a>
+    </div>
+    <p style="font-family:'Space Mono',monospace; font-size:13px; color:#C7D3B6; margin:0;">© 2026 Pozitivní pes</p>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #F6F1E4; font-family: 'Karla', sans-serif; }
+    a { color: #C96A4E; text-decoration: none; }
+    a:hover { color: #2D5F4C; }
+    ::selection { background: #E0A83E; color: #2B241C; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid #C7D3B6; font-size: 15px; }
+    th { font-family: 'Space Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: #2D5F4C; }
+  </style>
+</helmet>
+
+<div style="background:#F6F1E4; color:#2B241C; overflow-x:hidden;">
+
+  <!-- NAV -->
+  <nav style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:20px clamp(20px,5vw,64px); flex-wrap:wrap;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:22px; color:#2B241C;">
+      <svg width="30" height="30" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#2D5F4C"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#2D5F4C"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#2D5F4C"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#2D5F4C"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; align-items:center; gap:clamp(12px,3vw,32px); flex-wrap:wrap; font-size:16px; font-weight:600;">
+      <a href="Vychova.dc.html" style="color:#2B241C;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#2B241C;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#2B241C;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#2B241C;">O nás</a>
+    </div>
+  </nav>
+
+  <article style="max-width:760px; margin:0 auto; padding:clamp(16px,3vw,24px) clamp(20px,5vw,64px) clamp(64px,8vw,96px);">
+
+    <a href="Checklist.dc.html" style="font-family:'Space Mono',monospace; font-size:14px; color:#2D5F4C; display:inline-block; margin-bottom:20px;">← Zpět na checklist</a>
+
+    <p style="font-family:'Space Mono',monospace; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; color:#C96A4E; margin:0 0 14px;">Zabezpečení domácnosti</p>
+    <h1 style="font-family:'Fraunces',serif; font-weight:700; font-style:italic; font-size:clamp(32px,5vw,48px); line-height:1.1; margin:0 0 24px;">Drobné předměty z dosahu: proč je to jedna z nejdůležitějších věcí, co pro štěně uděláte</h1>
+    <p style="font-size:19px; line-height:1.65; margin:0 0 40px; color:#2B241C;">Štěně vnímá svět hlavně ústy. Knoflíková baterie, gumička, víčko od lahve — pro dospělého člověka bezvýznamná drobnost, pro štěně potenciálně smrtelné sousto. Nebezpečí nespočívá v samotném kousání, ale ve spolknutí. Cizí těleso v trávicí soustavě může způsobit obstrukci střev, vnitřní poranění nebo chemické poleptání, a to i v případě, kdy pes nevykazuje žádné příznaky hned po spolknutí.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Proč štěňata polyká co najdou</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Štěňata procházejí fází orálního průzkumu světa, která je pro jejich vývoj naprosto přirozená — stejně jako lidská miminka. Čenich je dovede ke každému předmětu, a protože nemají ruce, přichází na řadu tlama. Problém je, že chybí filtr: štěně nerozlišuje, zda je předmět jedlý, nebezpečný, nebo naprosto nevhodný ke kousání.</p>
+    <ul style="font-size:17px; line-height:1.85; padding-left:22px; margin:0 0 16px;">
+      <li><strong>Nová vůně</strong> = automatický zájem. Použitý kapesník, ponožka nebo sluchátko nesou intenzivní lidský pach — a to štěně přitahuje.</li>
+      <li><strong>Zajímavá textura</strong> — gumičky, špunty do uší, krytky na zásuvky jsou měkké, pružné, příjemné k žvýkání.</li>
+      <li><strong>Malá velikost</strong> — předměty, které se vejdou do tlamy, jsou pro štěně snadnou kořistí: nejdou vzít pryč, dají se rychle spolknout.</li>
+      <li><strong>Nuda nebo přebytečná energie</strong> — štěně bez dostatečného pohybu a mentální stimulace sahá po čemkoliv v dosahu.</li>
+    </ul>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Klíčové zjištění: štěně nespolkne předmět ze vzdoru ani ze zvědavosti — spolkne ho prostě proto, že je tam. Prevence je vždy efektivnější než reaktivní řešení.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:48px 0 14px;">Nejnebezpečnější předměty v domácnosti</h2>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 20px;">Tabulka řazena od nejvyššího rizika. Rychlost reakce a povaha poranění se liší podle předmětu — proto je důležité vědět, na co konkrétně dát pozor.</p>
+
+    <div style="overflow-x:auto; margin:0 0 8px;">
+      <table>
+        <tr>
+          <th>Předmět</th>
+          <th>Proč je nebezpečný</th>
+          <th>Jak rychle jednat</th>
+        </tr>
+        <tr>
+          <td><strong>Knoflíkové baterie</strong></td>
+          <td>Nejzávažnější případ. Baterie v kontaktu se sliznicí generuje elektrický proud, který způsobuje elektrochemické popáleniny tkáně — i když je baterie „vybitá". Poranění jícnu nebo žaludku může nastat během dvou hodin.</td>
+          <td style="color:#C96A4E; font-weight:600;">Okamžitě k veterináři — nečekat na příznaky</td>
+        </tr>
+        <tr>
+          <td><strong>Mince</strong></td>
+          <td>Česká dvoukorunová mince a americký penny obsahují zinek, který se v kyselém prostředí žaludku postupně uvolňuje. Zinková otrava způsobuje hemolytickou anémii (rozpad červených krvinek), selhání ledvin a jater.</td>
+          <td style="color:#C96A4E; font-weight:600;">Okamžitě k veterináři</td>
+        </tr>
+        <tr>
+          <td><strong>Jehly, špendlíky, háčky</strong></td>
+          <td>Propíchnou sliznici trávicí soustavy, mohou migrovat do dalších orgánů nebo způsobit peritonitidu (zánět pobřišnice). Zapíchnutý háček s vlascem je obzvlášť nebezpečný — vlasec může říznout střevo.</td>
+          <td style="color:#C96A4E; font-weight:600;">Okamžitě k veterináři — nevyvolávat zvracení</td>
+        </tr>
+        <tr>
+          <td><strong>Gumičky do vlasů</strong></td>
+          <td>Pes je rád žvýká, protože jsou pružné a vonné. Spolknutá gumička se může omotat kolem střevní řasy nebo sliznice a způsobit obstrukci. Zvláštní riziko u malých plemen.</td>
+          <td>Do 24 hodin k veterináři při přetrvávajících příznacích</td>
+        </tr>
+        <tr>
+          <td><strong>Ponožky a ponožkové nárty</strong></td>
+          <td>Jeden z nejčastějších důvodů chirurgického zákroku u psů. Látka se ve střevě nerozkládá — omotá se, ucpe průchod. Příznaky se mohou objevit se zpožděním 24–48 hodin.</td>
+          <td>Do 24 hodin k veterináři</td>
+        </tr>
+        <tr>
+          <td><strong>Hračky pro děti s malými díly</strong></td>
+          <td>Figurky, plastové díly stavebnic, kuličky — lákají psy pachy dětí na nich. Tvrdé ostré části mohou poranit sliznici, měkké části způsobit obstrukci.</td>
+          <td>Veterinář podle příznaků</td>
+        </tr>
+        <tr>
+          <td><strong>Zástrčky a krytky zásuvek</strong></td>
+          <td>Plastové krytky jsou přesně té velikosti, aby se vešly do tlamy štěněte. Spolknuté způsobí obstrukci, kousání přímo v zásuvce hrozí elektrickým šokem.</td>
+          <td>Veterinář podle příznaků</td>
+        </tr>
+        <tr>
+          <td><strong>Víčka od lahví</strong></td>
+          <td>Plastová víčka jsou lehká, koulí se, voní a jsou přesně tak velká, aby šla spolknout. Ostré hrany po rozkousání mohou poranit sliznici.</td>
+          <td>Veterinář podle příznaků</td>
+        </tr>
+        <tr>
+          <td><strong>Špunty do uší (zátkové chrániče)</strong></td>
+          <td>Měkká pěna, příjemná textura a lákavá vůně lidského ušního kanálu — pro štěně ideální žvýkadlo. Ve střevě bobtnají a mohou způsobit obstrukci.</td>
+          <td>Veterinář podle příznaků</td>
+        </tr>
+      </table>
+    </div>
+    <p style="font-size:14px; color:#5c5648; margin:8px 0 0;">Tento přehled je orientační. Reakce závisí vždy na velikosti psa, množství spolknutého materiálu a konkrétní situaci. Při jakékoli nejistotě volejte veterináře.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:48px 0 14px;">Jak poznat, že pes spolkl cizí těleso</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Spolknutí nemusí proběhnout před vámi — a příznaky se mohou objevit s odstupem hodin. Následující signály jsou důvodem ke kontaktu s veterinářem.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 10px;">Příznaky, které nelze ignorovat</h3>
+    <ul style="font-size:17px; line-height:1.85; padding-left:22px; margin:0 0 16px;">
+      <li><strong>Opakované zvracení</strong> — zejména pokud pes zvrací i vodu nebo po každém jídle</li>
+      <li><strong>Odmítání jídla nebo nechutenství</strong> přetrvávající déle než 12 hodin</li>
+      <li><strong>Bolestivé nebo napjaté břicho</strong> — pes se brání dotyku, hrbí se, není schopen se pohodlně uložit</li>
+      <li><strong>Krev ve stolici nebo stolice s neobvyklou barvou</strong></li>
+      <li><strong>Slinění, škytavka nebo napínání na zvracení</strong> bez výsledku</li>
+      <li><strong>Letargie a ztráta zájmu o okolí</strong> — pes, který normálně chce hrát, leží bez pohybu</li>
+      <li><strong>Viditelné potíže při defekaci</strong> nebo úplná absence stolice</li>
+    </ul>
+
+    <div style="background:#2D5F4C; border-radius:18px; padding:24px 28px; margin:32px 0;">
+      <p style="font-family:'Space Mono',monospace; font-size:13px; text-transform:uppercase; letter-spacing:0.06em; color:#C7D3B6; margin:0 0 8px;">Kdy jednat okamžitě</p>
+      <p style="font-size:17px; color:#F6F1E4; margin:0 0 12px; line-height:1.6;">Pokud víte nebo důvodně podezříváte, že pes spolkl knoflíkovou baterii, minci, jehlu nebo jiný ostrý předmět — jeďte k veterináři bez čekání na příznaky. U těchto předmětů může poranění probíhat bez viditelných příznaků a každá hodina prodlení zvyšuje riziko závažného poškození.</p>
+      <p style="font-size:17px; color:#F6F1E4; margin:0; line-height:1.6;"><strong>Nevyvolávejte zvracení svépomocí</strong> — u ostrých předmětů a baterií by zpětný pohyb způsobil další poranění.</p>
+    </div>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:48px 0 14px;">Zákon podlahové perspektivy</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Nejefektivnější způsob, jak odhalit rizika, je fyzicky sednout si na podlahu a projet byt z výšky štěněte. Z pohledu výšky přibližně 20–30 cm od země uvidíte věci, které jsou z normální výšky neviditelné nebo zdánlivě nedostupné:</p>
+    <ul style="font-size:17px; line-height:1.85; padding-left:22px; margin:0 0 16px;">
+      <li>Knoflíkové baterie zapadlé pod pohovku nebo za radiátor</li>
+      <li>Mince u nohy jídelního stolu</li>
+      <li>Jehly nebo špendlíky, které spadly z pracovního stolu</li>
+      <li>Gumičky a vlasy srolované u stěny nebo za dveřmi</li>
+      <li>Víčka od lahví pod kuchyňskou linkou</li>
+      <li>Zástrčky a krytky, které děti vytáhly ze zásuvek</li>
+    </ul>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Tuto prohlídku doporučujeme provést při příchodu štěněte domů a opakovat ji po každé větší změně v domácnosti — po návštěvách, po svátcích, po stěhování nábytku.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0;">Praktické pravidlo z AKC: vše, co leží na podlaze nebo v dosahu štěněte do výšky přibližně jednoho metru, považujte za dostupné. Štěňata jsou výborní v překonávání překážek, které se zdají dostatečně vysoké.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:48px 0 14px;">Organizace domácnosti: co kam uložit</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 20px;">Nejde o to byt sterilizovat — jde o to systémově přemístit konkrétní kategorie věcí tak, aby byly mimo dosah i aktivního a vynalézavého štěněte.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:0 0 10px;">Šuplíky a skříňky</h3>
+    <ul style="font-size:17px; line-height:1.85; padding-left:22px; margin:0 0 20px;">
+      <li>Baterie, zástrčky a elektrické komponenty: uzamykatelný šuplík nebo police ve výšce alespoň 1,5 m</li>
+      <li>Šicí potřeby (jehly, špendlíky, knoflíky): uzavřená krabice v uzamčeném šuplíku — ne jen na polici</li>
+      <li>Léky a vitamíny: výhradně v uzavřené skříňce ve výšce mimo dosah, dveřmi otevíranými na kliku (ne magneticky)</li>
+    </ul>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:0 0 10px;">Police a pracovní plochy</h3>
+    <ul style="font-size:17px; line-height:1.85; padding-left:22px; margin:0 0 20px;">
+      <li>Odložené mince, klíče, šperky — nikdy na konferenční stolek nebo okraj pohovky</li>
+      <li>Drobné díly her a puzzle: ihned zpět do uzavřené krabice po skončení hry</li>
+      <li>Pracovní stůl: sponky, gumičky, zástrčky USB — na povrchu stolu jsou v bezpečí jen pokud je pes uzavřen mimo místnost</li>
+    </ul>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:0 0 10px;">Koše na odpadky</h3>
+    <ul style="font-size:17px; line-height:1.85; padding-left:22px; margin:0 0 20px;">
+      <li>Koupelnový koš bez víka: obsahuje holicí strojky, bavlněné tampóny, zbytky žiletek — vše nebezpečné. Nahradit košem s víkem nebo přemístit do skříňky.</li>
+      <li>Kuchyňský koš: víko s pedálem nestačí aktivnímu štěněti. Nejbezpečnější řešení je koš v uzavřené skříňce pod dřezem nebo ve spíži.</li>
+    </ul>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:0 0 10px;">Oblečení a doplňky</h3>
+    <ul style="font-size:17px; line-height:1.85; padding-left:22px; margin:0 0 20px;">
+      <li>Ponožky a spodní prádlo: uzavřený koš na špinavé prádlo — ne otevřený</li>
+      <li>Kabelky a batohy: nenechávat na zemi ani na nízké poličce — obsahují vše od žvýkaček (xylitol) po mince a léky</li>
+      <li>Špunty do uší a sluchátka: ihned do uzavřeného pouzdra</li>
+    </ul>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:48px 0 14px;">Příkaz „nech to" — záchranná brzda, ne náhrada prevence</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Příkaz „nech to" (nebo anglicky <em>leave it</em>) je jedním z nejpraktičtějších příkazů, které lze štěněti naučit. Funguje jako záchranná brzda v momentě, kdy vidíte, že se štěně k nebezpečnému předmětu chystá — nebo jej právě bere do tlamy.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Základní nácvik probíhá metodou pozitivního posílení: štěně se naučí, že ignorování předmětu přináší odměnu (pamlsek nebo chvála), zatímco sahání po předmětu odměnu nepřináší. Postupuje se od jednoduchých situací (pamlsek na zemi, ruka s pamlskem) k reálným situacím v prostředí.</p>
+
+    <div style="background:#fff; border-radius:18px; padding:24px 28px; margin:24px 0;">
+      <p style="font-family:'Space Mono',monospace; font-size:13px; text-transform:uppercase; letter-spacing:0.06em; color:#2D5F4C; margin:0 0 12px;">Důležité upozornění</p>
+      <p style="font-size:17px; line-height:1.7; margin:0; color:#2B241C;">Příkaz „nech to" funguje spolehlivě jen tehdy, když ho pes dobře zná a vy jste přítomni v daném okamžiku. Štěně bez dozoru v místnosti plné nebezpečných drobností se na tento příkaz spolehnout nedá. <strong>Prevence — tedy fyzické odstranění předmětů — je vždy primární ochrana.</strong></p>
+    </div>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; margin:48px 0 14px;">Zdroje</h2>
+    <p style="font-size:14px; color:#5c5648; margin:0 0 8px;">České zdroje:</p>
+    <ul style="font-size:14px; line-height:1.9; color:#5c5648; padding-left:20px; margin:0 0 16px;">
+      <li>Veterinární lékař — při jakémkoliv podezření na spolknutí cizího tělesa je první kontakt vždy váš veterinář</li>
+      <li>Toxikologické informační středisko Praha — tel. 224 919 293 (nonstop pohotovostní linka, poradí i při podezření na chemické spolknutí)</li>
+    </ul>
+    <p style="font-size:14px; color:#5c5648; margin:0 0 8px;">Zahraniční zdroje:</p>
+    <ul style="font-size:14px; line-height:1.9; color:#5c5648; padding-left:20px; margin:0;">
+      <li><a href="https://www.akc.org/expert-advice/puppy-information/preparing-for-puppy/puppy-proofing-tips-for-your-home-and-yard/">American Kennel Club — Puppy-Proofing Tips for Your Home and Yard (Harriet Meyers, aktualizace srpen 2026)</a></li>
+    </ul>
+
+  </article>
+
+  <!-- FOOTER -->
+  <footer style="background:#2B241C; padding:clamp(32px,5vw,56px) clamp(20px,5vw,64px); display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between; align-items:center;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:20px; color:#F6F1E4;">
+      <svg width="26" height="26" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#E0A83E"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#E0A83E"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#E0A83E"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#E0A83E"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; gap:24px; flex-wrap:wrap; font-size:15px;">
+      <a href="Vychova.dc.html" style="color:#C7D3B6;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#C7D3B6;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#C7D3B6;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#C7D3B6;">O nás</a>
+    </div>
+    <p style="font-family:'Space Mono',monospace; font-size:13px; color:#C7D3B6; margin:0;">© 2026 Pozitivní pes</p>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>
