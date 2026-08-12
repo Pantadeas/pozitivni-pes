@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #F6F1E4; font-family: 'Karla', sans-serif; }
+    a { color: #C96A4E; text-decoration: none; }
+    a:hover { color: #2D5F4C; }
+    ::selection { background: #E0A83E; color: #2B241C; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid #C7D3B6; font-size: 15px; }
+    th { font-family: 'Space Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: #2D5F4C; }
+  </style>
+</helmet>
+
+<div style="background:#F6F1E4; color:#2B241C; overflow-x:hidden;">
+
+  <!-- NAV -->
+  <nav style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:20px clamp(20px,5vw,64px); flex-wrap:wrap;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:22px; color:#2B241C;">
+      <svg width="30" height="30" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#2D5F4C"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#2D5F4C"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#2D5F4C"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#2D5F4C"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; align-items:center; gap:clamp(12px,3vw,32px); flex-wrap:wrap; font-size:16px; font-weight:600;">
+      <a href="Vychova.dc.html" style="color:#2B241C;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#2B241C;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#2B241C;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#2B241C;">O nás</a>
+    </div>
+  </nav>
+
+  <article style="max-width:760px; margin:0 auto; padding:clamp(16px,3vw,24px) clamp(20px,5vw,64px) clamp(64px,8vw,96px);">
+
+    <a href="Checklist.dc.html" style="font-family:'Space Mono',monospace; font-size:14px; color:#2D5F4C; display:inline-block; margin-bottom:20px;">← Zpět na checklist</a>
+
+    <p style="font-family:'Space Mono',monospace; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; color:#C96A4E; margin:0 0 14px;">Napořád</p>
+    <h1 style="font-family:'Fraunces',serif; font-weight:700; font-style:italic; font-size:clamp(32px,5vw,48px); line-height:1.1; margin:0 0 24px;">Pravidelné veterinární prohlídky</h1>
+    <p style="font-size:19px; line-height:1.65; margin:0 0 40px; color:#2B241C;">Většina lidí vezme psa k veterináři, až když kulhá, nekouše nebo tři dny nic nejí. Jenže preventivní prohlídka funguje jinak — jde k lékaři dřív, než problém nastane. Nebo přesněji: v momentu, kdy je ještě malý a snadno řešitelný. Tento článek vysvětluje, jak často chodit, co se při prohlídce děje, jak z toho udělat příjemný výlet místo traumatu — a jak pečovat o zubní zdraví doma.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Proč chodit k veterináři i když pes „vypadá zdravě"</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Psi mají silný instinkt skrývat slabost. Bolest v kloubu, počínající oční zákal nebo mírný srdeční šelest nemusíte jako majitel rozpoznat měsíce — nebo vůbec. Veterinář při rutinním vyšetření systematicky kontroluje věci, které nejsou vidět pouhým okem: poslouchá srdeční ozvy, pohmatává lymfatické uzliny, hodnotí kondici a srovnává aktuální nález s loňským záznamem.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Právě <strong>srovnání v čase</strong> je klíčové. Jednotlivá prohlídka zachytí stav; dvě prohlídky ročně zachytí <em>trend</em>. Klesající váha u sedmiletého psa může být momentální, nebo může být prvním příznakem onemocnění ledvin. Jestliže máte záznam z prohlídky před šesti měsíci, veterinář to rozliší rychleji a s větší jistotou.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Odhalení problému v rané fázi také zpravidla znamená méně invazivní léčbu a nižší náklady. Zubní kámen, který se čistí preventivně jednou za dva roky, stojí zlomek toho, co pokročilá parodontitida s nutností extrakce zubů.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Jak často? Záleží na věku</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Potřeba preventivních prohlídek se v průběhu psího života mění. Obecně platí toto schéma:</p>
+
+    <table>
+      <tr><th>Věková skupina</th><th>Doporučená frekvence</th><th>Proč</th></tr>
+      <tr>
+        <td><strong>Štěně — do 1 roku</strong></td>
+        <td>Každé 3–4 měsíce</td>
+        <td>Vakcinační série, kontrola růstu, první dentice, socializační poradenství</td>
+      </tr>
+      <tr>
+        <td><strong>Dospělý pes — 1 až 7 let</strong></td>
+        <td>1× ročně</td>
+        <td>Celkové zdravotní vyšetření, přeočkování, zubní kontrola, váha</td>
+      </tr>
+      <tr>
+        <td><strong>Senior — 7 let a více</strong></td>
+        <td>2× ročně</td>
+        <td>Věkové změny se projevují rychle; krevní a močové testy zachytí orgánové funkce</td>
+      </tr>
+    </table>
+
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:16px 0 0;">U malých plemen nastupuje stáří zpravidla kolem 10 let, u velkých plemen (labrador, německý ovčák, bernský salašnický pes) již kolem 6–7 let. Pokud si nejste jistí, váš veterinář vám poradí, kdy přejít na pololetní rytmus.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Co se při prohlídce kontroluje</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Rutinní vyšetření trvá obvykle 20–30 minut a probíhá systematicky od hlavy po ocas. Veterinář standardně kontroluje:</p>
+    <ul style="font-size:17px; line-height:1.9; padding-left:22px; margin:0 0 16px;">
+      <li><strong>Zuby a dásně</strong> — zubní kámen, rané příznaky parodontitidy, zlomené zuby, barva sliznic</li>
+      <li><strong>Oči</strong> — čirost čočky (zákal), zarudnutí, výtok, symetrie zornic</li>
+      <li><strong>Uši</strong> — zánět, přítomnost roztočů, výtok, zápach</li>
+      <li><strong>Srdce a plíce</strong> — srdeční ozvy (šelesty), dechová frekvence a charakter</li>
+      <li><strong>Břicho a orgány</strong> — pohmat jater, sleziny, lymfatických uzlin, přítomnost bolesti</li>
+      <li><strong>Pohybový aparát</strong> — klouby, svalová hmota, souměrnost pohybu, příznaky artrózy</li>
+      <li><strong>Kůže a srst</strong> — parazité, vyrážky, alergické projevy, tumory nebo atypické boule</li>
+      <li><strong>Váha a tělesná kondice (BCS)</strong> — nadváha i podváha jsou zdravotní rizika</li>
+    </ul>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">U seniorů veterinář obvykle navrhne základní laboratorní panel — krevní obraz a biochemii, případně vyšetření moči. Tyto testy zachytí onemocnění ledvin, jater nebo cukrovku v době, kdy pes ještě nevykazuje klinické příznaky.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Jak připravit psa na veterináře: bez dramatu</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Pes, který se při vstupu do ordinace třese strachem, zvládne vyšetření hůř a veterináři práci znepříjemní. Dobrá zpráva: postoje ke veterináři se dají tvarovat — a nejlépe začít dřív, než přijde první vpich.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Pozitivní asociace s ordinací</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Základ je jednoduchý: <strong>veterinář = pamlsky</strong>. Vezměte s sebou to nejlepší, co pes zná — kousek kuřecího masa, sýr, sušené maso. Pokud veterinář nebo personál nabídne pamlsek při každém kontaktu (beze slov, jen klidně podá), mozek psa začne budovat asociaci „tady je fajn".</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Neuklidňujte psa přehnaně a s politováním — hlas plný soucitu mu potvrzuje, že situace je skutečně nebezpečná. Buďte klidní a věcní. Pes čte váš emoční stav mnohem přesněji než vaše slova.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Nacvičovací návštěvy</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Mnohé ordinace rádi uvítají kratičkou „nenávštěvu" bez žádného výkonu: přijdete, recepční nebo asistent dá psovi pamlsek, případně ho zváží na váze v čekárně, a odejdete. Nic víc. Takových návštěv stačí tří nebo čtyři, aby pes přestal vnímat vstup do ordinace jako předzvěst nepříjemnosti.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Doma si nacvičujte manipulaci, která při vyšetření nastane: lehce prohlížejte uši, zvedejte tlapy, otevírejte tlamu a odměňujte klidné setrvání. Pes, který zná dotyk cizích rukou z domácího tréninku, snáší vyšetření výrazně lépe.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Zubní hygiena: co dělat doma</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Onemocnění dásní postihuje většinu psů starších tří let — a je jednou z nejčastěji přehlíženýchzdravotních komplikací. Bakterie z ústní dutiny se mohou dostat do krevního oběhu a zatěžovat srdce, ledviny i játra. Prevence doma výrazně snižuje frekvenci nutné veterinární dentální hygieny.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Čištění zubů kartáčkem</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Nejúčinnější metoda. Používejte <strong>psí zubní pastu</strong> (nikdy lidskou — obsahuje fluorid nebo xylitol, obojí je pro psy toxické) a kartáček určený pro psy nebo dětský kartáček s měkkými štětinami. Ideální frekvence je každý den; i třikrát týdně je výrazně lepší než nic.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Jak na to: začněte tím, že psa nechte olíznout pastu z prstu, pak přidejte prst s pohybem po zubech, pak teprve kartáček. Netlačte na násilné otevírání tlamy — pracujte zvenčí, přes pysky. Celý proces budujte postupně přes několik týdnů a každý krok bohatě odměňujte.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Dentální pamlsky a doplňky</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Dentální pamlsky, žvýkací tyčinky nebo speciální dentální granule zmírňují tvorbu zubního kamene mechanickým třením, ale <strong>nenahrazují kartáček</strong>. Jsou vhodným doplňkem, zvláště u psů, kteří kartáček odmítají. Při výběru se orientujte na produkty s certifikací VOHC (Veterinary Oral Health Council), která garantuje prokázanou účinnost.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Kdy je čas na veterináře kvůli zubům</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Jděte mimo plán, pokud vidíte: hnědý nebo žlutý povlak na zubech sahající ke dásni, zarudlé nebo krvácející dásně, nepříjemný zápach z tlamy, potíže s kousáním nebo odmítání tvrdého jídla. Profesionální ultrazvukové čištění se provádí v celkové anestezii — proto je prevence doma tolik důležitá.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Zdravotní záznamy: co si vést a proč</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Průkaz psa (vakcinační průkaz) je zákonem povinný doklad o očkování, ale sám o sobě nestačí. Doporučujeme vést jednoduchou <strong>složku nebo digitální dokument</strong>, kde budete mít:</p>
+    <ul style="font-size:17px; line-height:1.9; padding-left:22px; margin:0 0 16px;">
+      <li>Záznamy ze všech prohlídek (co veterinář zjistil, jaká byla váha, co doporučil)</li>
+      <li>Výsledky laboratorních testů s datem</li>
+      <li>Přehled podávaných léků a jejich dávkování</li>
+      <li>Záznamy o alergiích nebo nežádoucích reakcích</li>
+      <li>Kontakt na veterináře a číslo na pohotovostní kliniku</li>
+    </ul>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Tyto záznamy oceníte v několika situacích: při změně veterináře (nový lékař okamžitě vidí historii), při cestování do zahraničí (některé země nebo ubytovací zařízení vyžadují doklady nad rámec pasu), při sjednávání nebo uplatňování pojistné události, nebo při akutní hospitalizaci, kdy personál potřebuje znát aktuální léky a alergie.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Fotografie zubů, kůže nebo boule pořízená telefonem je cenná informace — zachytí stav před zahájením léčby a pomůže veterináři hodnotit průběh.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Kdy jít k veterináři mimo plán</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Preventivní prohlídky nenahrazují akutní péči. Tyto příznaky vyžadují návštěvu co nejdříve — ideálně tentýž den nebo pohotovost:</p>
+    <ul style="font-size:17px; line-height:1.9; padding-left:22px; margin:0 0 16px;">
+      <li><strong>Letargie</strong> — pes je výrazně apatičtější než obvykle, nezajímají ho věci, které ho normálně aktivují</li>
+      <li><strong>Odmítnutí jídla delší než 24 hodin</strong> — zvláště pokud je to pro psa neobvyklé</li>
+      <li><strong>Průjem s příměsí krve</strong> nebo zvracení s krví</li>
+      <li><strong>Ztížené nebo zrychlené dýchání</strong> v klidu, dýchání otevřenou tlamou bez fyzické zátěže</li>
+      <li><strong>Kulhání nebo neschopnost vstát</strong> — zejména pokud přišlo náhle</li>
+      <li><strong>Nadýmání nebo tvrdé břicho</strong> — u velkých plemen (dogy, dogy, dogy, retrieveři) může jít o torzi žaludku, která ohrožuje život</li>
+      <li><strong>Ztráta vědomí nebo záchvat</strong></li>
+      <li><strong>Poranění nebo požití jedovaté látky</strong> (čokoláda, hroznové víno, léky, chemikálie)</li>
+    </ul>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Pokud váháte — zavolejte. Veterinář po telefonu dokáže rychle odhadnout, zda situace vyžaduje okamžitou akci nebo může počkat do druhého dne. Je lepší zavolat zbytečně než čekat příliš dlouho.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; margin:48px 0 14px;">Zdroje</h2>
+    <p style="font-size:14px; color:#5c5648; margin:0 0 8px;">Zahraniční zdroje:</p>
+    <ul style="font-size:14px; line-height:1.9; color:#5c5648; padding-left:20px; margin:0 0 16px;">
+      <li>American Kennel Club (AKC) — How Often Should Dogs Go to the Vet?: doporučení frekvence prohlídek dle věkové skupiny a co se při vyšetření kontroluje</li>
+      <li>PetMD — How Often Should You Take Your Dog to the Vet?: přehled preventivní péče, věkové segmentace a varovných příznaků</li>
+      <li>Veterinary Oral Health Council (VOHC) — akreditace dentálních produktů pro psy a kočky</li>
+    </ul>
+    <p style="font-size:14px; color:#5c5648; margin:0 0 8px;">Česká legislativa:</p>
+    <ul style="font-size:14px; line-height:1.9; color:#5c5648; padding-left:20px; margin:0;">
+      <li>Zákon č. 166/1999 Sb., o veterinární péči (veterinární zákon) — povinnosti chovatelů a vedení zdravotní dokumentace psů</li>
+    </ul>
+
+  </article>
+
+  <!-- FOOTER -->
+  <footer style="background:#2B241C; padding:clamp(32px,5vw,56px) clamp(20px,5vw,64px); display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between; align-items:center;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:20px; color:#F6F1E4;">
+      <svg width="26" height="26" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#E0A83E"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#E0A83E"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#E0A83E"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#E0A83E"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; gap:24px; flex-wrap:wrap; font-size:15px;">
+      <a href="Vychova.dc.html" style="color:#C7D3B6;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#C7D3B6;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#C7D3B6;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#C7D3B6;">O nás</a>
+    </div>
+    <p style="font-family:'Space Mono',monospace; font-size:13px; color:#C7D3B6; margin:0;">© 2026 Pozitivní pes</p>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>

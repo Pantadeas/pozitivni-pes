@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #F6F1E4; font-family: 'Karla', sans-serif; }
+    a { color: #C96A4E; text-decoration: none; }
+    a:hover { color: #2D5F4C; }
+    ::selection { background: #E0A83E; color: #2B241C; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid #C7D3B6; font-size: 15px; }
+    th { font-family: 'Space Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: #2D5F4C; }
+  </style>
+</helmet>
+
+<div style="background:#F6F1E4; color:#2B241C; overflow-x:hidden;">
+
+  <!-- NAV -->
+  <nav style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:20px clamp(20px,5vw,64px); flex-wrap:wrap;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:22px; color:#2B241C;">
+      <svg width="30" height="30" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#2D5F4C"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#2D5F4C"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#2D5F4C"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#2D5F4C"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; align-items:center; gap:clamp(12px,3vw,32px); flex-wrap:wrap; font-size:16px; font-weight:600;">
+      <a href="Vychova.dc.html" style="color:#2B241C;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#2B241C;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#2B241C;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#2B241C;">O nás</a>
+    </div>
+  </nav>
+
+  <article style="max-width:760px; margin:0 auto; padding:clamp(16px,3vw,24px) clamp(20px,5vw,64px) clamp(64px,8vw,96px);">
+
+    <a href="Checklist.dc.html" style="font-family:'Space Mono',monospace; font-size:14px; color:#2D5F4C; display:inline-block; margin-bottom:20px;">← Zpět na checklist</a>
+
+    <p style="font-family:'Space Mono',monospace; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; color:#C96A4E; margin:0 0 14px;">Napořád</p>
+    <h1 style="font-family:'Fraunces',serif; font-weight:700; font-style:italic; font-size:clamp(32px,5vw,48px); line-height:1.1; margin:0 0 24px;">Udržování aktuálního očkování a odčervení</h1>
+    <p style="font-size:19px; line-height:1.65; margin:0 0 40px; color:#2B241C;">Štěněcí série vakcín a první odčervení jsou za vámi. Jenže ochrana není trvalá — protilátky z vakcín postupně klesají, červi se znovu vyskytují a klíšťata nečekají. Tento článek shrnuje, co dospělý pes potřebuje každý rok, co závisí na jeho životním stylu a jak si udržet přehled nad tím vším, aniž byste museli spoléhat na paměť.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Proč je potřeba přeočkovávat — protilátky se ztrácejí</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Vakcína funguje tak, že imunitní systém naučí rozpoznávat konkrétní patogen a uloží si paměťové buňky schopné rychlé odpovědi. Tyto buňky ale nejsou nesmrtelné — a hladina obranných protilátek v krvi přirozeně klesá. U některých vakcín je pokles tak pomalý, že přeočkování stačí jednou za tři roky. U jiných — zejména těch cílených na bakteriální původce — ochrana vyprší za rok.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Klíčový rozdíl proto nestojí na tom, „jestli" přeočkovat, ale <strong>jak rychle konkrétní vakcína ochranu ztrácí</strong>. To závisí na typu původce, adjuvantní látce vakcíny, způsobu podání i na individuálním imunitním profilu psa. Váš veterinář zná výrobcem garantovanou dobu ochrany a podle ní nastaví harmonogram.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Titr protilátek lze změřit krevním testem — u psů s nejasnou historií vakcinace (záchranáři, psi z množíren) to může být cesta, jak zjistit skutečnou úroveň ochrany před opakováním celé série.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Standardní vakcinační plán pro dospělého psa v ČR</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Po dokončení štěněcí série a prvním ročním přeočkování přechází většina psů do zjednodušeného dospělého harmonogramu. Konkrétní přípravky a termíny závisejí na vakcíně a veterináři — níže jsou obecná doporučená rozmezí:</p>
+
+    <table>
+      <tr><th>Vakcína</th><th>Interval přeočkování</th><th>Poznámka</th></tr>
+      <tr>
+        <td><strong>Vzteklina</strong></td>
+        <td>1–3 roky (dle vakcíny)</td>
+        <td><strong>Zákonná povinnost</strong> dle zák. č. 166/1999 Sb.; doklad nutný pro cestování a mnohé psí akce</td>
+      </tr>
+      <tr>
+        <td><strong>PSK — parvoviróza, distemper (sečka), hepatitida</strong></td>
+        <td>každé 1–3 roky (dle vakcíny)</td>
+        <td>Core vakcíny; moderní přípravky s tříletou zárukou, starší generace vyžadují roční booster</td>
+      </tr>
+      <tr>
+        <td><strong>Leptospiróza</strong></td>
+        <td>každý rok</td>
+        <td>Doporučená prakticky každému psovi, který tráví čas venku; ochrana trvá přibližně 12 měsíců</td>
+      </tr>
+      <tr>
+        <td><strong>Bordetella (psí kašel)</strong></td>
+        <td>každý rok nebo dle expozice</td>
+        <td>Nutná nebo doporučená pro psy v psích hotelech, školkách, na výstavách; někdy povinně vyžadována provozovatelem</td>
+      </tr>
+      <tr>
+        <td><strong>Lymeská borelióza</strong></td>
+        <td>každý rok</td>
+        <td>Vhodná pro psy v lesnatých oblastech s vysokým výskytem klíšťat; nenahrazuje antiparazitika</td>
+      </tr>
+    </table>
+
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:16px 0 0;">Leptospirózu a boreliózu nenabízejí všichni veterináři automaticky — zeptejte se aktivně, pokud pes tráví čas v přírodě nebo u vody.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Odčervení dospělého psa — doporučení ESCCAP</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Evropská vědecká rada pro parazitologii společníků (ESCCAP) vydává závazné pokyny pro veterináře v celé Evropě. Jejich guideline GL1 pro odčervení psů a koček stanoví základní frekvenci na <strong>minimálně čtyřikrát ročně</strong> — tedy přibližně každé tři měsíce. Toto doporučení vychází z životního cyklu nejčastějších střevních parazitů.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Pro psy s vyšší expozicí — ty, kteří loví, konzumují syrové maso, pijí z přírodních zdrojů nebo se pohybují na místech s vysokou hustotou psí populace — ESCCAP doporučuje frekvenci až <strong>jednou za měsíc (12× ročně)</strong>.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Druhy červů, které odčervení řeší</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">U dospělého psa pohybujícího se v České přírodě se nejčastěji setkáte s těmito skupinami:</p>
+    <ul style="font-size:17px; line-height:1.9; padding-left:22px; margin:0 0 16px;">
+      <li><strong>Škrkavky (<em>Toxocara canis</em>)</strong> — přenáší se ze znečištěné půdy, výkalů jiných psů nebo mlékem; vajíčka ve výkalech jsou infekční i pro lidi (zoonóza)</li>
+      <li><strong>Tasemnice (<em>Dipylidium caninum</em>, <em>Taenia</em> spp.)</strong> — přenos přes blechy nebo pozřením infikované kořisti; na tasemnice účinkuje výhradně praziquantel</li>
+      <li><strong>Háďátka (<em>Ancylostoma, Uncinaria</em>)</strong> — průnik kůží nebo mlékem; způsobují anémii a krvavý průjem</li>
+      <li><strong>Bičíkovci (<em>Trichuris vulpis</em>)</strong> — přenos z kontaminované půdy; vajíčka přežívají v zemi až pět let</li>
+      <li><strong>Plicní červi (<em>Angiostrongylus vasorum</em>, <em>Crenosoma vulpis</em>)</strong> — přenos přes slimáky; výskyt v ČR narůstá; způsobují kašel, dušnost a poruchy srážlivosti krve</li>
+    </ul>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Každý přípravek má jiné spektrum. Kombinace milbemycinu oxim + praziquantel pokrývá nejširší škálu; na plicní červy jsou vhodné přípravky s fenbendazolem nebo milbemycinem s dostatečnou délkou podávání. Přípravek vždy konzultujte s veterinářem — záleží na tom, kde a jak pes žije.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Klíšťata a blechy — preventivní přípravky po celý rok</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Klíšťata v ČR přenášejí boreliózu, ehrlichiózu a méně často i virovou klíšťovou encefalitidu. Aktivní jsou od prvních teplých dnů — v mírných zimách i v únoru a březnu — a sezóna končí teprve s trvalými mrazíky. Blechy jsou celoroční problém, protože v bytech s podlahovým topením přežívají bez přestávky.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Kdy začít a jak dlouho pokračovat</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Antiparazitika proti klíšťatům a blechám nasaďte <strong>nejpozději s prvními výlety do přírody na jaře</strong> — v praxi to bývá únor nebo začátek března. Pokud pes žije v bytě a tráví v přírodě minimum času, lze sezónu zkrátit podle skutečné expozice. Pro psy chodiče do lesa nebo na louky je ideální celoroční ochrana.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Přípravky existují ve formě:</p>
+    <ul style="font-size:17px; line-height:1.9; padding-left:22px; margin:0 0 16px;">
+      <li><strong>Spot-on</strong> — aplikace na kůži v zátylku, ochrana 1–3 měsíce podle přípravku</li>
+      <li><strong>Tablety a žvýkací přípravky</strong> — systémová ochrana; klíšťata a blechy hynou po kousnutí; délka účinku 1–3 měsíce</li>
+      <li><strong>Obojky</strong> — kontinuální uvolňování účinné látky, ochrana až 8 měsíců; vhodné jako doplněk k jinému přípravku nebo jako primární metoda</li>
+      <li><strong>Spreje</strong> — rychlá doplňková ochrana na konkrétní výlet, není náhradou pravidelné profylaxe</li>
+    </ul>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Kontrola srsti po každém pobytu v přírodě</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Antiparazitika snižují riziko, ale nezaručují stoprocentní ochranu — některá klíšťata stihnou přisát dříve, než je zasáhne účinná látka. Proto si po každém výletu do přírody prohledejte srst psa: zvláštní pozornost věnujte oblasti kolem uší, podpaží, třísla, spáry prstů a hráz. Přisáté klíště odstraňte co nejdříve speciálními kleštěmi nebo háčkem — přenos patogenů se prokazatelně zvyšuje po 24–48 hodinách přisátí.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Nikdy klíšťata nevymačkávejte prsty, nedávejte na ně olej ani líh — zvyšujete tím riziko přenosu obsahu klíštěte do rány.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Cestování do zahraničí — EU pet passport a zvláštní požadavky</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Pro cestování v rámci Evropské unie potřebujete <strong>EU pet passport</strong> (EU průkaz pro zvířata v zájmovém chovu). Vydává ho veterinář; musí obsahovat záznam o platném očkování proti vzteklině a čip nebo tetování jako identifikaci. Bez platné vztekliny vás na hranicích nepustí.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Echinococcus — povinné odčervení pro vstup do některých zemí</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Několik evropských zemí vyžaduje před vstupem povinné odčervení psa proti tasemnici <em>Echinococcus multilocularis</em> — jde o závažnou zoonózu přenášenou na lidi, pro níž tyto státy udržují status bez výskytu. Povinnost se vztahuje na cestování do:</p>
+    <ul style="font-size:17px; line-height:1.9; padding-left:22px; margin:0 0 16px;">
+      <li><strong>Velké Británie</strong></li>
+      <li><strong>Malty</strong></li>
+      <li><strong>Irska</strong></li>
+      <li><strong>Finska</strong></li>
+      <li><strong>Norska</strong></li>
+    </ul>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Odčervení musí proběhnout <strong>24–120 hodin před vstupem</strong> na území dané země a musí ho provést veterinář s záznamem v EU pet pasu. Účinná látka je praziquantel — použijte přípravek s tímto složením, ne jen kombinaci na škrkavky. Bez záznamu v pase vám pes nemusí být vpuštěn do země nebo bude muset do karantény.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Před každou cestou do zahraničí si ověřte platné podmínky cílové země — pravidla se mohou měnit. Spolehlivým zdrojem jsou webové stránky příslušného ministerstva zemědělství nebo celní správy cílové destinace.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Kde ukládat záznamy — průkaz, digitální kopie a připomínky</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;"><strong>Očkovací průkaz</strong> je fyzický doklad, který veterinář vyplňuje při každé návštěvě — razítko, datum, použitý přípravek a šarže. Uchovávejte ho na bezpečném místě; při ztrátě nelze zpětně rekonstruovat celou historii. Pokud cestujete, odpovídá mu v roli dokladu EU pet passport.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Dobré zvyky pro udržení přehledu:</p>
+    <ul style="font-size:17px; line-height:1.9; padding-left:22px; margin:0 0 16px;">
+      <li><strong>Vyfotografujte každou novou stránku průkazu</strong> hned po návštěvě veterináře. Fotka v telefonu nestačí jako doklad, ale v případě nouze poslouží k dohledání dat.</li>
+      <li><strong>Nastavte si připomínku v kalendáři</strong> — vzteklina, PSK, leptospiróza mají různé intervaly a je snadné jeden termín prošvihnout.</li>
+      <li><strong>Uložte záznamy v cloudu</strong> — Google Drive, iCloud nebo aplikace zaměřené na zdraví mazlíčků. Pro případ cestování nebo změny veterináře máte historii vždy po ruce.</li>
+      <li><strong>Antiparazitika evidujte zvlášť</strong> — veterinář ne vždy zapisuje odčervení do průkazu; veďte si vlastní tabulku s datem, přípravkem a příští plánovanou dávkou.</li>
+    </ul>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Pokud přebíráte dospělého psa bez dokumentace (záchrana, útulk), nechte veterináře prověřit titr protilátek a začněte vakcinaci jako novou sérii. Lepší opakovat než spekulovat o ochraně, která nemusí existovat.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; margin:48px 0 14px;">Zdroje</h2>
+    <p style="font-size:14px; color:#5c5648; margin:0 0 8px;">Zahraniční zdroje:</p>
+    <ul style="font-size:14px; line-height:1.9; color:#5c5648; padding-left:20px; margin:0 0 16px;">
+      <li>ESCCAP — Guideline GL1: Worm Control in Dogs and Cats (Evropská vědecká rada pro parazitologii společníků): doporučená frekvence odčervování, spektrum parazitů, rizikové skupiny</li>
+      <li>American Kennel Club — Dog Vaccination Schedule: přehled core a non-core vakcín pro dospělé psy, intervaly přeočkování</li>
+    </ul>
+    <p style="font-size:14px; color:#5c5648; margin:0 0 8px;">Česká legislativa:</p>
+    <ul style="font-size:14px; line-height:1.9; color:#5c5648; padding-left:20px; margin:0;">
+      <li>Zákon č. 166/1999 Sb., o veterinární péči (veterinární zákon) — povinné očkování psů proti vzteklině</li>
+      <li>Nařízení EU č. 576/2013 o nekomerčním přesunu zvířat v zájmovém chovu — EU pet passport, podmínky vstupu do členských států</li>
+    </ul>
+
+  </article>
+
+  <!-- FOOTER -->
+  <footer style="background:#2B241C; padding:clamp(32px,5vw,56px) clamp(20px,5vw,64px); display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between; align-items:center;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:20px; color:#F6F1E4;">
+      <svg width="26" height="26" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#E0A83E"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#E0A83E"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#E0A83E"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#E0A83E"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; gap:24px; flex-wrap:wrap; font-size:15px;">
+      <a href="Vychova.dc.html" style="color:#C7D3B6;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#C7D3B6;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#C7D3B6;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#C7D3B6;">O nás</a>
+    </div>
+    <p style="font-family:'Space Mono',monospace; font-size:13px; color:#C7D3B6; margin:0;">© 2026 Pozitivní pes</p>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>

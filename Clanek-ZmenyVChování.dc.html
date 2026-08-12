@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #F6F1E4; font-family: 'Karla', sans-serif; }
+    a { color: #C96A4E; text-decoration: none; }
+    a:hover { color: #2D5F4C; }
+    ::selection { background: #E0A83E; color: #2B241C; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid #C7D3B6; font-size: 15px; }
+    th { font-family: 'Space Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: #2D5F4C; }
+  </style>
+</helmet>
+
+<div style="background:#F6F1E4; color:#2B241C; overflow-x:hidden;">
+
+  <!-- NAV -->
+  <nav style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:20px clamp(20px,5vw,64px); flex-wrap:wrap;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:22px; color:#2B241C;">
+      <svg width="30" height="30" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#2D5F4C"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#2D5F4C"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#2D5F4C"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#2D5F4C"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; align-items:center; gap:clamp(12px,3vw,32px); flex-wrap:wrap; font-size:16px; font-weight:600;">
+      <a href="Vychova.dc.html" style="color:#2B241C;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#2B241C;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#2B241C;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#2B241C;">O nás</a>
+    </div>
+  </nav>
+
+  <article style="max-width:760px; margin:0 auto; padding:clamp(16px,3vw,24px) clamp(20px,5vw,64px) clamp(64px,8vw,96px);">
+
+    <a href="Checklist.dc.html" style="font-family:'Space Mono',monospace; font-size:14px; color:#2D5F4C; display:inline-block; margin-bottom:20px;">← Zpět na checklist</a>
+
+    <p style="font-family:'Space Mono',monospace; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; color:#C96A4E; margin:0 0 14px;">Napořád</p>
+    <h1 style="font-family:'Fraunces',serif; font-weight:700; font-style:italic; font-size:clamp(32px,5vw,48px); line-height:1.1; margin:0 0 24px;">Sledování změn chování a zdraví</h1>
+    <p style="font-size:19px; line-height:1.65; margin:0 0 40px; color:#2B241C;">Psi nemohou říct, že je něco bolí. Nemohou vysvětlit, že se necítí dobře, že je jim smutno nebo že jim schodiště dělá potíže. Místo toho mění chování — a to je jejich jediný jazyk. Majitel, který zná svého psa dobře a všímá si odchylek, má obrovskou výhodu: problémy zachycuje dřív, než se stanou vážnými.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Chování jako komunikační jazyk</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Veterináři i behavioristé se shodují: <strong>změna chování je zpravidla prvním příznakem</strong> toho, že něco není v pořádku — často se objeví dny nebo týdny dřív, než se problém projeví jinak viditelně. Přitom se nemusí jednat o dramatický obrat. Stačí, že pes, který rád chodil pro míček, přestane reagovat. Nebo že se psík, který miloval mazlení, najednou stahuje, když ho chcete pohladit po zádech.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Zdravotní problémy a psychické obtíže se u psů vzájemně prolínají. Bolest způsobuje podrážděnost. Podrážděnost vede k agresi. Agrese vypadá jako problém výchovy — přestože kořen je fyzický. Právě proto je při jakékoli náhlé nebo přetrvávající změně chování první otázka vždy: <em>Co říká veterinář?</em></p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Znát základní linii chování svého psa — jeho obvyklý rytmus, oblíbené aktivity, spánkové vzorce, chuť k jídlu — je předpokladem pro to, aby odchylka vůbec byla rozpoznatelná. Nejlépe to jde u majitelů, kteří tráví se psem čas vědomě, ne jen pasivně.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Nejčastější varovné signály</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 20px;">Níže jsou změny, které nejčastěji signalizují zdravotní nebo psychický problém. Žádná z nich není diagnóza — jsou to podněty k tomu, aby pes dostal odbornou péči.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Agrese, která tu dřív nebyla</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Pes, který nikdy nedával najevo agresivitu, a najednou vrčí nebo škvaří zuby při dotyku, hlazení nebo přiblížení — to je jeden z nejspolehlivějších signálů bolesti. Bolestivý kloub, napjatý sval, interní problém: pes neví, proč ho to bolí, ví jen, že kontakt mu ublíží, a chrání se.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Agrese jako projev bolesti se nejčastěji váže na konkrétní oblast těla nebo situaci (zdvihání, dotek beder, chůze po schodech). Nezačínejte výcvikem, dokud veterinář nevyloučí fyzickou příčinu.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Odmítání schodů nebo skoku</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Pes, který dřív bez váhání skákal na pohovku nebo do auta, a najednou zaváhá, obchází schody nebo je musí povzbuzovat — téměř vždy jde o klouby nebo páteř. Artritida, dysplazie kyčlí, výhřez ploténky: to vše začíná nenápadně a majitel to snadno přisoudí rozmaru nebo lenosti.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">U větších a středních plemen sledujte příznaky kloubních problémů průběžně od středního věku (5–7 let), u predisponovaných plemen (německý ovčák, retriever, labradorský retrívr) ještě dříve.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Nadměrné pití vody</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Polydipsie — zvýšený příjem vody — je příznakem, který nikdy nepřehlédněte. Může signalizovat onemocnění ledvin, cukrovku (diabetes mellitus), Cushingovu chorobu (hyperadrenokorticismus) nebo infekci dělohy (pyometru) u nesterilizovaných fen. Všechny tyto stavy jsou léčitelné, pokud jsou zachyceny včas.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Praktický tip: pokud máte pocit, že pes pije víc než obvykle, měřte příjem vody po dobu tří dnů a výsledek sdělte veterináři. Normální příjem je přibližně 50–60 ml na kilogram tělesné hmotnosti denně.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Ztráta zájmu o hru a interakci</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Pes, který přestane reagovat na oblíbenou hračku, odmítá procházky nebo se stahuje od rodiny, může trpět bolestí — nebo psí depresí. Ano, psi depresí trpí. Změna prostředí, ztráta psího nebo lidského společníka, nedostatek pohybu a mentální stimulace: to vše může vést ke stavům, které se projevují pasivitou, ztrátou chuti k jídlu a sníženou reaktivitou na podněty.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Pokud ztráta zájmu trvá déle než dva týdny, vyhledejte veterináře a zvažte konzultaci s veterinárním behavioristou.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Poruchy spánku</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Pes, který v noci chodí, štěká bez příčiny nebo nemůže najít polohu k ležení, může být v bolesti — nebo může jít o první příznak kognitivní dysfunkce u starších psů. Noční neklid je u seniorských psů jedním z nejčastěji přehlížených signálů, protože majitelé ho svalují na "prostě se mu nechce spát".</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">U psů do 7 let věku je noční neklid zpravidla spojen s fyzickým diskomfortem nebo úzkostí. U psů nad 10 let vždy myslete i na kognitivní dysfunkci.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Kognitivní dysfunkce — psí "Alzheimer"</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Kognitivní dysfunkční syndrom (CDS) je neurologické onemocnění postihující starší psy. Výzkumy ukazují, že příznaky se projevují u <strong>28 % psů ve věku 11–12 let</strong> a u <strong>68 % psů ve věku 15–16 let</strong>. Přesto zůstává diagnóza u mnoha psů přehlédnuta, protože majitelé příznaky připisují prostému stárnutí.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Mezi typické příznaky CDS patří:</p>
+    <ul style="font-size:17px; line-height:1.8; padding-left:22px; margin:0 0 16px;">
+      <li>Dezorientace — pes se ztrácí v bytě, zabočuje do rohů a nedokáže z nich odejít</li>
+      <li>Zapomínání naučených povelů a domu jako "bezpečného místa" pro toaletu</li>
+      <li>Noční neklid, bloudění, štěkání nebo vytí bez zjevné příčiny</li>
+      <li>Změny v sociálních interakcích — pes se vyhýbá kontaktu, nebo naopak lpí na přítomnosti majitele</li>
+      <li>Ztráta zájmu o jídlo, hračky a aktivity, které dřív rád dělal</li>
+      <li>Zapomínání, kde má misku s vodou nebo jídlem</li>
+    </ul>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;"><strong>Jak odlišit CDS od normálního stárnutí?</strong> Normální stárnutí přináší pomalejší reakce, menší výdrž a jistou míru ztuhlosti. Kognitivní dysfunkce jde dál: přináší zmatenost, ztrátu orientace a výrazné změny v osobnosti nebo sociálním chování. Veterinář musí nejprve vyloučit jiné příčiny (onemocnění jater, ledvin, štítné žlázy, mozkový nádor), které mohou příznaky napodobovat.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">CDS nelze vyléčit, ale jeho průběh lze zpomalit. Pomáhají: pravidelný pohybový a mentální program, omega-3 mastné kyseliny a antioxidanty ve stravě, noční světýlka a ohraničení prostoru, případně léky na předpis (selegilin). Čím dříve je diagnóza stanovena, tím větší prostor pro intervenci zůstává.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Zdravotní deník: měsíční check</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Nemusíte být veterinář, abyste si vedli jednoduchý přehled. Stačí jednou za měsíc projít pět oblastí a zaznamenat, co je jinak. Změny jsou nápadnější, když máte s čím porovnávat.</p>
+
+    <table>
+      <tr><th>Oblast</th><th>Co sledovat</th><th>Varovný signál</th></tr>
+      <tr>
+        <td><strong>Váha</strong></td>
+        <td>Pravidelné vážení (doma nebo u veterináře)</td>
+        <td>Úbytek nebo přírůstek &gt; 10 % za měsíc</td>
+      </tr>
+      <tr>
+        <td><strong>Spánek</strong></td>
+        <td>Kde spí, jak dlouho, zda se v noci budí</td>
+        <td>Noční neklid, neschopnost najít polohu</td>
+      </tr>
+      <tr>
+        <td><strong>Chuť k jídlu</strong></td>
+        <td>Sní celou porci? Pije normálně?</td>
+        <td>Odmítání jídla 2+ dny, výrazně zvýšený příjem vody</td>
+      </tr>
+      <tr>
+        <td><strong>Pohyblivost</strong></td>
+        <td>Chůze, běh, schody, skok, vstávání ze dřepu</td>
+        <td>Kulhání, ztuhlost ráno, váhání před schody</td>
+      </tr>
+      <tr>
+        <td><strong>Chování</strong></td>
+        <td>Zájem o hru, reakce na podněty, sociální interakce</td>
+        <td>Nová agrese, stahování, dezorientace, ztráta radosti</td>
+      </tr>
+    </table>
+
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:16px 0 0;">Zápisník nemusí být elaborát — stačí pět řádků v telefonu nebo papírový list na lednici. Při každé veterinární návštěvě ho vezměte s sebou: konkrétní pozorování pomáhají veterináři výrazně lépe než "nějak se mi zdá, že je divný".</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Kdy okamžitě k veterináři</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Existují stavy, které nemohou čekat na objednací termín. Při následujících příznacích volejte pohotovostní veterinární kliniku okamžitě nebo ihned vyrazte:</p>
+    <ul style="font-size:17px; line-height:1.8; padding-left:22px; margin:0 0 14px;">
+      <li><strong>Náhlá paralýza nebo ztráta koordinace</strong> — pes se nemůže postavit, padá, táhne zadní nohy</li>
+      <li><strong>Záchvat</strong> — křeče, ztráta vědomí, mimovolní pohyby</li>
+      <li><strong>Dušnost</strong> — pes dýchá s námahou, má otevřená ústa, bledé nebo modravé dásně</li>
+      <li><strong>Krvácení</strong> — z tlamičky, z konečníku, moč s krví, neovladatelné krvácení z rány</li>
+      <li><strong>Ztráta vědomí</strong> nebo závratě, pád bez zjevné příčiny</li>
+      <li><strong>Nafouklé břicho s neschopností se ulevit</strong> — může jít o torzi žaludku (GDV), která je bez léčby smrtelná v řádu hodin</li>
+    </ul>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">V pochybnostech volejte. Veterinář po telefonu dokáže rychle posoudit, zda jde o naléhavý případ — a vy přitom přijdete o pár minut, ne o psa.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Kdy ke behavioristce</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Když veterinář vyloučí zdravotní příčinu a chování přesto přetrvává nebo se zhoršuje, nastupuje veterinární behaviorista nebo certifikovaný etolog. Odbornou konzultaci zvažte zejména při:</p>
+    <ul style="font-size:17px; line-height:1.8; padding-left:22px; margin:0 0 14px;">
+      <li><strong>Agresi bez zjevné fyzické příčiny</strong> — vůči lidem, jiným psům nebo konkrétním situacím; zejména pokud je agrese nepředvídatelná</li>
+      <li><strong>Těžkých fobiích</strong> — bouřkách, výstřelech, dopravě; stav, kdy pes není schopen fungovat nebo se zraňuje</li>
+      <li><strong>Stereotypním chování (stereotypiích)</strong> — opakující se rituály bez zjevného účelu: otáčení v kruhu (circling), pronásledování vlastního stínu nebo ocasu (shadow chasing), kompulzivní lízání, tkaní v ohradě</li>
+      <li><strong>Separační úzkosti</strong>, která nepomalu reaguje na základní desenzitizaci</li>
+    </ul>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Behaviorista nepomáhá jen "špatně vychovaným" psům. Pracuje s neurologicky podmíněnými obtížemi, strachovými poruchami a kompulzivním chováním — oblastmi, kde samotný výcvik nestačí a kde může být součástí řešení i medikace předepsaná veterinárním specialistou.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Hledejte odborníka s certifikací IAABC (International Association of Animal Behavior Consultants), veterinárního behavioristu se specializací (DACVB) nebo etologa s dokladatelnou praxí v pozitivní metodologii.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; margin:48px 0 14px;">Zdroje</h2>
+    <p style="font-size:14px; color:#5c5648; margin:0 0 8px;">Zahraniční zdroje:</p>
+    <ul style="font-size:14px; line-height:1.9; color:#5c5648; padding-left:20px; margin:0 0 16px;">
+      <li>American Kennel Club (akc.org) — Signs Your Dog Is in Pain: přehled behaviorálních příznaků bolesti a doporučení pro veterinární konzultaci</li>
+      <li>PetMD — Canine Cognitive Dysfunction Syndrome: příznaky, prevalence dle věku, možnosti léčby a podpůrné péče</li>
+      <li>American Veterinary Society of Animal Behavior (AVSAB) — Position Statements: doporučení pro práci s agresí a fobiemi u psů</li>
+    </ul>
+    <p style="font-size:14px; color:#5c5648; margin:0 0 8px;">Česká odborná literatura:</p>
+    <ul style="font-size:14px; line-height:1.9; color:#5c5648; padding-left:20px; margin:0;">
+      <li>Kognitivní dysfunkce psů je popsána v rámci veterinární neurologie — konzultujte s veterinárním neurologem nebo behavioristou s atestací</li>
+    </ul>
+
+  </article>
+
+  <!-- FOOTER -->
+  <footer style="background:#2B241C; padding:clamp(32px,5vw,56px) clamp(20px,5vw,64px); display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between; align-items:center;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:20px; color:#F6F1E4;">
+      <svg width="26" height="26" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#E0A83E"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#E0A83E"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#E0A83E"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#E0A83E"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; gap:24px; flex-wrap:wrap; font-size:15px;">
+      <a href="Vychova.dc.html" style="color:#C7D3B6;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#C7D3B6;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#C7D3B6;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#C7D3B6;">O nás</a>
+    </div>
+    <p style="font-family:'Space Mono',monospace; font-size:13px; color:#C7D3B6; margin:0;">© 2026 Pozitivní pes</p>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>

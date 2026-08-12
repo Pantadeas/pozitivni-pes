@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #F6F1E4; font-family: 'Karla', sans-serif; }
+    a { color: #C96A4E; text-decoration: none; }
+    a:hover { color: #2D5F4C; }
+    ::selection { background: #E0A83E; color: #2B241C; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid #C7D3B6; font-size: 15px; }
+    th { font-family: 'Space Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: #2D5F4C; }
+  </style>
+</helmet>
+
+<div style="background:#F6F1E4; color:#2B241C; overflow-x:hidden;">
+
+  <!-- NAV -->
+  <nav style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:20px clamp(20px,5vw,64px); flex-wrap:wrap;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:22px; color:#2B241C;">
+      <svg width="30" height="30" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#2D5F4C"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#2D5F4C"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#2D5F4C"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#2D5F4C"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; align-items:center; gap:clamp(12px,3vw,32px); flex-wrap:wrap; font-size:16px; font-weight:600;">
+      <a href="Vychova.dc.html" style="color:#2B241C;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#2B241C;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#2B241C;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#2B241C;">O nás</a>
+    </div>
+  </nav>
+
+  <article style="max-width:760px; margin:0 auto; padding:clamp(16px,3vw,24px) clamp(20px,5vw,64px) clamp(64px,8vw,96px);">
+
+    <a href="Checklist.dc.html" style="font-family:'Space Mono',monospace; font-size:14px; color:#2D5F4C; display:inline-block; margin-bottom:20px;">← Zpět na checklist</a>
+
+    <p style="font-family:'Space Mono',monospace; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; color:#C96A4E; margin:0 0 14px;">Napořád</p>
+    <h1 style="font-family:'Fraunces',serif; font-weight:700; font-style:italic; font-size:clamp(32px,5vw,48px); line-height:1.1; margin:0 0 24px;">Pravidelný pohyb a mentální stimulace</h1>
+    <p style="font-size:19px; line-height:1.65; margin:0 0 40px; color:#2B241C;">Unavený pes je dobrý pes — to říkají všichni. Jenže fyzická únava a skutečná spokojenost nejsou totéž. Pes, který si každý den odběhne hodinu v parku, může večer ječet, ničit nebo neustále lézt na klín. Mozek totiž potřebuje stejně tolik péče jako tělo. <strong>Pohyb bez mentální stimulace nestačí</strong> — a naopak ani ta nejchytřejší hra nedokáže nahradit pohyb.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Proč fyzická únava nestačí</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Pracovní plemena — border kolie, malinois, německý ovčák, husky — byla selektována po staletí na to, aby pracovala celé hodiny s vysokou koncentrací. Jejich mozky jsou doslova nastavené na řešení problémů, sledování pohybu a spolupráci s člověkem. Hodinová procházka nebo volné pobíhání na louce pro ně představuje přibližně tolik, co pro trénovaného maratonce lehké protažení.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Výsledek? Pes je fyzicky vyčerpaný, ale mentálně podstimulovaný. Dostává se do stavu, který behavioristé někdy přirovnávají k člověku, jenž celý den strávil v tělocvičně na pásu, ale neměl jedinou konverzaci ani žádný úkol k řešení. Tělo odpočívá, hlava se točí.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0;">Navíc vysoká fyzická zátěž bez mentální složky může mít opačný efekt, než zamýšlíte: pes si postupně buduje kondici a žádá čím dál více. Vzniká bludný kruh — čím více ho unavíte fyzicky, tím více fyzické aktivity bude příště potřebovat.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Kolik pohybu pes potřebuje: záleží na plemeni a věku</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 16px;">Neexistuje jediná správná odpověď platná pro všechny psy. Čivava a border kolie jsou oba psi — a tím podobnosti v pohybových potřebách v podstatě končí. Orientační vodítko nabízí tabulka níže; vždy ji čtěte spolu s věkem a individuálním zdravotním stavem konkrétního psa.</p>
+
+    <div style="background:#fff; border-radius:20px; padding:20px 24px; margin:0 0 32px;">
+      <p style="font-family:'Space Mono',monospace; font-size:13px; text-transform:uppercase; letter-spacing:0.05em; color:#2D5F4C; margin:0 0 10px;">Orientační denní potřeba pohybu</p>
+      <table>
+        <tr><th>Skupina</th><th>Příklady plemen</th><th>Pohyb denně</th></tr>
+        <tr><td><strong>Pracovní / pastevecká</strong></td><td>Border kolie, malinois, kelpie, aussie</td><td>90–120 min +</td></tr>
+        <tr><td><strong>Lovecká / sportovní</strong></td><td>Labrador, vizsla, springer španěl, weimaraner</td><td>60–90 min</td></tr>
+        <tr><td><strong>Terieři a norníci</strong></td><td>Jack russell, parson, airedale</td><td>45–75 min</td></tr>
+        <tr><td><strong>Velká plemena</strong></td><td>Německá doga, bernský salašnický, newfoundland</td><td>30–45 min (pozor na klouby)</td></tr>
+        <tr><td><strong>Toy / společenská</strong></td><td>Čivava, maltézák, bolonský psík, papillon</td><td>20–30 min</td></tr>
+        <tr><td><strong>Brachycefalická</strong></td><td>Buldok, mops, francouzský buldoček</td><td>20–30 min, bez horka</td></tr>
+        <tr><td><strong>Štěně (do 12 měsíců)</strong></td><td>Jakékoliv plemeno</td><td>5 minut × věk v měsících, 2× denně</td></tr>
+        <tr><td><strong>Senior</strong></td><td>Jakékoliv plemeno</td><td>Kratší, ale četnější; individuálně</td></tr>
+      </table>
+      <p style="font-size:14px; color:#5c5648; margin:12px 0 0;">Tabulka je orientační. Zdravotní stav, kasteace, počasí a individuální temperament ji mohou výrazně posunout oběma směry.</p>
+    </div>
+
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">U štěňat platí zvláštní pravidlo: přetěžování kloubů před uzavřením růstových plotének (6–18 měsíců podle velikosti plemene) může způsobit trvalé poškození. Krátké, časté procházky a volná hra na měkkém povrchu jsou vždy lepší než jedna dlouhá výprava.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Mentální stimulace: co to konkrétně znamená</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Mentální stimulace je jakákoliv aktivita, která vyžaduje, aby pes <em>přemýšlel</em>, řešil problém nebo soustředěně pracoval. Nejde o to, aby byl pes zaneprázdněný — jde o to, aby byl mentálně zaměstnaný. Rozdíl je zásadní.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; margin:32px 0 12px;">Nosová práce — nejúčinnější nástroj</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Nos je pro psa tím, čím jsou pro nás oči. Čichový mozek psa je proporcionálně čtyřicetinásobně větší než lidský — a když ho pes naplno zapojí, spotřebovává ohromné množství energie. Dvacet minut intenzivní nosové práce odpovídá zhruba hodině fyzické aktivity.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;"><strong>Nosework</strong> (čichová práce) a <strong>mantrailing</strong> (sledování stopy konkrétního člověka) jsou organizované sporty s pevnou metodikou. Nosework začíná hledáním pamlsku v krabičce a postupně přechází k vyhledávání specifických pachů v exteriérech; mantrailing psa učí sledovat individuální pachovou stopu. Obojí je dostupné pro libovolné plemeno a věk — a pro psy s omezenou pohyblivostí jsou zvláště cenné.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 14px;">Žádný speciální talent není potřeba. Každý pes čuchá — a čichat ho baví více než cokoliv jiného.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; margin:32px 0 12px;">Výcvik nových povelů</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Pes se učí po celý život. Mozek, který se učí nové věci, je aktivní mozek — a aktivní mozek je spokojený mozek. Nezáleží na tom, zda trénujete přivolání, nácvik přinesení předmětu, nebo čistý trik jako podání tlapky. Samotný proces soustředěné spolupráce s člověkem a řešení nové výzvy je pro psa hluboce uspokojivý.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Pět minut výcviku denně je víc než hodina výcviku jednou za týden. Krátké, pravidelné session jsou pro učení i vztah efektivnější než občasné maratony.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; margin:32px 0 12px;">Potravinové hádanky a snuffle maty</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Podávat psovi jídlo z misky je promarněná příležitost. Každé krmení může být krátký mentální trénink. <strong>Snuffle mat</strong> — rohožka z hustých textilních proužků, do které se skrývají granule nebo pamlsky — nutí psa čichat a pracovat na to, aby se k jídlu dostal. <strong>Kong</strong> nebo jiný plnitelný hračkový předmět plněný pasou, banánem nebo vývarem zmraženým přes noc dokáže zaměstnat psa na 15–30 minut.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Interaktivní hádanky (puzzle feedery) existují v různých úrovních obtížnosti — od jednoduchého posunutí dvířek až po víceúrovňové kombinace. Začněte snazší variantou a obtížnost zvyšujte teprve tehdy, kdy pes předchozí úroveň zvládá bez frustrace.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; margin:32px 0 12px;">Čichací procházky — pes vede, my čekáme</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Existují dva typy procházek. Pohybová procházka — kdy jdete svižně a cílem je, aby pes vyběhal energii. A čichací procházka — kdy pes jde vlastním tempem a vy mu necháváte volnou ruku v tom, kde a jak dlouho čichá. Obojí má své místo, ale čichací procházka je mentálně mnohem náročnější.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Nechte psa, aby sám rozhodoval o trase nebo alespoň o zastávkách. Stojan nad starým stromem a pět minut čichání je pro psa hodnotnější než rychlý přesun na kilometr dál. Čichání navíc prokazatelně snižuje tepovou frekvenci a má na psa uklidňující účinek — je to doslova jeho meditace.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0;">Dobrou pomůckou je dlouhá vodítko (5–10 metrů) na bezpečném místě. Pes dostane prostor se pohybovat přirozeně a nosem sledovat, co ho zajímá.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Co mentální stimulací není</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Volné pobíhání na zahradě nebo v parku bez jakékoliv interakce s člověkem nebo prostředím není mentální stimulace. Pes se pohybuje, ale mozek pracuje na minimální obrátky. Podobně pouhé sledování televize, ležení na gauči vedle vás nebo opakování povelů, které pes dávno umí bez sebemenší výzvy, mentální kapacitu nevyčerpává.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Mentální stimulací není ani aktivita, která psa přetěžuje nebo frustruje. Pes, který opakovaně selhává u puzzle feederu nastaveného příliš obtížně, nebo je nucen pokračovat ve cvičení, když je unavený, se nestimuluje — stresuje.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0;">Zlaté pravidlo: pes by měl od aktivity odcházet s pocitem úspěchu, ne vyčerpání nebo frustrace. Skončete dřív, než pes ztratí zájem.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Příznaky nedostatku stimulace</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Pes, který nedostává dostatek mentální ani fyzické stimulace, vám to dá jasně najevo — jen ne slovem. Typické signály:</p>
+    <ul style="font-size:17px; line-height:1.8; padding-left:22px; margin:0 0 16px;">
+      <li><strong>Destrukce</strong> — žvýkání nábytku, bot, koberce, knih. Pes si hledá vlastní "práci", protože vy mu žádnou nedáváte.</li>
+      <li><strong>Nadměrné štěkání</strong> — na každý zvuk, stín, projíždějící auto. Podstimulovaný pes je přecitlivělý a reaktivní.</li>
+      <li><strong>Neustálé vyhledávání kontaktu</strong> — postrkování tlapou, drbání, neschopnost si lehnout a odpočinout, neustálé léžení na vás.</li>
+      <li><strong>Hyperaktivita doma</strong> — přeběhy, skákání, neschopnost se uklidnit, i když byl pes venku.</li>
+      <li><strong>Apatie a letargie</strong> — opačný extrém; pes, který se nudí dlouhodobě, může přestat projevovat zájem o cokoliv.</li>
+    </ul>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0;">Destrukce a hyperaktivita nejsou zlomyslnost ani špatná výchova. Jsou to symptomy. Hledejte příčinu, ne trest.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Senior pes: méně neznamená nic</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Starý pes potřebuje pohyb jinak — ne nutně méně, ale jinak. Místo jedné dlouhé procházky jsou vhodnější dvě nebo tři kratší. Klouby a svaly potřebují pohyb, ale ne přetížení. Plavání je pro seniory skvělá alternativa — pohybuje celým tělem bez nárazu do kloubů. Kopcovitý terén nebo dlouhé běhy ustupují klidným procházkám po rovině.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Mentální stimulace u seniorů neklesá na důležitosti — naopak. Starý pes, jehož mozek zůstává aktivní, stárne pomaleji. Nosová práce je pro seniory ideální: fyzická zátěž je minimální, mentální maximální. Výcvik nových povelů jednodušší varianty nebo puzzle feedery nižší obtížnosti jsou dostupné pro psy jakéhokoliv věku.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0;">Velkou chybou je přestat se psem pracovat jen proto, že je starý. Pes, který celé dny leží a nemá žádnou výzvu, stárne rychleji — mentálně i fyzicky. Pohyb a stimulace jsou prevence, ne nadstandard.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; margin:48px 0 14px;">Zdroje</h2>
+    <p style="font-size:14px; color:#5c5648; margin:0 0 8px;">Zahraniční zdroje:</p>
+    <ul style="font-size:14px; line-height:1.9; color:#5c5648; padding-left:20px; margin:0;">
+      <li><a href="https://www.akc.org/sports/akc-scent-work/">AKC — Scent Work: organizovaný čichový sport pro libovolné plemeno a věk</a></li>
+      <li><a href="https://www.whole-dog-journal.com/training/developing-a-dog-exercise-routine/">Whole Dog Journal — Developing a Dog Exercise Routine: pohybové potřeby dle věku a plemene, varování před přetížením</a></li>
+    </ul>
+
+  </article>
+
+  <!-- FOOTER -->
+  <footer style="background:#2B241C; padding:clamp(32px,5vw,56px) clamp(20px,5vw,64px); display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between; align-items:center;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:20px; color:#F6F1E4;">
+      <svg width="26" height="26" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#E0A83E"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#E0A83E"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#E0A83E"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#E0A83E"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; gap:24px; flex-wrap:wrap; font-size:15px;">
+      <a href="Vychova.dc.html" style="color:#C7D3B6;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#C7D3B6;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#C7D3B6;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#C7D3B6;">O nás</a>
+    </div>
+    <p style="font-family:'Space Mono',monospace; font-size:13px; color:#C7D3B6; margin:0;">© 2026 Pozitivní pes</p>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>
