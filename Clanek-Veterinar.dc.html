@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #F6F1E4; font-family: 'Karla', sans-serif; }
+    a { color: #C96A4E; text-decoration: none; }
+    a:hover { color: #2D5F4C; }
+    ::selection { background: #E0A83E; color: #2B241C; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid #C7D3B6; font-size: 15px; }
+    th { font-family: 'Space Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: #2D5F4C; }
+  </style>
+</helmet>
+
+<div style="background:#F6F1E4; color:#2B241C; overflow-x:hidden;">
+
+  <!-- NAV -->
+  <nav style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:20px clamp(20px,5vw,64px); flex-wrap:wrap;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:22px; color:#2B241C;">
+      <svg width="30" height="30" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#2D5F4C"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#2D5F4C"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#2D5F4C"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#2D5F4C"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; align-items:center; gap:clamp(12px,3vw,32px); flex-wrap:wrap; font-size:16px; font-weight:600;">
+      <a href="Vychova.dc.html" style="color:#2B241C;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#2B241C;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#2B241C;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#2B241C;">O nás</a>
+    </div>
+  </nav>
+
+  <article style="max-width:760px; margin:0 auto; padding:clamp(16px,3vw,24px) clamp(20px,5vw,64px) clamp(64px,8vw,96px);">
+
+    <a href="Checklist.dc.html" style="font-family:'Space Mono',monospace; font-size:14px; color:#2D5F4C; display:inline-block; margin-bottom:20px;">← Zpět na checklist</a>
+
+    <p style="font-family:'Space Mono',monospace; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; color:#C96A4E; margin:0 0 14px;">První dny doma</p>
+    <h1 style="font-family:'Fraunces',serif; font-weight:700; font-style:italic; font-size:clamp(32px,5vw,48px); line-height:1.1; margin:0 0 24px;">Vybraný veterinář — jak ho najít dřív, než přijede štěně</h1>
+    <p style="font-size:19px; line-height:1.65; margin:0 0 40px; color:#2B241C;">Veterináře si většina majitelů hledá až ve chvíli, kdy ho akutně potřebuje — a to je přesně ten moment, kdy na výběr není čas. Správný veterinář není jen adresa v telefonu pro případ nouze; je to partner na roky dopředu. A čím dříve ho najdete, tím klidnější bude celý příchod štěněte domů.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Proč vybrat veterináře ještě před příjezdem štěněte</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">První prohlídka štěněte by ideálně měla proběhnout <strong>do 72 hodin od příjezdu domů</strong>. Důvody jsou praktické: chovatel vydá průkaz původu a potvrzení o odčervení, ale stav zdraví štěněte v momentu předání nikdo nezaručuje — veterinář zachytí případné problémy, které na první pohled nejsou vidět (šelesty, hernii, parazity). Pokud veterináře nemáte vybraného, strávíte stres prvních dnů hledáním namísto zvykáním.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Výběr veterináře s předstihem má navíc jednu praktickou výhodu: můžete ordinaci navštívit nanečisto, popovídat si s personálem a udělat si obrázek bez časového tlaku. Ordinace, která na vás nemá čas před tím, než jste jejich klient, může mít podobný přístup i poté.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Pravidlo: veterináře vybrat, zapsat číslo do telefonu a naplánovat první schůzku — nejpozději týden před plánovaným příchodem štěněte.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Co hledat při výběru</h2>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Vzdálenost a dostupnost</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Pro rutinní návštěvy nezáleží na vzdálenosti tolik. Pro <strong>urgentní situace</strong> je klíčové, abyste se dostali do ordinace do <strong>přibližně 15 minut</strong>. U štěněte, které spolkne toxickou látku nebo zkolabuje, je čas kritický — veterinář vzdálený hodinu a půl vám v takové situaci nepomůže.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Zkontrolujte také <strong>otevírací dobu</strong>: ordinace otevřená jen v úzkém okně pracovní doby může být problém, pokud pracujete na plný úvazek. Mnohé moderní ordinace nabízejí sobotní hodiny nebo online rezervace s delší dostupností.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Pohotovostní služba</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Ještě před registrací se zeptejte: <em>„Kam mám zavolat ve tři ráno, když bude pes v nouzi?"</em> Každá ordinace by vám měla umět odpovědět — buď má vlastní pohotovost, nebo odkazuje na konkrétní veterinární kliniku s non-stop službou ve vašem okolí. Pokud odpověď zní „nevíme", je to varovný signál.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 16px;">Tip: vyhledejte si ještě zvlášť nejbližší veterinární pohotovost (obvykle při větších veterinárních klinikách ve velkých městech) a uložte její číslo bez ohledu na to, jakou ordinaci nakonec zvolíte.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Specialista na malá zvířata vs. smíšená praxe</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Veterináři se dělí na ty, kteří se specializují výhradně na malá zvířata (psi, kočky), a ty, kteří léčí i hospodářská nebo exotická zvířata — takzvaná <strong>smíšená praxe</strong>. Pro psa je ideální veterinář zaměřený primárně na malá zvířata: vybavení ordinace, diagnostické přístroje i zkušenosti jsou pak zacílené přesně na vaše potřeby.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Pokud v okolí smíšená praxe dominuje, není to automaticky problém — ptejte se, jaký podíl pacientů tvoří psi a kočky. Ordinace, kde psi tvoří většinu případů, bude pravděpodobně dobře vybavená a zkušená i bez úzké specializace.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Pro složitější zdravotní problémy (oční, srdečně-cévní, onkologické, neurologické) může váš praktický veterinář doporučit specializovanou veterinární kliniku — to je standardní postup, ne selhání.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Jak poznat dobrého veterináře</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Kvalifikace je základ, ale není to vše. Na první návštěvě sledujte:</p>
+    <ul style="font-size:17px; line-height:1.8; padding-left:22px; margin:0 0 16px;">
+      <li><strong>Komunikuje s vámi jako s partnerem.</strong> Dobrý veterinář vysvětluje nález, diagnózu i důvody léčby — nespoléhá na to, že mu prostě věříte. Pokud se ptáte a odpověď je odbývána, je to špatné znamení.</li>
+      <li><strong>Nezlehčuje vaše dotazy.</strong> „To není důležité" nebo „jste přecitlivělý" — to jsou věty, které od dobrého lékaře neuslyšíte. Každá otázka majitele má smysl.</li>
+      <li><strong>Věnuje se zvířeti, ne jen výkonu.</strong> Všímá si chování psa, přizpůsobuje tempo vyšetření, jde od méně stresujících úkonů k více stresujícím, používá pamlsky jako součást procesu — ne jen jako trik.</li>
+      <li><strong>Je upřímný ohledně hranic své odbornosti.</strong> Veterinář, který vám řekne „toto je nad rámec mé specializace, doporučím kolegu" je lepší než ten, kdo léčí vše bez ohledu na výsledky.</li>
+    </ul>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Fear Free veterinární přístup — co to je a proč záleží</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;"><strong>Fear Free</strong> je mezinárodní hnutí a certifikační program pro veterinární profesionály, jehož cílem je eliminovat strach, úzkost a stres u zvířat při zdravotní péči. Zakladatelem je americký veterinář <strong>Dr. Marty Becker</strong>, který vychází z jednoduché premisy: zvíře, které se při vyšetření nebojí, spolupracuje lépe — a veterinář tak získá přesnější nález.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">V praxi to znamená konkrétní věci: vyšetřovny navržené tak, aby neovládal pach dezinfekce a paniky, čekárny, kde psi a kočky nesdílí prostor, personál trénovaný v práci se stresovým chováním, používání pamlsků a přestávek jako standardní součást vyšetření — ne jako výjimku. Fear Free certifikovaní veterináři absolvují odborný online program a certifikované praxe procházejí celostním hodnocením celého týmu i prostoru ordinace.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Proč na tom záleží prakticky? Pes, který byl jako štěně u veterináře v klidu a s pozitivní asociací, se u lékaře bát nebude ani v dospělosti. Pes, jehož první zkušenosti byly stresující, si to bude pamatovat — a každá další návštěva bude těžší. To není jen pohodlí; je to základ spolehlivé diagnostiky po celý život psa.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Fear Free certifikované veterinární praxe a profesionály lze vyhledat v adresáři na <a href="https://fearfree.com/" target="_blank" rel="noopener">fearfree.com</a> (zatím převážně zahraniční ordinace; v ČR principy aplikuje část moderních ordinací i bez formální certifikace — ptejte se přímo).</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">První návštěva: co přinést a jak štěně připravit</h2>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Co vzít s sebou</h3>
+    <ul style="font-size:17px; line-height:1.8; padding-left:22px; margin:0 0 16px;">
+      <li><strong>Průkaz původu nebo veterinární průkaz od chovatele</strong> — obsahuje záznamy o odčervení a prvním očkování.</li>
+      <li><strong>Informace o odčervení</strong> — přípravek, dávka, datum. Veterinář nastaví další harmonogram.</li>
+      <li><strong>Vzorek stolice</strong> — čerstvý (ideálně ranní), v uzavíratelné nádobce nebo sáčku. Vyšetření na parazity je u štěňat standardem. Pokud zapomenete, veterinář vám sdělí, jak vzorek dodat dodatečně.</li>
+      <li><strong>Seznam otázek</strong>, které vás zajímají — krmení, harmonogram očkování, čipování, antiparazitika, kastrační plán. Lépe než snažit se vše vymyslet na místě.</li>
+    </ul>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Jak štěně připravit na návštěvu</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;"><strong>Nechte štěně mírně lačnit</strong> před návštěvou — 2 až 3 hodiny bez jídla (voda nevadí). Hladové štěně bude motivovanější pamlsky, které veterinář nebo vy použijete při vyšetření. Plné štěně na pamlsky nereaguje, a tím pádem je spolupráce horší.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;"><strong>Krátká procházka těsně před</strong> příchodem do čekárny: štěně by mělo mít možnost se venku vyprázdnit a vydat část energie. Unavené a odlehčené štěně reaguje klidněji než přeplněné a přeexcitované.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Pokud je to možné, přijďte do ordinace cíleně v méně frekventovanou dobu — vyhnete se dlouhému čekání v čekárně plné cizích psů, které by mohlo být pro štěně první velkou zátěží.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Kdy volat veterináře ihned — bez čekání</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">U štěněte platí zásada: raději zavolat zbytečně než čekat příliš dlouho. Ale existují situace, kdy je okamžitý kontakt s veterinářem nezbytný:</p>
+    <div style="background:#fff; border-radius:20px; padding:24px 28px; margin:0 0 24px;">
+      <ul style="font-size:17px; line-height:2.0; padding-left:22px; margin:0; color:#2B241C;">
+        <li><strong>Zvracení + průjem + letargie zároveň</strong> — kombinace těchto tří příznaků může signalizovat závažnou infekci nebo otravu; každý z nich samostatně bývá méně závažný.</li>
+        <li><strong>Krev ve stolici nebo moči</strong> — malé množství může mít banální příčinu, větší nebo opakující se výskyt ne.</li>
+        <li><strong>Potíže s dýcháním</strong> — zrychlené, namáhavé nebo nepravidelné dýchání v klidu; cyanotické (namodralé) sliznice.</li>
+        <li><strong>Bezvědomí nebo záchvat</strong> — včetně krátkých epizod, po kterých se pes zdá v pořádku.</li>
+        <li><strong>Spolknutí toxické látky</strong> — čokoláda, xylitol, hrozny/rozinky, léky, chemikálie, rostliny (k dispozici je seznam toxických rostlin u veterináře). Volejte ihned a uveďte, co přesně a v jakém množství.</li>
+        <li><strong>Viditelný úraz s bolestí</strong> — pád z výšky, autonehoda, zakousnutí jiným psem.</li>
+        <li><strong>Nadmutý nebo tvrdý břicho</strong> — zejména u větších plemen může jít o torzi žaludku, která je bezprostředně život ohrožující.</li>
+      </ul>
+    </div>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">U pochybností zavolejte a popište příznaky — zkušený personál vám řekne, zda přijet okamžitě nebo sledovat situaci doma. Nikdy nečekejte „do rána" u příznaků z výše uvedeného seznamu.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Orientační ceník základních výkonů v ČR</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Ceny se liší mezi regiony (Praha vs. menší města) a mezi ordinacemi. Níže jsou orientační rozsahy pro rok 2025–2026 — přesné ceny vždy ověřte přímo v ordinaci.</p>
+    <table>
+      <tr><th>Výkon</th><th>Orientační cena</th><th>Poznámka</th></tr>
+      <tr>
+        <td><strong>Klinické vyšetření (konzultace)</strong></td>
+        <td>300–600 Kč</td>
+        <td>Základní prohlídka, součást každé návštěvy</td>
+      </tr>
+      <tr>
+        <td><strong>Kompletní očkování štěněte</strong><br><span style="font-size:13px; color:#5c5648;">první série (DHPPiL + leptospiróza)</span></td>
+        <td>500–900 Kč / dávka</td>
+        <td>Štěně obvykle dostává 2–3 dávky v sérii</td>
+      </tr>
+      <tr>
+        <td><strong>Očkování proti vzteklině</strong></td>
+        <td>200–450 Kč</td>
+        <td>Povinné ze zákona; někdy součástí kombinované vakcíny</td>
+      </tr>
+      <tr>
+        <td><strong>Čipování + zápis do registru</strong></td>
+        <td>400–700 Kč</td>
+        <td>Čip + poplatek za registraci v databázi (např. ČMD)</td>
+      </tr>
+      <tr>
+        <td><strong>Veterinární pas (EU pas)</strong></td>
+        <td>200–350 Kč</td>
+        <td>Nutný pro cestování do zahraničí v rámci EU</td>
+      </tr>
+      <tr>
+        <td><strong>Vyšetření stolice na parazity</strong></td>
+        <td>150–300 Kč</td>
+        <td>Doporučeno u každého nového štěněte</td>
+      </tr>
+      <tr>
+        <td><strong>Antiparazitika (spot-on, tablety)</strong></td>
+        <td>100–350 Kč / dávka</td>
+        <td>Záleží na hmotnosti psa a přípravku</td>
+      </tr>
+    </table>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:16px 0 0;">Veterinární péče patří mezi pravidelné fixní výdaje. Orientační roční náklady na preventivní péči (přeočkování, antiparazitika, 1–2 kontrolní návštěvy) se pohybují přibližně od 3 000 do 7 000 Kč ročně — bez neočekávaných zdravotních událostí.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; margin:48px 0 14px;">Zdroje</h2>
+    <p style="font-size:14px; color:#5c5648; margin:0 0 8px;">České zdroje:</p>
+    <ul style="font-size:14px; line-height:1.9; color:#5c5648; padding-left:20px; margin:0 0 16px;">
+      <li>Žádný ověřitelný český online zdroj k tématu výběru veterináře s dostupným obsahem se nepodařilo při tvorbě tohoto článku najít. Ceny jsou orientační odhady z praxe, ověřte přímo u vaší ordinace.</li>
+    </ul>
+    <p style="font-size:14px; color:#5c5648; margin:0 0 8px;">Zahraniční zdroje:</p>
+    <ul style="font-size:14px; line-height:1.9; color:#5c5648; padding-left:20px; margin:0;">
+      <li><a href="https://www.akc.org/expert-advice/health/veterinary-specialist/" target="_blank" rel="noopener">American Kennel Club — Does Your Dog Need to See a Veterinary Specialist?: rozdíl mezi praktickým veterinářem a specialistou, kdy je referral na místě</a></li>
+      <li><a href="https://fearfree.com/" target="_blank" rel="noopener">Fear Free — fearfree.com: popis Fear Free hnutí, certifikační program pro veterináře, adresář Fear Free ordinací</a></li>
+    </ul>
+
+  </article>
+
+  <!-- FOOTER -->
+  <footer style="background:#2B241C; padding:clamp(32px,5vw,56px) clamp(20px,5vw,64px); display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between; align-items:center;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:20px; color:#F6F1E4;">
+      <svg width="26" height="26" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#E0A83E"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#E0A83E"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#E0A83E"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#E0A83E"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; gap:24px; flex-wrap:wrap; font-size:15px;">
+      <a href="Vychova.dc.html" style="color:#C7D3B6;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#C7D3B6;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#C7D3B6;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#C7D3B6;">O nás</a>
+    </div>
+    <p style="font-family:'Space Mono',monospace; font-size:13px; color:#C7D3B6; margin:0;">© 2026 Pozitivní pes</p>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>

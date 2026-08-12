@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #F6F1E4; font-family: 'Karla', sans-serif; }
+    a { color: #C96A4E; text-decoration: none; }
+    a:hover { color: #2D5F4C; }
+    ::selection { background: #E0A83E; color: #2B241C; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid #C7D3B6; font-size: 15px; }
+    th { font-family: 'Space Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: #2D5F4C; }
+  </style>
+</helmet>
+
+<div style="background:#F6F1E4; color:#2B241C; overflow-x:hidden;">
+
+  <!-- NAV -->
+  <nav style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:20px clamp(20px,5vw,64px); flex-wrap:wrap;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:22px; color:#2B241C;">
+      <svg width="30" height="30" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#2D5F4C"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#2D5F4C"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#2D5F4C"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#2D5F4C"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; align-items:center; gap:clamp(12px,3vw,32px); flex-wrap:wrap; font-size:16px; font-weight:600;">
+      <a href="Vychova.dc.html" style="color:#2B241C;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#2B241C;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#2B241C;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#2B241C;">O nás</a>
+    </div>
+  </nav>
+
+  <article style="max-width:760px; margin:0 auto; padding:clamp(16px,3vw,24px) clamp(20px,5vw,64px) clamp(64px,8vw,96px);">
+
+    <a href="Checklist.dc.html" style="font-family:'Space Mono',monospace; font-size:14px; color:#2D5F4C; display:inline-block; margin-bottom:20px;">← Zpět na checklist</a>
+
+    <p style="font-family:'Space Mono',monospace; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; color:#C96A4E; margin:0 0 14px;">První dny doma</p>
+    <h1 style="font-family:'Fraunces',serif; font-weight:700; font-style:italic; font-size:clamp(32px,5vw,48px); line-height:1.1; margin:0 0 24px;">Průkaz očkování a EU pas — co je co a co budete potřebovat</h1>
+    <p style="font-size:19px; line-height:1.65; margin:0 0 40px; color:#2B241C;">Každý nový majitel psa dostane od chovatele nějaký průkaz — jenže ne každý průkaz je totéž. Existují dva zcela odlišné dokumenty: domácí průkaz očkování a unifikovaný EU cestovní pas pro zvířata. Záměna nebo podceňování jednoho z nich může vyjít draho — ať už při přechodu hranice, při prokazování původu psa, nebo při rekonstrukci zdravotní historie po ztrátě dokumentu.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Průkaz očkování vs. EU pas — základní rozdíl</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Nejčastější záměna: chovatel předá štěněti malou knížku plnou razítek a očkovacích štítků — a majitel předpokládá, že je to "pas". Zpravidla není. Průkaz očkování je neoficiální, libovolně formátovaný doklad — komerční tiskovina nebo sešit, do kterého veterinář zapisuje provedená očkování a odčervení. Nemá standardizovanou podobu, neobsahuje čip a při cestování do zahraničí ho hraniční kontrola neuznává.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">EU pas pro zvířata v zájmovém chovu (anglicky <em>EU Pet Passport</em>) je naopak závazně standardizovaný dokument zavedený nařízením EU č. 576/2013. Má pevně danou podobu, formát a obsah, je vydáván výhradně autorizovanými veterinárními lékaři a je jedinou uznávanou cestovní dokumentací při cestování v rámci EU i do mnoha zemí mimo EU.</p>
+
+    <table>
+      <tr><th>Dokument</th><th>Forma</th><th>Vydává</th><th>Platný pro cestování?</th></tr>
+      <tr>
+        <td><strong>Průkaz očkování</strong></td>
+        <td>Libovolná — komerční tiskovina, sešit</td>
+        <td>Jakýkoli veterinář, případně chovatel</td>
+        <td>Ne — pouze jako doplněk u veterináře</td>
+      </tr>
+      <tr>
+        <td><strong>EU pas pro zvířata</strong></td>
+        <td>Standardizovaný — modrá knížka formátu A6</td>
+        <td>Výhradně veterinář oprávněný SVS ČR</td>
+        <td>Ano — v rámci celé EU i do řady třetích zemí</td>
+      </tr>
+    </table>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">EU pas: kdy je povinný a kdo ho vystavuje</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">EU pas potřebujete vždy, když překračujete hranice s psem — ať už cestujete do jiného státu EU, do státu EHP (Norsko, Island, Lichtenštejnsko), nebo do Švýcarska. Po odchodu Velké Británie z EU platí totéž pro cestu přes Lamanšský průliv nebo sever Irska.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Pas vystavuje výhradně <strong>soukromý nebo státní veterinární lékař autorizovaný Státní veterinární správou ČR (SVS ČR)</strong>. Ne každý veterinář oprávnění má — při výběru ordinace se přímo zeptejte, zda jsou oprávněni pasy vydávat. V ČR je pas jednorázový doklad — vydává se jednou a platí po celý život psa. Nelze ho přepsat ani vydat znovu „čistý"; v případě ztráty se vydává duplikát s poznámkou.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Pas nevystavuje chovatelský svaz, obec ani chovatel sám. Pokud vám někdo nabízí pas, který nebyl vydán veterinářem, jde o padělek.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Co EU pas obsahuje</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Standardizovaný formát EU pasu zahrnuje vždy tyto oddíly:</p>
+    <ul style="font-size:17px; line-height:1.8; padding-left:22px; margin:0 0 16px;">
+      <li><strong>Identifikace zvířete</strong> — jméno, plemeno, barva, pohlaví, datum narození, číslo mikročipu (nebo tetování u starších psů), fotografie.</li>
+      <li><strong>Identifikace majitele</strong> — jméno, adresa, kontakt.</li>
+      <li><strong>Čipování</strong> — číslo čipu, datum aplikace, místo, jméno veterináře.</li>
+      <li><strong>Očkování proti vzteklině (rabies)</strong> — povinná položka; datum, název vakcíny, šarže, datum platnosti, razítko a podpis veterináře.</li>
+      <li><strong>Ostatní očkování</strong> — psinková, parvoviróza, hepatitida, leptospiróza apod. (dobrovolná evidence, ale veterináři je zpravidla zapisují).</li>
+      <li><strong>Antiparazitární ošetření</strong> — odčervení (datum, přípravek, dávka, veterinář); pro vstup do některých zemí je odčervení proti tasemnici <em>Echinococcus multilocularis</em> povinné.</li>
+      <li><strong>Klinická vyšetření</strong> — záznamy o vyšetřeních nutných pro konkrétní cesty.</li>
+    </ul>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Čipování — podmínka pro vydání EU pasu</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Bez mikročipu nelze EU pas vydat. Čipování musí proběhnout <strong>před</strong> prvním očkováním proti vzteklině — pokud byl pes nejdřív očkován a teprve pak čipován, je nutné celý cyklus vztekliny zopakovat (to znamená nová vakcína a čekání 21 dnů).</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Technické parametry mikročipu</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">EU uznává čipy standardu <strong>ISO 11784 / ISO 11785</strong> — 15místný číselný kód čtený pasivním transponderem na frekvenci 134,2 kHz. Starší čipy s odlišnou frekvencí (125 kHz, AVID) nejsou čtečkami standardně rozpoznávány; pokud pes takový čip má, je vhodné při veterinárním vyšetření použít vlastní kompatibilní čtečku nebo nový čip aplikovat vedle.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Čip se aplikuje <strong>pod kůži v oblasti levého boku za lopatkou</strong>, zpravidla bez anestezie — jde o rychlou proceduru srovnatelnou s běžnou injekcí. U štěňat se aplikuje standardně při první veterinární návštěvě.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Registrace čipu v databázi</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Samotný čip nemá žádnou hodnotu bez registrace v databázi — nalezený nebo odcizený pes je dohledatelný jedině tehdy, pokud je číslo čipu spárováno s majitelem. V ČR existuje několik databází; nejrozšířenější provozuje ČMKU pod adresou <strong>cz-pet.cz</strong>. Od roku 2023 SVS ČR spouští také <strong>Centrální evidenci psů</strong>, do které mají povinnost hlásit chovatelé a veterináři nové registrace.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Pokud přebíráte psa od chovatele, ověřte si číslo čipu ihned po přebírce — přiložte čtečku (nebo si ji nechte přiložit u veterináře) a zkontrolujte, že číslo odpovídá zápisu v průkazu. Zároveň si ověřte, zda je čip registrován v databázi a zda jsou v záznamu uvedeny vaše kontaktní údaje jako nového majitele.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Průkaz od chovatele — co přebíráte a jak ověřit pravost</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Od chovatele zpravidla přebíráte:</p>
+    <ul style="font-size:17px; line-height:1.8; padding-left:22px; margin:0 0 16px;">
+      <li><strong>Průkaz původu</strong> (rodokmen, pedigree) — vydává kynologický svaz (v ČR zpravidla ČMKU nebo jeho přidružené organizace) a dokládá registrované předky psa minimálně tři generace zpět. Jde o doklad identity a původu, nikoli zdravotní historii.</li>
+      <li><strong>Průkaz očkování</strong> — záznamy o provedených veterinárních úkonech před předáním: nejčastěji první štěněcí vakcína (hexavakcína nebo pentavakcína) a odčervení. Nemusí jít o EU pas.</li>
+      <li>Případně <strong>EU pas</strong>, pokud byl chovatel dostatečně prozíravý a pas nechal vystavit předem — to je méně časté, ale stává se.</li>
+    </ul>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Jak ověřit pravost záznamu v průkazu: každý veterinární zápis musí obsahovat <strong>datum, název preparátu, číslo šarže a razítko s podpisem veterináře</strong>. Pokud některý z těchto prvků chybí, zápis není platný. U očkování navíc bývají vlepeny štítky ze samotné vakcíny — ty si ověřte u svého veterináře při první návštěvě.</p>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Podezřelé je, pokud jsou záznamy psány rukou bez razítka, pokud nesouhlasí data s věkem štěněte, nebo pokud průkaz vypadá jako kopie. V takovém případě se obraťte na SVS ČR nebo přímo na veterináře uvedeného v záznamu a ověřte, zda dotyčnou ordinaci vůbec provozuje.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Jak průkaz správně vyplňovat a uchovávat</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Průkaz — ať už domácí nebo EU pas — není váš dokument k libovolnému vyplňování. Do průkazu smí zapisovat <strong>výhradně veterinář</strong>. Majitel do průkazu nepíše nic, vyjma identifikačních údajů, pokud je k tomu výslovně vyzván při vydání pasu.</p>
+    <ul style="font-size:17px; line-height:1.8; padding-left:22px; margin:0 0 16px;">
+      <li>Průkaz uchovávejte na suchém místě, mimo přímé slunce — plastové obaly nebo specializované pouzdra prodlouží životnost knížky.</li>
+      <li>Nikdy průkaz nelamte, nevkládejte do zadní kapsy ani nenechávejte v autě — poničený nebo nečitelný průkaz může způsobit komplikace na hranici.</li>
+      <li>Pořiďte si <strong>fotografickou zálohu</strong> — vyfotografujte každou stranu s razítkem a uložte do cloudu. V případě ztráty zrychlíte vydání duplikátu.</li>
+      <li>Po každé veterinární návštěvě zkontrolujte, že jsou zápisy kompletní a čitelné — chyby v šarži nebo datu vakcíny se lépe opravují okamžitě než zpětně.</li>
+    </ul>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Cestování: co potřebujete pro vstup do různých zemí</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Pro cestování v rámci zemí EU platí jednotný systém — EU pas, mikročip a platné očkování proti vzteklině (vakcína musí být aplikována nejméně <strong>21 dnů před překročením hranice</strong>). Přesně tolik trvá, než se vytvoří dostatečná imunita uznaná pro cestovní účely. Při opakovaném přeočkování v platnosti stará vakcína platí bez čekací lhůty, pokud neuplynula platnost.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Finsko, Norsko, Irsko, Malta a Severní Irsko — odčervení povinné</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Tyto země vyžadují nad rámec standardního EU pasu <strong>potvrzené odčervení proti tasemnici <em>Echinococcus multilocularis</em></strong>. Přípravek musí být podán veterinářem nejméně 24 hodin a nejvýše 5 dní před vstupem do země. Datum a hodina aplikace musí být zaznamenány v EU pasu. Nesprávný časový interval je důvodem k odmítnutí vstupu.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Velká Británie — specifický vstupní režim po Brexitu</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Po odchodu Velké Británie z EU <strong>EU pas pro vstup do UK nestačí</strong>. Od 1. ledna 2021 je vyžadováno <strong>Animal Health Certificate (AHC)</strong> — veterinární osvědčení vydané úředním veterinářem nejdéle 10 dní před vstupem. AHC není pas, je platné pouze pro jednu cestu. Zároveň UK vyžaduje odčervení proti echinokokům (stejná pravidla jako Finsko/Norsko výše).</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Pro psy, kteří přicestují do UK z tzv. „nevyjmenovaných zemí" (kam ČR nepatří — ČR je na seznamu vyjmenovaných zemí s nižšími riziky), platí zjednodušený postup bez povinného titračního testu protilátek. Pokud však váš pes cestoval v poslední době do zemí mimo seznam, situace se komplikuje — poraďte se s veterinářem minimálně 3 měsíce před plánovanou cestou.</p>
+
+    <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:28px 0 12px;">Titrační test protilátek (rabies titer test)</h3>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Titrační test (sérologické vyšetření hladiny protilátek proti vzteklině) je povinný pro psy cestující <strong>z tzv. třetích zemí do EU</strong> — tedy například pro psa přivezené z Turecka, Egypta nebo jiných zemí mimo EU a seznam bezpečných zemí. Pro psy vyjíždějící z ČR do UK nebo Norska tento test standardně není vyžadován, dokud pes nepobýval v rizikové třetí zemi. Výsledek musí být nejméně 0,5 IU/ml a od odběru vzorku musí uplynout 3 měsíce před vstupem do EU ze třetí země. Test musí být proveden v akreditované laboratoři.</p>
+
+    <table>
+      <tr><th>Destinace</th><th>EU pas</th><th>Odčervení (Echinococcus)</th><th>AHC / jiný doklad</th><th>Titer test</th></tr>
+      <tr>
+        <td><strong>Státy EU</strong></td>
+        <td>Ano</td>
+        <td>Pouze Finsko, Irsko, Malta</td>
+        <td>Ne</td>
+        <td>Ne (z ČR)</td>
+      </tr>
+      <tr>
+        <td><strong>Norsko</strong></td>
+        <td>Ano</td>
+        <td>Ano</td>
+        <td>Ne</td>
+        <td>Ne (z ČR)</td>
+      </tr>
+      <tr>
+        <td><strong>Velká Británie</strong></td>
+        <td>Ne — nestačí</td>
+        <td>Ano (1–5 dní před vstupem)</td>
+        <td>AHC — ano</td>
+        <td>Ne (z ČR, pokud pes nepobýval v rizikové zemi)</td>
+      </tr>
+      <tr>
+        <td><strong>Třetí země → EU</strong></td>
+        <td>Ne — veterinární osvědčení</td>
+        <td>Dle destinace</td>
+        <td>Dle pravidel dané země</td>
+        <td>Ano, pokud jde o nevyjmenovanou zemi</td>
+      </tr>
+    </table>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:16px 0 0;">Požadavky se mohou měnit — vždy si před cestou ověřte aktuální podmínky přímo na webu SVS ČR (svscr.cz) nebo portálu Evropské komise věnovaném cestování se zvířaty.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:24px; margin:40px 0 14px;">Ztráta průkazu nebo pasu — jak postupovat</h2>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Ztrátu průkazu očkování (domácí) řešíte u svého veterináře — ordinace zpravidla vede vlastní záznamy a může vystavit nový průkaz s opisy předchozích záznamů. Zda a jak detailní záznamy mají, záleží na konkrétní praxi.</p>
+    <p style="font-size:17px; line-height:1.7; margin:0 0 14px;">Ztrátu EU pasu nelze vyřešit vystavením nového „čistého" pasu se stejným obsahem. Veterinář oprávněný SVS ČR vystaví <strong>duplikát</strong>, který musí obsahovat poznámku o tom, že jde o náhradu za ztracený pas. Do duplikátu se přenesou záznamy, které lze doložit — nejlépe fotografiemi původního pasu nebo záznamy veterinářů, kteří vakcíny aplikovali.</p>
+    <ul style="font-size:17px; line-height:1.8; padding-left:22px; margin:0 0 16px;">
+      <li>Kontaktujte veterináře, kteří psa v minulosti ošetřovali — záznamy o vakcinacích mívají v systému.</li>
+      <li>Pokud cestujete brzy a pas nelze včas rekonstruovat, bude pravděpodobně nutné přeočkování vztekliny a opětovné čekání 21 dnů — cestovní pojišťovna zpravidla tyto náklady nehradí.</li>
+      <li>Záloha fotografií průkazu ušetří čas i peníze: veterinář z fotek může ověřit šarže vakcín a doplnit záznamy.</li>
+    </ul>
+    <p style="font-size:16px; line-height:1.6; color:#5c5648; margin:0 0 0;">Ztracený průkaz původu (pedigree) řešíte přímo u ČMKU — po ověření identity psa přes číslo čipu a záznamy plemenné knihy lze vydat opis. Kontakt a postup najdete na cmku.cz.</p>
+
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; margin:48px 0 14px;">Zdroje</h2>
+    <p style="font-size:14px; color:#5c5648; margin:0 0 8px;">České zdroje:</p>
+    <ul style="font-size:14px; line-height:1.9; color:#5c5648; padding-left:20px; margin:0 0 16px;">
+      <li><a href="https://www.svscr.cz">Státní veterinární správa ČR (svscr.cz) — oprávnění k vydávání EU pasů, identifikace zvířat, cestování se zvířaty</a></li>
+      <li><a href="https://www.cmku.cz">Českomoravská kynologická unie (cmku.cz) — průkazy původu, databáze čipů a tetovacích čísel, plemenná kniha</a></li>
+    </ul>
+    <p style="font-size:14px; color:#5c5648; margin:0 0 8px;">Evropské a zahraniční zdroje:</p>
+    <ul style="font-size:14px; line-height:1.9; color:#5c5648; padding-left:20px; margin:0;">
+      <li><a href="https://europa.eu/youreurope/citizens/travel/carry/pets-and-other-animals/index_cs.htm">Evropská komise / Vaše Evropa — Cestování s domácími zvířaty: podmínky v EU, požadavky třetích zemí, titrační test</a></li>
+      <li>Nařízení Evropského parlamentu a Rady (EU) č. 576/2013 o přesunu zvířat v zájmovém chovu — závazný právní rámec pro EU pas a podmínky cestování</li>
+    </ul>
+
+  </article>
+
+  <!-- FOOTER -->
+  <footer style="background:#2B241C; padding:clamp(32px,5vw,56px) clamp(20px,5vw,64px); display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between; align-items:center;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:20px; color:#F6F1E4;">
+      <svg width="26" height="26" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#E0A83E"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#E0A83E"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#E0A83E"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#E0A83E"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; gap:24px; flex-wrap:wrap; font-size:15px;">
+      <a href="Vychova.dc.html" style="color:#C7D3B6;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#C7D3B6;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#C7D3B6;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#C7D3B6;">O nás</a>
+    </div>
+    <p style="font-family:'Space Mono',monospace; font-size:13px; color:#C7D3B6; margin:0;">© 2026 Pozitivní pes</p>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>

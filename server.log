@@ -7924,3 +7924,1463 @@ ConnectionResetError: [Errno 104] Connection reset by peer
 5.61.209.92 - - [11/Aug/2026 18:09:32] "GET /SDK/webLanguage HTTP/1.1" 404 -
 3.129.187.38 - - [11/Aug/2026 18:14:20] "GET / HTTP/1.1" 200 -
 54.226.29.111 - - [11/Aug/2026 18:30:02] "GET / HTTP/1.1" 200 -
+108.165.12.43 - - [11/Aug/2026 18:55:52] code 404, message File not found
+108.165.12.43 - - [11/Aug/2026 18:55:52] "GET /api/status HTTP/1.1" 404 -
+108.165.12.43 - - [11/Aug/2026 18:55:52] code 404, message File not found
+108.165.12.43 - - [11/Aug/2026 18:55:52] "GET /health HTTP/1.1" 404 -
+108.165.12.43 - - [11/Aug/2026 18:55:53] code 404, message File not found
+108.165.12.43 - - [11/Aug/2026 18:55:53] "GET /v1/models HTTP/1.1" 404 -
+108.165.12.43 - - [11/Aug/2026 18:55:53] "GET / HTTP/1.1" 200 -
+108.165.12.43 - - [11/Aug/2026 18:56:24] code 404, message File not found
+108.165.12.43 - - [11/Aug/2026 18:56:24] "GET /api/status HTTP/1.1" 404 -
+108.165.12.43 - - [11/Aug/2026 18:56:24] code 404, message File not found
+108.165.12.43 - - [11/Aug/2026 18:56:24] "GET /health HTTP/1.1" 404 -
+108.165.12.43 - - [11/Aug/2026 18:56:25] code 404, message File not found
+108.165.12.43 - - [11/Aug/2026 18:56:25] "GET /v1/models HTTP/1.1" 404 -
+108.165.12.43 - - [11/Aug/2026 18:56:25] "GET / HTTP/1.1" 200 -
+180.178.58.90 - - [11/Aug/2026 19:07:29] code 400, message Bad request version ('À\\x13À')
+180.178.58.90 - - [11/Aug/2026 19:07:29] "\x16\x03\x01\x01\x1e\x01\x00\x01\x1a\x03\x03^ÊDU\x07N8í\x1aú½5\x9fM\x8d<\x0c_­-qÈÐ\x1ce>\x90jtüná 4\x83ýU/ä¿{y·ÓÃÜk\x7f£t\x1c\x19¼h\x0fþ\x94Ç\x03È\x95Pä?¨\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À" 400 -
+91.92.43.121 - - [11/Aug/2026 19:21:59] code 404, message File not found
+91.92.43.121 - - [11/Aug/2026 19:21:59] "GET /login HTTP/1.1" 404 -
+5.61.209.44 - - [11/Aug/2026 19:23:04] code 404, message File not found
+5.61.209.44 - - [11/Aug/2026 19:23:04] "GET /SDK/webLanguage HTTP/1.1" 404 -
+18.116.101.220 - - [11/Aug/2026 19:31:07] "GET / HTTP/1.1" 200 -
+18.116.101.220 - - [11/Aug/2026 19:32:38] "GET / HTTP/1.1" 200 -
+18.116.101.220 - - [11/Aug/2026 19:34:16] code 400, message Bad request version ('x\\x8f>rkÞs\\x10')
+18.116.101.220 - - [11/Aug/2026 19:34:16] "\x16\x03\x01\x01\x00\x01\x00\x00ü\x03\x03cQ<·\x0bF\x0f\x04¸þ'\x0dâ\x0eò0ä\x0cx\x8f>rkÞs\x10" 400 -
+18.116.101.220 - - [11/Aug/2026 19:35:41] code 400, message Bad request version ('À\\x14À')
+18.116.101.220 - - [11/Aug/2026 19:35:41] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03¥\x1f\x1eäC\x05*f\x1b\x9c¶¬g'v\x99Æá)\x91aÞ®UV>\x97ë\x0co|@ U ©Ã\x09×\x0fF9\x0d^\x90á\x13\x1e*§PÓl\x00¯\x19v\x15VyÛP\x06@È\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" 400 -
+108.165.12.43 - - [11/Aug/2026 19:35:55] code 404, message File not found
+108.165.12.43 - - [11/Aug/2026 19:35:55] "GET /api/config HTTP/1.1" 404 -
+108.165.12.43 - - [11/Aug/2026 19:35:55] code 404, message File not found
+108.165.12.43 - - [11/Aug/2026 19:35:55] "GET /api/models HTTP/1.1" 404 -
+108.165.12.43 - - [11/Aug/2026 19:35:56] code 404, message File not found
+108.165.12.43 - - [11/Aug/2026 19:35:56] "GET /api/v1/auths/signup HTTP/1.1" 404 -
+108.165.12.43 - - [11/Aug/2026 19:36:07] code 404, message File not found
+108.165.12.43 - - [11/Aug/2026 19:36:07] "GET /api/config HTTP/1.1" 404 -
+108.165.12.43 - - [11/Aug/2026 19:36:07] code 404, message File not found
+108.165.12.43 - - [11/Aug/2026 19:36:07] "GET /api/models HTTP/1.1" 404 -
+108.165.12.43 - - [11/Aug/2026 19:36:08] code 404, message File not found
+108.165.12.43 - - [11/Aug/2026 19:36:08] "GET /api/v1/auths/signup HTTP/1.1" 404 -
+194.165.16.121 - - [11/Aug/2026 19:39:25] code 400, message Bad HTTP/0.9 request type ('\\x03\\x00\\x00/*à\\x00\\x00\\x00\\x00\\x00Cookie:')
+194.165.16.121 - - [11/Aug/2026 19:39:25] "\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr" 400 -
+205.210.31.41 - - [11/Aug/2026 19:46:46] code 400, message Bad request version ('À\\x13À')
+205.210.31.41 - - [11/Aug/2026 19:46:46] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x045ìr\x81R\x82®¿ìâÌ®rèTg¥",÷}\x06\x11\x86\x18qG\x8eYòZ íå)¨µ±Ô\x8e_\x9b7Öé\x01&ýzj\x93\x13O\x09ÆCYû\x0f\x05Á(_ò\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À" 400 -
+205.210.31.41 - - [11/Aug/2026 19:46:46] code 400, message Bad request version ('À(À$À\\x14À')
+205.210.31.41 - - [11/Aug/2026 19:46:46] "\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03|\x99\x17èãì\x91Î%òö\x85\x81\x9fÕ`\x13ÃN\x7fì\x93àT\x12]\x90ùÏòð\x1c\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À" 400 -
+194.187.176.185 - - [11/Aug/2026 19:48:07] "GET / HTTP/1.1" 200 -
+194.187.176.188 - - [11/Aug/2026 19:48:07] code 404, message File not found
+194.187.176.188 - - [11/Aug/2026 19:48:07] "GET /favicon.ico HTTP/1.1" 404 -
+101.36.107.65 - - [11/Aug/2026 20:09:24] code 400, message Bad request version ('\\x00\\x9eÌ¨Ìª\\x003\\x00=\\x00\\x16À')
+101.36.107.65 - - [11/Aug/2026 20:09:24] "\x16\x03\x01\x00ü\x01\x00\x00ø\x03\x03ÈÈåEÐpÚE.ã®&>g\\1v\x86ÜÌ²á³l\x81T3¦> øN |mª\x8d^¶k¿EÆ\x9fSÁqöªzüàNAüZ÷k:·/¹­$\x86\x004Ì¨Ì©À/À0À+À,À\x09\x00\x9eÌ¨Ìª\x003\x00=\x00\x16À" 400 -
+101.36.107.65 - - [11/Aug/2026 20:09:37] "GET / HTTP/1.1" 200 -
+101.36.107.65 - - [11/Aug/2026 20:09:38] code 404, message File not found
+101.36.107.65 - - [11/Aug/2026 20:09:38] "GET /favicon.ico HTTP/1.1" 404 -
+101.36.107.65 - - [11/Aug/2026 20:09:39] code 404, message File not found
+101.36.107.65 - - [11/Aug/2026 20:09:39] "GET /robots.txt HTTP/1.1" 404 -
+101.36.107.65 - - [11/Aug/2026 20:09:40] code 404, message File not found
+101.36.107.65 - - [11/Aug/2026 20:09:40] "GET /sitemap.xml HTTP/1.1" 404 -
+101.36.107.65 - - [11/Aug/2026 20:09:41] code 404, message File not found
+101.36.107.65 - - [11/Aug/2026 20:09:41] "GET /config.json HTTP/1.1" 404 -
+101.36.107.65 - - [11/Aug/2026 20:09:42] "GET / HTTP/1.1" 200 -
+101.36.107.65 - - [11/Aug/2026 20:09:43] "GET /.git/ HTTP/1.1" 200 -
+101.36.107.65 - - [11/Aug/2026 20:09:44] code 404, message File not found
+101.36.107.65 - - [11/Aug/2026 20:09:44] "GET /hooks/ HTTP/1.1" 404 -
+101.36.107.65 - - [11/Aug/2026 20:09:45] code 404, message File not found
+101.36.107.65 - - [11/Aug/2026 20:09:45] "GET /info/ HTTP/1.1" 404 -
+101.36.107.65 - - [11/Aug/2026 20:09:45] code 404, message File not found
+101.36.107.65 - - [11/Aug/2026 20:09:45] "GET /logs/ HTTP/1.1" 404 -
+101.36.107.65 - - [11/Aug/2026 20:09:46] code 404, message File not found
+101.36.107.65 - - [11/Aug/2026 20:09:46] "GET /objects/ HTTP/1.1" 404 -
+101.36.107.65 - - [11/Aug/2026 20:09:47] code 404, message File not found
+101.36.107.65 - - [11/Aug/2026 20:09:47] "GET /refs/ HTTP/1.1" 404 -
+94.154.43.70 - - [11/Aug/2026 20:47:24] code 404, message File not found
+94.154.43.70 - - [11/Aug/2026 20:47:24] "GET /login HTTP/1.1" 404 -
+45.148.10.125 - - [11/Aug/2026 21:24:57] code 400, message Bad HTTP/0.9 request type ('\\x16\\x03\\x01\\x01')
+45.148.10.125 - - [11/Aug/2026 21:24:57] "\x16\x03\x01\x01\x0c\x01\x00\x01\x08\x03\x03ëM>ÉÊ\x89\x9f£áN÷`¶³=\x86fÃ\x99A(ï»\x05\x95û\x06à\\9\x81" 400 -
+45.148.10.125 - - [11/Aug/2026 21:24:57] "GET / HTTP/1.1" 200 -
+45.148.10.125 - - [11/Aug/2026 21:24:58] "GET / HTTP/1.1" 200 -
+45.148.10.125 - - [11/Aug/2026 21:24:58] "GET /.git/HEAD HTTP/1.1" 200 -
+45.148.10.125 - - [11/Aug/2026 21:24:58] code 404, message File not found
+45.148.10.125 - - [11/Aug/2026 21:24:58] "GET /.aws/credentials HTTP/1.1" 404 -
+45.148.10.125 - - [11/Aug/2026 21:24:58] code 404, message File not found
+45.148.10.125 - - [11/Aug/2026 21:24:58] "GET /.npmrc HTTP/1.1" 404 -
+45.148.10.125 - - [11/Aug/2026 21:24:58] code 404, message File not found
+45.148.10.125 - - [11/Aug/2026 21:24:58] "GET /app/.env HTTP/1.1" 404 -
+45.148.10.125 - - [11/Aug/2026 21:24:58] code 404, message File not found
+45.148.10.125 - - [11/Aug/2026 21:24:58] "GET /appsettings.json HTTP/1.1" 404 -
+45.148.10.125 - - [11/Aug/2026 21:24:58] code 404, message File not found
+45.148.10.125 - - [11/Aug/2026 21:24:58] "GET /phpinfo.php HTTP/1.1" 404 -
+45.148.10.125 - - [11/Aug/2026 21:24:58] code 404, message File not found
+45.148.10.125 - - [11/Aug/2026 21:24:58] "GET /api/.env HTTP/1.1" 404 -
+45.148.10.125 - - [11/Aug/2026 21:24:58] code 404, message File not found
+45.148.10.125 - - [11/Aug/2026 21:24:58] "GET /.env.production HTTP/1.1" 404 -
+45.148.10.125 - - [11/Aug/2026 21:24:58] code 404, message File not found
+45.148.10.125 - - [11/Aug/2026 21:24:58] "GET /.env.development HTTP/1.1" 404 -
+45.148.10.125 - - [11/Aug/2026 21:24:58] code 404, message File not found
+45.148.10.125 - - [11/Aug/2026 21:24:58] "GET /.env.bak HTTP/1.1" 404 -
+45.148.10.125 - - [11/Aug/2026 21:24:58] code 404, message File not found
+45.148.10.125 - - [11/Aug/2026 21:24:58] "GET /backend/.env HTTP/1.1" 404 -
+45.148.10.125 - - [11/Aug/2026 21:24:58] code 404, message File not found
+45.148.10.125 - - [11/Aug/2026 21:24:58] "GET /actuator/env HTTP/1.1" 404 -
+45.148.10.125 - - [11/Aug/2026 21:24:58] code 404, message File not found
+45.148.10.125 - - [11/Aug/2026 21:24:58] "GET /terraform.tfstate HTTP/1.1" 404 -
+45.148.10.125 - - [11/Aug/2026 21:24:58] code 404, message File not found
+45.148.10.125 - - [11/Aug/2026 21:24:58] "GET /.env HTTP/1.1" 404 -
+45.148.10.125 - - [11/Aug/2026 21:24:59] code 404, message File not found
+45.148.10.125 - - [11/Aug/2026 21:24:59] "GET /.env.local HTTP/1.1" 404 -
+45.148.10.125 - - [11/Aug/2026 21:24:59] code 404, message File not found
+45.148.10.125 - - [11/Aug/2026 21:24:59] "GET /.env.staging HTTP/1.1" 404 -
+45.148.10.125 - - [11/Aug/2026 21:24:59] code 404, message File not found
+45.148.10.125 - - [11/Aug/2026 21:24:59] "GET /.env.prod HTTP/1.1" 404 -
+45.148.10.125 - - [11/Aug/2026 21:24:59] code 404, message File not found
+45.148.10.125 - - [11/Aug/2026 21:24:59] "GET /.env.backup HTTP/1.1" 404 -
+45.148.10.125 - - [11/Aug/2026 21:24:59] "GET /.git/config HTTP/1.1" 200 -
+45.148.10.125 - - [11/Aug/2026 21:24:59] code 404, message File not found
+45.148.10.125 - - [11/Aug/2026 21:24:59] "GET /.git-credentials HTTP/1.1" 404 -
+45.148.10.125 - - [11/Aug/2026 21:24:59] code 404, message File not found
+45.148.10.125 - - [11/Aug/2026 21:24:59] "GET /info.php HTTP/1.1" 404 -
+45.148.10.125 - - [11/Aug/2026 21:24:59] code 404, message File not found
+45.148.10.125 - - [11/Aug/2026 21:24:59] "GET /.env.old HTTP/1.1" 404 -
+----------------------------------------
+Exception occurred during processing of request from ('45.79.211.97', 41926)
+Traceback (most recent call last):
+  File "/usr/lib/python3.14/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 1422, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 732, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 496, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 464, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.14/socket.py", line 725, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+45.79.211.97 - - [11/Aug/2026 21:35:13] "GET / HTTP/1.1" 200 -
+45.79.128.205 - - [11/Aug/2026 21:35:31] "GET / HTTP/1.1" 200 -
+45.194.67.26 - - [11/Aug/2026 21:50:11] "GET / HTTP/1.1" 200 -
+45.194.67.26 - - [11/Aug/2026 21:50:11] code 404, message File not found
+45.194.67.26 - - [11/Aug/2026 21:50:11] "GET /favicon.ico HTTP/1.1" 404 -
+66.132.195.123 - - [11/Aug/2026 21:52:50] "GET / HTTP/1.1" 200 -
+66.132.195.123 - - [11/Aug/2026 21:52:50] code 400, message Bad request syntax ('\\x16\\x03\\x01\\x00î\\x01\\x00\\x00ê\\x03\\x03Ã®@')
+66.132.195.123 - - [11/Aug/2026 21:52:50] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03Ã®@" 400 -
+66.132.195.123 - - [11/Aug/2026 21:52:52] "GET / HTTP/1.1" 200 -
+66.132.195.123 - - [11/Aug/2026 21:52:55] code 505, message Invalid HTTP version (2.0)
+66.132.195.123 - - [11/Aug/2026 21:52:55] "PRI * HTTP/2.0" 505 -
+66.132.195.123 - - [11/Aug/2026 21:52:58] code 404, message File not found
+66.132.195.123 - - [11/Aug/2026 21:52:58] "GET /favicon.ico HTTP/1.1" 404 -
+66.132.195.123 - - [11/Aug/2026 21:53:48] "GET / HTTP/1.1" 200 -
+66.132.195.123 - - [11/Aug/2026 21:54:58] code 400, message Bad request version ('À\\x14À')
+66.132.195.123 - - [11/Aug/2026 21:54:58] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x90ÐÍðttSO\x1d\x8f\x1aý\x97]n\x9d$fW\x82b\x8dç÷á%Ioa\x81M\x0c ªT\x01ÔîhT\x0cEA\x8f¥«ü0k~GpVÝè±wÀV\x87ù=\x9bTB\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" 400 -
+66.132.195.123 - - [11/Aug/2026 21:55:00] code 404, message File not found
+66.132.195.123 - - [11/Aug/2026 21:55:00] "GET /.well-known/security.txt HTTP/1.1" 404 -
+----------------------------------------
+Exception occurred during processing of request from ('45.33.14.197', 39615)
+Traceback (most recent call last):
+  File "/usr/lib/python3.14/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 1422, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 732, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 496, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 464, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.14/socket.py", line 725, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+45.33.14.197 - - [11/Aug/2026 22:33:43] "GET / HTTP/1.1" 200 -
+198.235.24.198 - - [11/Aug/2026 22:35:12] "GET / HTTP/1.1" 200 -
+172.236.228.245 - - [11/Aug/2026 22:36:58] "GET / HTTP/1.1" 200 -
+85.90.246.159 - - [11/Aug/2026 22:40:21] code 400, message Bad request syntax ('\\x10\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x01\\x00\\x00\\x00')
+85.90.246.159 - - [11/Aug/2026 22:40:21] "\x10\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00" 400 -
+94.154.43.144 - - [11/Aug/2026 22:51:31] code 404, message File not found
+94.154.43.144 - - [11/Aug/2026 22:51:31] "GET /login HTTP/1.1" 404 -
+107.150.111.240 - - [11/Aug/2026 23:20:03] "GET / HTTP/1.1" 200 -
+107.150.111.240 - - [11/Aug/2026 23:20:04] code 404, message File not found
+107.150.111.240 - - [11/Aug/2026 23:20:04] "GET /favicon.ico HTTP/1.1" 404 -
+107.150.111.240 - - [11/Aug/2026 23:20:40] code 400, message Bad request syntax ('\\x16\\x03\\x01\\x00ß\\x01\\x00\\x00Û\\x03\\x03z\\x1b[½\\x01#mm')
+107.150.111.240 - - [11/Aug/2026 23:20:40] "\x16\x03\x01\x00ß\x01\x00\x00Û\x03\x03z\x1b[½\x01#mm" 400 -
+107.150.111.240 - - [11/Aug/2026 23:21:30] code 404, message File not found
+107.150.111.240 - - [11/Aug/2026 23:21:30] "GET /favicon.ico HTTP/1.1" 404 -
+165.154.162.203 - - [11/Aug/2026 23:24:52] "GET / HTTP/1.1" 200 -
+165.154.162.203 - - [11/Aug/2026 23:24:53] code 404, message File not found
+165.154.162.203 - - [11/Aug/2026 23:24:53] "GET /favicon.ico HTTP/1.1" 404 -
+165.154.162.203 - - [11/Aug/2026 23:25:54] code 400, message Bad request syntax ('\\x16\\x03\\x01\\x00ß\\x01\\x00\\x00Û\\x03\\x03¡q<+\\x05\\x08_"êÒN·]¤rÂË¡\\x95è\\x8b]xeÕMß\\x97E¢Ë\\x10\\x00\\x00h\\x00')
+165.154.162.203 - - [11/Aug/2026 23:25:54] "\x16\x03\x01\x00ß\x01\x00\x00Û\x03\x03¡q<+\x05\x08_"êÒN·]¤rÂË¡\x95è\x8b]xeÕMß\x97E¢Ë\x10\x00\x00h\x00" 400 -
+165.154.162.203 - - [11/Aug/2026 23:27:02] code 404, message File not found
+165.154.162.203 - - [11/Aug/2026 23:27:02] "GET /favicon.ico HTTP/1.1" 404 -
+165.154.172.129 - - [11/Aug/2026 23:27:27] "GET / HTTP/1.1" 200 -
+165.154.172.129 - - [11/Aug/2026 23:27:27] code 404, message File not found
+165.154.172.129 - - [11/Aug/2026 23:27:27] "GET /favicon.ico HTTP/1.1" 404 -
+165.154.172.129 - - [11/Aug/2026 23:28:08] code 400, message Bad request syntax ('\\x16\\x03\\x01\\x00ß\\x01\\x00\\x00Û\\x03\\x03ª7%£³Æ\\x94c\\x98#:\\x035\\x82Ï=+\\x11É\\x9fµ(.)Fõ\\x8e\\x1a\\x0eÕ¤\\x12\\x00\\x00h\\x002\\x00¢\\x00kÀ0\\x00\\x16À')
+165.154.172.129 - - [11/Aug/2026 23:28:08] "\x16\x03\x01\x00ß\x01\x00\x00Û\x03\x03ª7%£³Æ\x94c\x98#:\x035\x82Ï=+\x11É\x9fµ(.)Fõ\x8e\x1a\x0eÕ¤\x12\x00\x00h\x002\x00¢\x00kÀ0\x00\x16À" 400 -
+165.154.172.129 - - [11/Aug/2026 23:28:39] code 404, message File not found
+165.154.172.129 - - [11/Aug/2026 23:28:39] "GET /favicon.ico HTTP/1.1" 404 -
+107.150.104.68 - - [11/Aug/2026 23:30:21] "GET / HTTP/1.1" 200 -
+107.150.104.68 - - [11/Aug/2026 23:30:22] code 404, message File not found
+107.150.104.68 - - [11/Aug/2026 23:30:22] "GET /favicon.ico HTTP/1.1" 404 -
+152.32.235.147 - - [11/Aug/2026 23:31:13] "GET / HTTP/1.1" 200 -
+152.32.235.147 - - [11/Aug/2026 23:31:14] code 404, message File not found
+152.32.235.147 - - [11/Aug/2026 23:31:14] "GET /favicon.ico HTTP/1.1" 404 -
+107.150.104.68 - - [11/Aug/2026 23:31:39] code 400, message Bad request version ('\\x86-hy\\x1aT%Î÷ÿ_SÓÙ¹Äõ.<+¶ý»\\x00\\x00h\\x00\\x03\\x00\\x13\\x009À\\x14\\x00\\x06\\x00<\\x00\\x14\\x00k\\x00\\x19\\x00fÀ\\x11\\x00/\\x008Ìª\\x00\\x17\\x00g\\x00\\x9c\\x00¢\\x00\\x04\\x00\\x9d\\x00\\x08\\x00£\\x00\\x9e\\x00')
+107.150.104.68 - - [11/Aug/2026 23:31:39] "\x16\x03\x01\x00ß\x01\x00\x00Û\x03\x03Ê¡\x99\x1dÍn¯f\x1f\x86-hy\x1aT%Î÷ÿ_SÓÙ¹Äõ.<+¶ý»\x00\x00h\x00\x03\x00\x13\x009À\x14\x00\x06\x00<\x00\x14\x00k\x00\x19\x00fÀ\x11\x00/\x008Ìª\x00\x17\x00g\x00\x9c\x00¢\x00\x04\x00\x9d\x00\x08\x00£\x00\x9e\x00" 400 -
+152.32.235.147 - - [11/Aug/2026 23:31:44] code 400, message Bad request version ('ý\\x00\\x00h\\x00=\\x00g\\x00\\x06\\x00\\x15\\x00\\x9fÀ0\\x00<À')
+152.32.235.147 - - [11/Aug/2026 23:31:44] "\x16\x03\x01\x00ß\x01\x00\x00Û\x03\x03\x7f[ó'<ß¨ï7çg¦ýgÍq\x07öùÐYÞÉË\x82<\x85Æ±\x06\x1fý\x00\x00h\x00=\x00g\x00\x06\x00\x15\x00\x9fÀ0\x00<À" 400 -
+107.150.104.68 - - [11/Aug/2026 23:32:06] code 404, message File not found
+107.150.104.68 - - [11/Aug/2026 23:32:06] "GET /favicon.ico HTTP/1.1" 404 -
+152.32.235.147 - - [11/Aug/2026 23:32:36] code 404, message File not found
+152.32.235.147 - - [11/Aug/2026 23:32:36] "GET /favicon.ico HTTP/1.1" 404 -
+165.154.135.211 - - [11/Aug/2026 23:33:36] "GET / HTTP/1.1" 200 -
+165.154.135.211 - - [11/Aug/2026 23:33:37] code 404, message File not found
+165.154.135.211 - - [11/Aug/2026 23:33:37] "GET /favicon.ico HTTP/1.1" 404 -
+----------------------------------------
+Exception occurred during processing of request from ('69.164.217.74', 43092)
+Traceback (most recent call last):
+  File "/usr/lib/python3.14/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 1422, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 732, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 496, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 464, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.14/socket.py", line 725, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+69.164.217.74 - - [11/Aug/2026 23:33:48] "GET / HTTP/1.1" 200 -
+165.154.135.211 - - [11/Aug/2026 23:34:23] code 400, message Bad HTTP/0.9 request type ('\\x16\\x03\\x01\\x00ß\\x01\\x00\\x00Û\\x03\\x03\\\\\\x8aQkÁØ')
+165.154.135.211 - - [11/Aug/2026 23:34:23] "\x16\x03\x01\x00ß\x01\x00\x00Û\x03\x03\\\x8aQkÁØ\x1d\x03f^6\x19\x92û_\x00©¿§Ù¯VÏ¨æãÀÛ\x87E?1\x00\x00h\x00g\x00\x12À/\x009Ì¨À\x08\x00f\x00\x08\x00" 400 -
+165.154.135.211 - - [11/Aug/2026 23:35:27] code 404, message File not found
+165.154.135.211 - - [11/Aug/2026 23:35:27] "GET /favicon.ico HTTP/1.1" 404 -
+172.236.127.133 - - [11/Aug/2026 23:35:59] "GET / HTTP/1.1" 200 -
+193.124.20.228 - - [11/Aug/2026 23:58:27] code 404, message File not found
+193.124.20.228 - - [11/Aug/2026 23:58:27] "GET /zc?action=getInfo HTTP/1.1" 404 -
+81.19.216.94 - - [11/Aug/2026 23:58:50] "GET / HTTP/1.1" 200 -
+185.223.235.46 - - [11/Aug/2026 23:58:50] code 404, message File not found
+185.223.235.46 - - [11/Aug/2026 23:58:50] "GET /favicon.ico HTTP/1.1" 404 -
+193.176.31.250 - - [11/Aug/2026 23:58:50] code 404, message File not found
+193.176.31.250 - - [11/Aug/2026 23:58:50] "GET /mcp/ HTTP/1.1" 404 -
+81.19.216.112 - - [11/Aug/2026 23:58:50] code 404, message File not found
+81.19.216.112 - - [11/Aug/2026 23:58:50] "GET /api/mcp HTTP/1.1" 404 -
+185.223.235.24 - - [11/Aug/2026 23:58:50] code 404, message File not found
+185.223.235.24 - - [11/Aug/2026 23:58:50] "GET /mcp HTTP/1.1" 404 -
+81.19.216.97 - - [11/Aug/2026 23:58:50] "GET / HTTP/1.1" 200 -
+81.19.216.87 - - [11/Aug/2026 23:58:50] code 404, message File not found
+81.19.216.87 - - [11/Aug/2026 23:58:50] "GET /sse HTTP/1.1" 404 -
+62.171.146.116 - - [12/Aug/2026 00:31:24] code 400, message Bad request version ('0\\x95\\x9c-\\x93j')
+62.171.146.116 - - [12/Aug/2026 00:31:24] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03ØZ~\x1a¨c\x0foõýJ´\x9e%Û\x01ugïUáÎl;Å9\x9b\x0b|;Â\x9d 0\x95\x9c-\x93j" 400 -
+172.105.82.111 - - [12/Aug/2026 01:01:31] "GET / HTTP/1.1" 200 -
+195.178.110.137 - - [12/Aug/2026 01:33:56] code 400, message Bad request syntax ('\\x04\\x01\\x01»h\\x10¸ñ\\x00')
+195.178.110.137 - - [12/Aug/2026 01:33:56] "\x04\x01\x01»h\x10¸ñ\x00" 400 -
+195.178.110.137 - - [12/Aug/2026 01:34:06] code 501, message Unsupported method ('CONNECT')
+195.178.110.137 - - [12/Aug/2026 01:34:06] "CONNECT 104.16.184.241:443 HTTP/1.1" 501 -
+195.178.110.137 - - [12/Aug/2026 01:34:06] code 400, message Bad request syntax ('\\x05\\x01\\x00')
+195.178.110.137 - - [12/Aug/2026 01:34:06] "\x05\x01\x00" 400 -
+91.92.43.121 - - [12/Aug/2026 01:58:53] code 404, message File not found
+91.92.43.121 - - [12/Aug/2026 01:58:53] "GET /login HTTP/1.1" 404 -
+45.198.224.26 - - [12/Aug/2026 02:30:13] code 404, message File not found
+45.198.224.26 - - [12/Aug/2026 02:30:13] "GET /login HTTP/1.1" 404 -
+150.107.36.82 - - [12/Aug/2026 02:35:01] "GET / HTTP/1.1" 200 -
+150.107.36.82 - - [12/Aug/2026 02:35:01] code 400, message Bad request version ('À\\x13À')
+150.107.36.82 - - [12/Aug/2026 02:35:01] "\x16\x03\x01\x05¨\x01\x00\x05¤\x03\x03XaÐ'uåFÎü\x0c\x00âð~9U!Î\x94Or\x12\x87DkÓ\x83ÐZ¸çä \x09ÅpLÝ:7!Û\x96:§9\x81l³ÌúÆs£üÌ\x09\x91\x0b\x0bKÖ¯þ\x90\x00\x1aÀ+À/À,À0Ì©Ì¨À\x09À\x13À" 400 -
+205.210.31.220 - - [12/Aug/2026 02:51:35] "GET / HTTP/1.0" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('66.132.224.80', 22026)
+Traceback (most recent call last):
+  File "/usr/lib/python3.14/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 1422, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 732, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 496, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 464, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.14/socket.py", line 725, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+66.132.224.80 - - [12/Aug/2026 02:52:04] "GET / HTTP/1.1" 200 -
+66.132.224.80 - - [12/Aug/2026 02:52:11] code 400, message Bad request version ('À\\x14À')
+66.132.224.80 - - [12/Aug/2026 02:52:11] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03!\x8e\x15±f\x06Fø)\x9a/hÊµëI6\x13AYÑÂ±:ûæµ(K\x15\x06¡ ô­\x9eìò=·¬C\x93øÄ\x0fV\x9fáFÝ¸4\x0de\x0dZãîÿ\x08¦«¢\x15\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" 400 -
+66.132.224.80 - - [12/Aug/2026 02:52:12] "GET / HTTP/1.1" 200 -
+66.132.224.80 - - [12/Aug/2026 02:52:13] code 505, message Invalid HTTP version (2.0)
+66.132.224.80 - - [12/Aug/2026 02:52:13] "PRI * HTTP/2.0" 505 -
+66.132.224.80 - - [12/Aug/2026 02:52:13] code 404, message File not found
+66.132.224.80 - - [12/Aug/2026 02:52:13] "GET /favicon.ico HTTP/1.1" 404 -
+66.132.224.80 - - [12/Aug/2026 02:52:17] "GET / HTTP/1.1" 200 -
+66.132.224.80 - - [12/Aug/2026 02:52:24] code 400, message Bad request version ('À\\x14À')
+66.132.224.80 - - [12/Aug/2026 02:52:24] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03)zP\x02ñ6çóº\x84³\x92óPaÛÌét¡é\x10É´ºY%\x03\x03¦÷R ¨>Ø=\x95È\x1f1L\x9fÊõÂé\x05\x9c|ûx\x0e³AakÍµx&¤j\x19+\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" 400 -
+66.132.224.80 - - [12/Aug/2026 02:52:24] code 404, message File not found
+66.132.224.80 - - [12/Aug/2026 02:52:24] "GET /security.txt HTTP/1.1" 404 -
+94.154.43.70 - - [12/Aug/2026 03:00:23] code 404, message File not found
+94.154.43.70 - - [12/Aug/2026 03:00:23] "GET /login HTTP/1.1" 404 -
+94.154.43.70 - - [12/Aug/2026 03:17:49] code 404, message File not found
+94.154.43.70 - - [12/Aug/2026 03:17:49] "GET /login HTTP/1.1" 404 -
+64.176.36.116 - - [12/Aug/2026 03:21:22] "GET / HTTP/1.1" 200 -
+64.176.36.116 - - [12/Aug/2026 03:21:22] code 404, message File not found
+64.176.36.116 - - [12/Aug/2026 03:21:22] "GET /.env HTTP/1.1" 404 -
+64.176.36.116 - - [12/Aug/2026 03:21:23] code 404, message File not found
+64.176.36.116 - - [12/Aug/2026 03:21:23] "GET /.env.local HTTP/1.1" 404 -
+64.176.36.116 - - [12/Aug/2026 03:21:23] code 404, message File not found
+64.176.36.116 - - [12/Aug/2026 03:21:23] "GET /config HTTP/1.1" 404 -
+64.176.36.116 - - [12/Aug/2026 03:21:24] code 404, message File not found
+64.176.36.116 - - [12/Aug/2026 03:21:24] "GET /config.json HTTP/1.1" 404 -
+94.154.43.99 - - [12/Aug/2026 03:31:37] code 404, message File not found
+94.154.43.99 - - [12/Aug/2026 03:31:37] "GET /login HTTP/1.1" 404 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET / HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /Clanek-Misky.dc.html HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /Clanek-Pamlsky.dc.html HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /Clanek-Misto.dc.html HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /Clanek-Klikr.dc.html HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /Clanek-Ohradka.dc.html HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /support.js HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /Clanek-Obojek.dc.html HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /Clanek-Pece.dc.html HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /Clanek-Kose.dc.html HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /Clanek-Kabely.dc.html HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /server.log HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /Clanek-Rostliny.dc.html HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /Clanek-Vacek.dc.html HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /Clanek-Hracky.dc.html HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /Clanek-Prepravka.dc.html HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /image-slot.js HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /Clanek-Pelisek.dc.html HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /Clanek-Granule.dc.html HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /Clanek-Sacky.dc.html HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /Clanek-Auto.dc.html HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /Clanek-Postroj.dc.html HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /Homepage.dc.html HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /Checklist.dc.html HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:47] "GET /Clanek-Predmety.dc.html HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('113.196.59.51', 10803)
+Traceback (most recent call last):
+  File "/usr/lib/python3.14/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 1422, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 732, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 496, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 484, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 739, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 942, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/shutil.py", line 257, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+113.196.59.51 - - [12/Aug/2026 03:36:48] "GET /.git/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:48] "GET /.git/COMMIT_EDITMSG HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:48] "GET /.git/config HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:48] "GET /.git/HEAD HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:48] "GET /.git/description HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:48] "GET /.git/index HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:49] "GET /.git/objects/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:49] "GET /.git/refs/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:50] "GET /.git/logs/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:50] "GET /.git/logs/HEAD HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:51] "GET /.git/info/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:52] "GET /.git/info/exclude HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:52] "GET /.git/hooks/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:53] "GET /.git/hooks/pre-applypatch.sample HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:53] "GET /.git/hooks/post-update.sample HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:53] "GET /.git/hooks/pre-push.sample HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:53] "GET /.git/hooks/pre-receive.sample HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:53] "GET /.git/hooks/push-to-checkout.sample HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:53] "GET /.git/hooks/commit-msg.sample HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:53] "GET /.git/hooks/applypatch-msg.sample HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:53] "GET /.git/hooks/pre-rebase.sample HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:53] "GET /.git/hooks/sendemail-validate.sample HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:53] "GET /.git/hooks/pre-commit.sample HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:53] "GET /.git/hooks/pre-merge-commit.sample HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:53] "GET /.git/hooks/fsmonitor-watchman.sample HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:53] "GET /.git/hooks/prepare-commit-msg.sample HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:53] "GET /.git/hooks/update.sample HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:53] "GET /.git/objects/36/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:54] "GET /.git/objects/36/0e1354c76755a467b57a6a904bddcccd07958c HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:54] "GET /.git/objects/pack/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:55] "GET /.git/objects/1b/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:55] "GET /.git/objects/1b/bf8f108a4cefa91e173678c6c428bae1995cb3 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:56] "GET /.git/objects/0b/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:57] "GET /.git/objects/0b/d375430ed70613e638a7c66220feee4b882322 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:57] "GET /.git/objects/40/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:58] "GET /.git/objects/40/a4d9a91987291fa21074503dd49e35501e67f4 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:58] "GET /.git/objects/84/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:59] "GET /.git/objects/84/82de94c4c394405580d7de418d6834dd960252 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:36:59] "GET /.git/objects/9f/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:00] "GET /.git/objects/9f/db910738d3235bb46263903e2968e0154b6aa4 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:00] "GET /.git/objects/e9/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:01] "GET /.git/objects/e9/5c638ccfdcfeef309c9912cf8dc9f4b5320c6f HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:02] "GET /.git/objects/65/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:02] "GET /.git/objects/65/0f37951947b438e9c148921038a6a37cc49f6a HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:03] "GET /.git/objects/d7/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:03] "GET /.git/objects/d7/3a2047b2b13b9f6fbe9d0241f3ed755c231299 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:04] "GET /.git/objects/72/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:04] "GET /.git/objects/72/c2c8b104007bd00f289cbb996eac263ba601c5 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:05] "GET /.git/objects/c6/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:05] "GET /.git/objects/c6/fa82d54a794eb9d7556f9cd93e7676b7aa1054 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:06] "GET /.git/objects/b7/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:06] "GET /.git/objects/b7/c1caee3effc9c520c9a74a8599678d14cbf73b HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:07] "GET /.git/objects/aa/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:07] "GET /.git/objects/aa/e0596a3280487a7e0ea21d206f94cff7f69fba HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:08] "GET /.git/objects/74/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:09] "GET /.git/objects/74/f3056b205f8e699a04901b23333f563f353690 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:09] "GET /.git/objects/74/36263b28696bf8ef99cc92b2051c85ab1b0d09 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:09] "GET /.git/objects/71/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:10] "GET /.git/objects/71/5f03eacccf911ac3f5d22e84a281db1e471c3f HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:10] "GET /.git/objects/f2/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:11] "GET /.git/objects/f2/1dda7a3c71f87fc14ac2555cd2e36b7f873435 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:11] "GET /.git/objects/47/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:12] "GET /.git/objects/47/362da01914d8f7e2dd93281e18c6596c96f3b3 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:12] "GET /.git/objects/8b/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:13] "GET /.git/objects/8b/b73a0fe682f9d9e84441cb9186fd66bbce3db8 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:14] "GET /.git/objects/44/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:14] "GET /.git/objects/44/050a1b3d23410479ceeda20385177a75ac064c HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:15] "GET /.git/objects/4f/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:15] "GET /.git/objects/4f/17001601b158e723af89914a47e95754812554 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:16] "GET /.git/objects/ac/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:16] "GET /.git/objects/ac/5ccec38740264889f887f0f7208fe7bd39f220 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:17] "GET /.git/objects/9c/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:17] "GET /.git/objects/9c/707af3000d91b9374af57008f994acbf3a6a4e HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:18] "GET /.git/objects/12/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:18] "GET /.git/objects/12/e78d9880eb5188c39d2100953caed942a88dc5 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:19] "GET /.git/objects/e6/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:19] "GET /.git/objects/e6/f59685244a920731a171c70e52884d70a8bed5 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:20] "GET /.git/objects/0c/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:20] "GET /.git/objects/0c/109ea503b977ee80997973f4a01446766517ae HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:21] "GET /.git/objects/2a/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:22] "GET /.git/objects/2a/282c2be0a61576a81f56bb2f312e33229a46fc HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:22] "GET /.git/objects/info/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:23] "GET /.git/objects/31/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:23] "GET /.git/objects/31/17c85f36ae53dfc56ad999b303700f8650584f HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:24] "GET /.git/objects/4a/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:24] "GET /.git/objects/4a/db910d4e24fe92f2311caff26b4089f4651b75 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:25] "GET /.git/objects/19/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:25] "GET /.git/objects/19/4c5869ca57046c3594aa6b06505b139bd26d70 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:26] "GET /.git/objects/66/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:26] "GET /.git/objects/66/c4ba7108ac6660c20f0bc831a8bd3c3379e93c HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:27] "GET /.git/objects/ba/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:28] "GET /.git/objects/ba/9d56ddc3c7551bb6d8e6a43a135916d3078f6a HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:28] "GET /.git/objects/0e/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:29] "GET /.git/objects/0e/f39c7c8abb98182c48ca3a964d28cc993a5643 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:29] "GET /.git/objects/f7/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:30] "GET /.git/objects/f7/32939ddad9be927dab3e8dddc9bc4ba1b88ef8 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:30] "GET /.git/objects/5e/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:31] "GET /.git/objects/5e/4f285258b88e1e7d711d96c369f6c68b0b7f14 HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:32] "GET /.git/objects/0d/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:32] "GET /.git/objects/0d/fd4751a3df3fed6dcc596f406a2dd646a412cc HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:33] "GET /.git/refs/tags/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:33] "GET /.git/refs/heads/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:34] "GET /.git/refs/heads/main HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:34] "GET /.git/refs/remotes/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:35] "GET /.git/logs/refs/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:35] "GET /.git/refs/remotes/origin/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:36] "GET /.git/refs/remotes/origin/main HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:37] "GET /.git/logs/refs/heads/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:37] "GET /.git/logs/refs/heads/main HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:38] "GET /.git/logs/refs/remotes/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:38] "GET /.git/logs/refs/remotes/origin/ HTTP/1.1" 200 -
+113.196.59.51 - - [12/Aug/2026 03:37:39] "GET /.git/logs/refs/remotes/origin/main HTTP/1.1" 200 -
+45.148.10.125 - - [12/Aug/2026 03:38:24] code 400, message Bad request version ('À\\x13À')
+45.148.10.125 - - [12/Aug/2026 03:38:24] "\x16\x03\x01\x01\x0c\x01\x00\x01\x08\x03\x03Ñî%t,\x87\x19v\x98~¡¸ÈC¸±²Á\x1aOÒ\\\x99æógs³m¯\x1c© ¿\x87\x8e\x89ÏUè¿w\x08uBÐ\x0fßJgÂHæ±\x9f>'ÒÈ>\x98v¹I \x00&À+À/À,À0Ì©Ì¨À\x09À\x13À" 400 -
+45.148.10.125 - - [12/Aug/2026 03:38:24] "GET / HTTP/1.1" 200 -
+45.148.10.125 - - [12/Aug/2026 03:38:24] "GET / HTTP/1.1" 200 -
+45.148.10.125 - - [12/Aug/2026 03:38:24] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 03:38:24] "GET /.env.development HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 03:38:24] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 03:38:24] "GET /.env.old HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 03:38:24] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 03:38:24] "GET /.aws/credentials HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 03:38:24] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 03:38:24] "GET /api/.env HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 03:38:24] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 03:38:24] "GET /app/.env HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 03:38:24] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 03:38:24] "GET /backend/.env HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 03:38:24] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 03:38:24] "GET /actuator/env HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 03:38:24] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 03:38:24] "GET /.env.production HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 03:38:24] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 03:38:24] "GET /.env.staging HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 03:38:24] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 03:38:24] "GET /.env.prod HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 03:38:24] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 03:38:24] "GET /.env.bak HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 03:38:24] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 03:38:24] "GET /.git-credentials HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 03:38:24] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 03:38:24] "GET /.npmrc HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 03:38:25] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 03:38:25] "GET /phpinfo.php HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 03:38:25] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 03:38:25] "GET /.env HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 03:38:25] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 03:38:25] "GET /.env.local HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 03:38:25] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 03:38:25] "GET /.env.backup HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 03:38:25] "GET /.git/HEAD HTTP/1.1" 200 -
+45.148.10.125 - - [12/Aug/2026 03:38:25] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 03:38:25] "GET /appsettings.json HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 03:38:25] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 03:38:25] "GET /info.php HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 03:38:25] "GET /.git/config HTTP/1.1" 200 -
+45.148.10.125 - - [12/Aug/2026 03:38:25] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 03:38:25] "GET /terraform.tfstate HTTP/1.1" 404 -
+204.76.203.49 - - [12/Aug/2026 03:42:36] code 501, message Unsupported method ('CONNECT')
+204.76.203.49 - - [12/Aug/2026 03:42:36] "CONNECT api.i.pn:443 HTTP/1.1" 501 -
+204.76.203.49 - - [12/Aug/2026 03:42:41] code 400, message Bad request syntax ('\\x05\\x01\\x00')
+204.76.203.49 - - [12/Aug/2026 03:42:41] "\x05\x01\x00" 400 -
+121.185.29.235 - - [12/Aug/2026 03:45:58] code 400, message Bad request version ('\\x00\\x01\\x14Ì¨Ì©ÌªÀ,À0\\x00\\x9fÀ\\xadÀ\\x9fÀ$À(\\x00kÀ')
+121.185.29.235 - - [12/Aug/2026 03:45:58] "\x16\x03\x01\x01\x89\x01\x00\x01\x85\x03\x03j|jý\x18\x0fDVmâmw\x13íl\x03EÖù\x93»Ïá.y\x12\x15%\x18\x074\x85\x00\x01\x14Ì¨Ì©ÌªÀ,À0\x00\x9fÀ­À\x9fÀ$À(\x00kÀ" 400 -
+184.105.247.196 - - [12/Aug/2026 03:51:07] code 400, message Bad request version ('À\\x14À')
+184.105.247.196 - - [12/Aug/2026 03:51:07] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x04ï\x95Bò\x16\x81\x9e\x89<Á\x13!¬vØBd\x83Yb\x1eo13÷\x84Ñ,Fd÷\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" 400 -
+20.119.86.53 - - [12/Aug/2026 03:52:24] code 400, message Bad request syntax ('MGLNDD_65.21.185.212_8080')
+20.119.86.53 - - [12/Aug/2026 03:52:24] "MGLNDD_65.21.185.212_8080" 400 -
+5.61.209.92 - - [12/Aug/2026 04:13:07] code 404, message File not found
+5.61.209.92 - - [12/Aug/2026 04:13:07] "GET /SDK/webLanguage HTTP/1.1" 404 -
+5.61.209.44 - - [12/Aug/2026 04:16:11] code 404, message File not found
+5.61.209.44 - - [12/Aug/2026 04:16:11] "GET /SDK/webLanguage HTTP/1.1" 404 -
+20.65.194.88 - - [12/Aug/2026 04:17:25] code 404, message File not found
+20.65.194.88 - - [12/Aug/2026 04:17:25] "GET /hudson HTTP/1.1" 404 -
+94.154.43.99 - - [12/Aug/2026 04:35:22] code 404, message File not found
+94.154.43.99 - - [12/Aug/2026 04:35:22] "GET /login HTTP/1.1" 404 -
+45.205.1.246 - - [12/Aug/2026 04:46:56] "GET / HTTP/1.1" 200 -
+45.205.1.246 - - [12/Aug/2026 04:46:56] code 404, message File not found
+45.205.1.246 - - [12/Aug/2026 04:46:56] "GET /favicon.ico HTTP/1.1" 404 -
+204.16.172.106 - - [12/Aug/2026 05:03:43] "HEAD /image-slot.js HTTP/1.1" 200 -
+204.16.172.106 - - [12/Aug/2026 05:03:43] "HEAD /support.js HTTP/1.1" 200 -
+50.31.235.131 - - [12/Aug/2026 05:03:43] "GET /support.js HTTP/1.1" 200 -
+50.31.235.131 - - [12/Aug/2026 05:03:43] "GET /image-slot.js HTTP/1.1" 200 -
+172.105.82.111 - - [12/Aug/2026 05:04:37] "GET / HTTP/1.1" 200 -
+45.194.67.26 - - [12/Aug/2026 05:34:11] "GET / HTTP/1.1" 200 -
+45.194.67.26 - - [12/Aug/2026 05:34:12] code 404, message File not found
+45.194.67.26 - - [12/Aug/2026 05:34:12] "GET /favicon.ico HTTP/1.1" 404 -
+5.61.209.44 - - [12/Aug/2026 05:34:53] code 404, message File not found
+5.61.209.44 - - [12/Aug/2026 05:34:53] "GET /SDK/webLanguage HTTP/1.1" 404 -
+80.94.95.83 - - [12/Aug/2026 05:39:37] code 400, message Bad HTTP/0.9 request type ('\\x03\\x00\\x00/*à\\x00\\x00\\x00\\x00\\x00Cookie:')
+80.94.95.83 - - [12/Aug/2026 05:39:37] "\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr" 400 -
+94.154.43.70 - - [12/Aug/2026 05:43:49] code 404, message File not found
+94.154.43.70 - - [12/Aug/2026 05:43:49] "GET /login HTTP/1.1" 404 -
+94.154.43.99 - - [12/Aug/2026 06:17:04] code 404, message File not found
+94.154.43.99 - - [12/Aug/2026 06:17:04] "GET /login HTTP/1.1" 404 -
+113.196.56.150 - - [12/Aug/2026 06:25:52] "GET / HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:53] "GET /Homepage.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:53] "GET /Clanek-Pelisek.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:53] "GET /Clanek-Sacky.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:53] "GET /Clanek-Klikr.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:53] "GET /Checklist.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:53] "GET /Clanek-Ohradka.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:53] "GET /Clanek-Misky.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:53] "GET /support.js HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:53] "GET /Clanek-Auto.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:53] "GET /Clanek-Kose.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:53] "GET /Clanek-Prepravka.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:53] "GET /Clanek-Pamlsky.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:53] "GET /Clanek-Vacek.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:53] "GET /server.log HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:53] "GET /Clanek-Pece.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:53] "GET /Clanek-Granule.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:53] "GET /Clanek-Misto.dc.html HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('113.196.56.150', 62192)
+Traceback (most recent call last):
+  File "/usr/lib/python3.14/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 1422, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 732, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 496, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 484, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 739, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 942, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/shutil.py", line 257, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+113.196.56.150 - - [12/Aug/2026 06:25:54] "GET /Clanek-Kabely.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:54] "GET /Clanek-Postroj.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:54] "GET /image-slot.js HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:54] "GET /Clanek-Rostliny.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:54] "GET /Clanek-Obojek.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:54] "GET /Clanek-Predmety.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:54] "GET /Clanek-Hracky.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:54] "GET /.git/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:55] "GET /.git/index HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:55] "GET /.git/config HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:55] "GET /.git/COMMIT_EDITMSG HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:55] "GET /.git/description HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:55] "GET /.git/HEAD HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:55] "GET /.git/objects/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:56] "GET /.git/logs/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:56] "GET /.git/logs/HEAD HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:57] "GET /.git/refs/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:58] "GET /.git/hooks/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:58] "GET /.git/hooks/pre-applypatch.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:58] "GET /.git/hooks/fsmonitor-watchman.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:58] "GET /.git/hooks/post-update.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:58] "GET /.git/hooks/push-to-checkout.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:58] "GET /.git/hooks/sendemail-validate.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:58] "GET /.git/hooks/commit-msg.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:58] "GET /.git/hooks/prepare-commit-msg.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:58] "GET /.git/hooks/pre-push.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:58] "GET /.git/hooks/applypatch-msg.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:58] "GET /.git/hooks/pre-merge-commit.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:58] "GET /.git/hooks/pre-rebase.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:58] "GET /.git/hooks/pre-receive.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:58] "GET /.git/hooks/update.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:58] "GET /.git/hooks/pre-commit.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:59] "GET /.git/info/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:25:59] "GET /.git/info/exclude HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:00] "GET /.git/objects/72/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:00] "GET /.git/objects/72/c2c8b104007bd00f289cbb996eac263ba601c5 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:01] "GET /.git/objects/84/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:01] "GET /.git/objects/84/82de94c4c394405580d7de418d6834dd960252 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:02] "GET /.git/objects/5e/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:02] "GET /.git/objects/5e/4f285258b88e1e7d711d96c369f6c68b0b7f14 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:03] "GET /.git/objects/74/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:04] "GET /.git/objects/74/f3056b205f8e699a04901b23333f563f353690 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:04] "GET /.git/objects/74/36263b28696bf8ef99cc92b2051c85ab1b0d09 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:04] "GET /.git/objects/e6/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:05] "GET /.git/objects/e6/f59685244a920731a171c70e52884d70a8bed5 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:05] "GET /.git/objects/44/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:06] "GET /.git/objects/44/050a1b3d23410479ceeda20385177a75ac064c HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:06] "GET /.git/objects/d7/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:07] "GET /.git/objects/d7/3a2047b2b13b9f6fbe9d0241f3ed755c231299 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:07] "GET /.git/objects/19/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:08] "GET /.git/objects/19/4c5869ca57046c3594aa6b06505b139bd26d70 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:08] "GET /.git/objects/ac/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:09] "GET /.git/objects/ac/5ccec38740264889f887f0f7208fe7bd39f220 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:10] "GET /.git/objects/0d/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:10] "GET /.git/objects/0d/fd4751a3df3fed6dcc596f406a2dd646a412cc HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:11] "GET /.git/objects/aa/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:11] "GET /.git/objects/aa/e0596a3280487a7e0ea21d206f94cff7f69fba HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:12] "GET /.git/objects/c6/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:12] "GET /.git/objects/c6/fa82d54a794eb9d7556f9cd93e7676b7aa1054 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:13] "GET /.git/objects/36/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:13] "GET /.git/objects/36/0e1354c76755a467b57a6a904bddcccd07958c HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:14] "GET /.git/objects/4f/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:14] "GET /.git/objects/4f/17001601b158e723af89914a47e95754812554 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:15] "GET /.git/objects/8b/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:15] "GET /.git/objects/8b/b73a0fe682f9d9e84441cb9186fd66bbce3db8 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:16] "GET /.git/objects/47/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:16] "GET /.git/objects/47/362da01914d8f7e2dd93281e18c6596c96f3b3 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:17] "GET /.git/objects/e9/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:18] "GET /.git/objects/e9/5c638ccfdcfeef309c9912cf8dc9f4b5320c6f HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:18] "GET /.git/objects/40/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:19] "GET /.git/objects/40/a4d9a91987291fa21074503dd49e35501e67f4 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:19] "GET /.git/objects/0c/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:20] "GET /.git/objects/0c/109ea503b977ee80997973f4a01446766517ae HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:20] "GET /.git/objects/ba/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:21] "GET /.git/objects/ba/9d56ddc3c7551bb6d8e6a43a135916d3078f6a HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:21] "GET /.git/objects/2a/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:22] "GET /.git/objects/2a/282c2be0a61576a81f56bb2f312e33229a46fc HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:23] "GET /.git/objects/f2/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:23] "GET /.git/objects/f2/1dda7a3c71f87fc14ac2555cd2e36b7f873435 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:24] "GET /.git/objects/info/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:24] "GET /.git/objects/65/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:25] "GET /.git/objects/65/0f37951947b438e9c148921038a6a37cc49f6a HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:25] "GET /.git/objects/1b/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:26] "GET /.git/objects/1b/bf8f108a4cefa91e173678c6c428bae1995cb3 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:26] "GET /.git/objects/pack/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:27] "GET /.git/objects/9f/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:27] "GET /.git/objects/9f/db910738d3235bb46263903e2968e0154b6aa4 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:28] "GET /.git/objects/9c/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:28] "GET /.git/objects/9c/707af3000d91b9374af57008f994acbf3a6a4e HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:29] "GET /.git/objects/0e/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:30] "GET /.git/objects/0e/f39c7c8abb98182c48ca3a964d28cc993a5643 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:30] "GET /.git/objects/f7/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:31] "GET /.git/objects/f7/32939ddad9be927dab3e8dddc9bc4ba1b88ef8 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:31] "GET /.git/objects/12/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:32] "GET /.git/objects/12/e78d9880eb5188c39d2100953caed942a88dc5 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:32] "GET /.git/objects/b7/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:33] "GET /.git/objects/b7/c1caee3effc9c520c9a74a8599678d14cbf73b HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:33] "GET /.git/objects/71/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:34] "GET /.git/objects/71/5f03eacccf911ac3f5d22e84a281db1e471c3f HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:34] "GET /.git/objects/66/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:35] "GET /.git/objects/66/c4ba7108ac6660c20f0bc831a8bd3c3379e93c HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:36] "GET /.git/objects/0b/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:36] "GET /.git/objects/0b/d375430ed70613e638a7c66220feee4b882322 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:37] "GET /.git/objects/31/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:37] "GET /.git/objects/31/17c85f36ae53dfc56ad999b303700f8650584f HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:38] "GET /.git/objects/4a/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:38] "GET /.git/objects/4a/db910d4e24fe92f2311caff26b4089f4651b75 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:39] "GET /.git/logs/refs/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:39] "GET /.git/refs/remotes/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:40] "GET /.git/refs/tags/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:41] "GET /.git/refs/heads/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:41] "GET /.git/refs/heads/main HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:42] "GET /.git/logs/refs/heads/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:42] "GET /.git/logs/refs/heads/main HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:43] "GET /.git/logs/refs/remotes/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:43] "GET /.git/refs/remotes/origin/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:44] "GET /.git/refs/remotes/origin/main HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:44] "GET /.git/logs/refs/remotes/origin/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 06:26:45] "GET /.git/logs/refs/remotes/origin/main HTTP/1.1" 200 -
+45.205.1.244 - - [12/Aug/2026 06:55:17] "GET / HTTP/1.1" 200 -
+45.205.1.244 - - [12/Aug/2026 06:55:17] code 404, message File not found
+45.205.1.244 - - [12/Aug/2026 06:55:17] "GET /favicon.ico HTTP/1.1" 404 -
+64.89.163.22 - - [12/Aug/2026 06:55:59] "GET / HTTP/1.1" 200 -
+204.76.203.30 - - [12/Aug/2026 07:23:01] code 404, message File not found
+204.76.203.30 - - [12/Aug/2026 07:23:01] "GET http://ip-api.com/json/ HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:25] "GET / HTTP/1.1" 200 -
+80.96.59.214 - - [12/Aug/2026 07:23:26] "GET /.git/HEAD HTTP/1.1" 200 -
+80.96.59.214 - - [12/Aug/2026 07:23:26] "GET /.git/refs/heads/main HTTP/1.1" 200 -
+80.96.59.214 - - [12/Aug/2026 07:23:26] "GET /.git/objects/8b/b73a0fe682f9d9e84441cb9186fd66bbce3db8 HTTP/1.1" 200 -
+80.96.59.214 - - [12/Aug/2026 07:23:26] "GET /.git/index HTTP/1.1" 200 -
+80.96.59.214 - - [12/Aug/2026 07:23:26] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:26] "GET /.env HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:26] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:26] "GET /.env.local HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:26] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:26] "GET /.env.production HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:26] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:26] "GET /.env.development HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:26] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:26] "GET /.env.example HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:26] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:26] "GET /.env.staging HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:27] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:27] "GET /.env.test HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:27] "GET /.git/config HTTP/1.1" 200 -
+80.96.59.214 - - [12/Aug/2026 07:23:27] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:27] "GET /.git-credentials HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:27] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:27] "GET /config/app.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:27] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:27] "GET /config/database.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:27] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:27] "GET /config/services.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:27] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:27] "GET /config/auth.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:27] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:27] "GET /config/broadcasting.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:27] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:27] "GET /config/mail.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:27] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:27] "GET /config/session.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:28] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:28] "GET /config/cache.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:28] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:28] "GET /config/filesystems.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:28] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:28] "GET /config/hashing.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:28] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:28] "GET /config/logging.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:28] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:28] "GET /config/queue.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:28] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:28] "GET /config/view.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:28] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:28] "GET /wp-config.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:28] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:28] "GET /wp-content/debug.log HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:28] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:28] "GET /configuration.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:28] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:28] "GET /config.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:29] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:29] "GET /db.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:29] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:29] "GET /database.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:29] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:29] "GET /settings.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:29] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:29] "GET /config/db.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:29] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:29] "GET /config/config.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:29] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:29] "GET /api/db.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:29] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:29] "GET /api/config.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:29] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:29] "GET /api/database.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:29] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:29] "GET /includes/config.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:29] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:29] "GET /includes/db.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:30] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:30] "GET /includes/database.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:30] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:30] "GET /admin/config.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:30] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:30] "GET /admin/db.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:30] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:30] "GET /admin/database.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:30] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:30] "GET /package.json HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:30] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:30] "GET /composer.json HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:30] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:30] "GET /yarn.lock HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:31] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:31] "GET /pnpm-lock.yaml HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:31] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:31] "GET /.npmrc HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:31] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:31] "GET /.yarnrc HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:31] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:31] "GET /docker-compose.yml HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:31] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:31] "GET /Dockerfile HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:31] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:31] "GET /docker-compose.yaml HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:31] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:31] "GET /.docker/config.json HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:31] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:31] "GET /.kube/config HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:31] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:31] "GET /kubeconfig HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:31] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:31] "GET /.aws/credentials HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:32] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:32] "GET /.aws/config HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:32] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:32] "GET /.my.cnf HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:32] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:32] "GET /.pgpass HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:32] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:32] "GET /.mongorc.js HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:32] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:32] "GET /.ssh/config HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:32] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:32] "GET /.ssh/id_rsa HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:32] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:32] "GET /.ssh/id_ed25519 HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:32] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:32] "GET /.ssh/authorized_keys HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:32] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:32] "GET /.accesshash HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:33] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:33] "GET /.bash_history HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:33] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:33] "GET /.zsh_history HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:33] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:33] "GET /.mysql_history HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:33] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:33] "GET /.psql_history HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:33] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:33] "GET /.node_history HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:33] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:33] "GET /.gitignore HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:33] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:33] "GET /.htaccess HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:33] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:33] "GET /.htpasswd HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:33] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:33] "GET /.s3cfg HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:33] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:33] "GET /.netrc HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:34] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:34] "GET /credentials.json HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:34] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:34] "GET /service-account.json HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:34] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:34] "GET /key.json HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:34] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:34] "GET /filezilla.xml HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:34] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:34] "GET /sftp.json HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:34] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:34] "GET /robots.txt HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:34] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:34] "GET /sitemap.xml HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:34] "GET /.git/config HTTP/1.1" 200 -
+80.96.59.214 - - [12/Aug/2026 07:23:34] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:34] "GET /config/app.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:35] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:35] "GET /config/database.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:35] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:35] "GET /config/services.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:35] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:35] "GET /config/auth.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:35] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:35] "GET /config/mail.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:35] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:35] "GET /config/session.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:35] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:35] "GET /config/broadcasting.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:35] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:35] "GET /wp-config.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:35] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:35] "GET /configuration.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:35] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:35] "GET /config.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:36] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:36] "GET /db.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:36] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:36] "GET /database.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:36] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:36] "GET /settings.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:36] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:36] "GET /config/db.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:36] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:36] "GET /config/config.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:36] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:36] "GET /api/db.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:36] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:36] "GET /api/config.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:36] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:36] "GET /api/database.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:36] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:36] "GET /includes/config.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:37] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:37] "GET /includes/db.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:37] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:37] "GET /includes/database.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:37] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:37] "GET /admin/config.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:37] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:37] "GET /admin/db.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:37] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:37] "GET /admin/database.php HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:37] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:37] "GET /docker-compose.yml HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:37] code 404, message File not found
+80.96.59.214 - - [12/Aug/2026 07:23:37] "GET /docker-compose.yaml HTTP/1.1" 404 -
+80.96.59.214 - - [12/Aug/2026 07:23:37] "GET / HTTP/1.1" 200 -
+93.123.109.234 - - [12/Aug/2026 07:28:42] code 400, message Bad request version ('ÎÕ¤\\x8e\\x9c=Xýù\\x07\\\\\\x1be\\x1a\\x98~«\\x94+ðê\\x05Ë|r\\x82\\x80')
+93.123.109.234 - - [12/Aug/2026 07:28:42] "\x16\x03\x01\x01\x0c\x01\x00\x01\x08\x03\x03Ò\x1e@\x85ÎÕ¤\x8e\x9c=Xýù\x07\\\x1be\x1a\x98~«\x94+ðê\x05Ë|r\x82\x80" 400 -
+93.123.109.234 - - [12/Aug/2026 07:28:42] "GET / HTTP/1.1" 200 -
+93.123.109.234 - - [12/Aug/2026 07:28:42] "GET / HTTP/1.1" 200 -
+93.123.109.234 - - [12/Aug/2026 07:28:42] "GET /.git/HEAD HTTP/1.1" 200 -
+93.123.109.234 - - [12/Aug/2026 07:28:42] code 404, message File not found
+93.123.109.234 - - [12/Aug/2026 07:28:42] "GET /api/.env HTTP/1.1" 404 -
+93.123.109.234 - - [12/Aug/2026 07:28:42] code 404, message File not found
+93.123.109.234 - - [12/Aug/2026 07:28:42] "GET /.env.bak HTTP/1.1" 404 -
+93.123.109.234 - - [12/Aug/2026 07:28:42] code 404, message File not found
+93.123.109.234 - - [12/Aug/2026 07:28:42] "GET /.npmrc HTTP/1.1" 404 -
+93.123.109.234 - - [12/Aug/2026 07:28:42] code 404, message File not found
+93.123.109.234 - - [12/Aug/2026 07:28:42] "GET /backend/.env HTTP/1.1" 404 -
+93.123.109.234 - - [12/Aug/2026 07:28:42] code 404, message File not found
+93.123.109.234 - - [12/Aug/2026 07:28:42] "GET /appsettings.json HTTP/1.1" 404 -
+93.123.109.234 - - [12/Aug/2026 07:28:42] code 404, message File not found
+93.123.109.234 - - [12/Aug/2026 07:28:42] "GET /terraform.tfstate HTTP/1.1" 404 -
+93.123.109.234 - - [12/Aug/2026 07:28:42] code 404, message File not found
+93.123.109.234 - - [12/Aug/2026 07:28:42] "GET /info.php HTTP/1.1" 404 -
+93.123.109.234 - - [12/Aug/2026 07:28:42] code 404, message File not found
+93.123.109.234 - - [12/Aug/2026 07:28:42] "GET /.env.production HTTP/1.1" 404 -
+93.123.109.234 - - [12/Aug/2026 07:28:42] code 404, message File not found
+93.123.109.234 - - [12/Aug/2026 07:28:42] "GET /.env.staging HTTP/1.1" 404 -
+93.123.109.234 - - [12/Aug/2026 07:28:43] code 404, message File not found
+93.123.109.234 - - [12/Aug/2026 07:28:43] "GET /.env.backup HTTP/1.1" 404 -
+93.123.109.234 - - [12/Aug/2026 07:28:43] "GET /.git/config HTTP/1.1" 200 -
+93.123.109.234 - - [12/Aug/2026 07:28:43] code 404, message File not found
+93.123.109.234 - - [12/Aug/2026 07:28:43] "GET /app/.env HTTP/1.1" 404 -
+93.123.109.234 - - [12/Aug/2026 07:28:43] code 404, message File not found
+93.123.109.234 - - [12/Aug/2026 07:28:43] "GET /phpinfo.php HTTP/1.1" 404 -
+93.123.109.234 - - [12/Aug/2026 07:28:43] code 404, message File not found
+93.123.109.234 - - [12/Aug/2026 07:28:43] "GET /.env.local HTTP/1.1" 404 -
+93.123.109.234 - - [12/Aug/2026 07:28:43] code 404, message File not found
+93.123.109.234 - - [12/Aug/2026 07:28:43] "GET /.env.prod HTTP/1.1" 404 -
+93.123.109.234 - - [12/Aug/2026 07:28:43] code 404, message File not found
+93.123.109.234 - - [12/Aug/2026 07:28:43] "GET /.env.old HTTP/1.1" 404 -
+93.123.109.234 - - [12/Aug/2026 07:28:43] code 404, message File not found
+93.123.109.234 - - [12/Aug/2026 07:28:43] "GET /.aws/credentials HTTP/1.1" 404 -
+93.123.109.234 - - [12/Aug/2026 07:28:43] code 404, message File not found
+93.123.109.234 - - [12/Aug/2026 07:28:43] "GET /actuator/env HTTP/1.1" 404 -
+93.123.109.234 - - [12/Aug/2026 07:28:43] code 404, message File not found
+93.123.109.234 - - [12/Aug/2026 07:28:43] "GET /.env HTTP/1.1" 404 -
+93.123.109.234 - - [12/Aug/2026 07:28:43] code 404, message File not found
+93.123.109.234 - - [12/Aug/2026 07:28:43] "GET /.env.development HTTP/1.1" 404 -
+93.123.109.234 - - [12/Aug/2026 07:28:43] code 404, message File not found
+93.123.109.234 - - [12/Aug/2026 07:28:43] "GET /.git-credentials HTTP/1.1" 404 -
+113.124.46.43 - - [12/Aug/2026 07:29:22] "GET / HTTP/1.1" 200 -
+113.124.46.43 - - [12/Aug/2026 08:12:28] "GET / HTTP/1.1" 200 -
+45.198.224.26 - - [12/Aug/2026 08:16:09] code 501, message Unsupported method ('POST')
+45.198.224.26 - - [12/Aug/2026 08:16:09] "POST /goform/set_LimitClient_cfg HTTP/1.1" 501 -
+204.76.203.30 - - [12/Aug/2026 09:07:35] code 404, message File not found
+204.76.203.30 - - [12/Aug/2026 09:07:35] "GET http://ip-api.com/json/ HTTP/1.1" 404 -
+113.124.46.43 - - [12/Aug/2026 09:16:00] "GET / HTTP/1.1" 200 -
+113.124.46.43 - - [12/Aug/2026 09:16:00] "GET /.git/ HTTP/1.1" 200 -
+176.65.139.236 - - [12/Aug/2026 09:20:31] code 404, message File not found
+176.65.139.236 - - [12/Aug/2026 09:20:31] "GET /login HTTP/1.1" 404 -
+144.91.90.12 - - [12/Aug/2026 09:34:15] code 400, message Bad request version ('À\\x14À')
+144.91.90.12 - - [12/Aug/2026 09:34:15] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03bM¿F\x89dR©÷á\x05þ¸8Õ\x93mèN'þ\x05ð¿k³\x1c\x05\x80k\\\x0d aü\x13ÅÎ\x8cÆ\\FVÇ5{IJ¨\x02Èöç@ø²ãý¢\x8a%\x14Ù28\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" 400 -
+121.170.6.75 - - [12/Aug/2026 09:48:12] "GET / HTTP/1.0" 200 -
+204.76.203.73 - - [12/Aug/2026 09:55:13] code 501, message Unsupported method ('CONNECT')
+204.76.203.73 - - [12/Aug/2026 09:55:13] "CONNECT proxy4.proxiesfood.com:443 HTTP/1.1" 501 -
+----------------------------------------
+Exception occurred during processing of request from ('204.76.203.224', 21678)
+Traceback (most recent call last):
+  File "/usr/lib/python3.14/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 1422, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 732, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 496, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 464, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.14/socket.py", line 725, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('204.76.203.224', 58404)
+Traceback (most recent call last):
+  File "/usr/lib/python3.14/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 1422, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 732, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 496, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 464, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.14/socket.py", line 725, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('204.76.203.226', 34528)
+Traceback (most recent call last):
+  File "/usr/lib/python3.14/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 1422, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 732, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 496, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 464, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.14/socket.py", line 725, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+94.154.43.99 - - [12/Aug/2026 11:18:52] code 404, message File not found
+94.154.43.99 - - [12/Aug/2026 11:18:52] "GET /login HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 11:29:19] code 400, message Bad HTTP/0.9 request type ('\\x16\\x03\\x01\\x01')
+45.148.10.125 - - [12/Aug/2026 11:29:19] "\x16\x03\x01\x01\x0c\x01\x00\x01\x08\x03\x03\x8bX\x02Æ\x05ÿ<\x86" 400 -
+45.148.10.125 - - [12/Aug/2026 11:29:19] "GET / HTTP/1.1" 200 -
+45.148.10.125 - - [12/Aug/2026 11:29:19] "GET / HTTP/1.1" 200 -
+45.148.10.125 - - [12/Aug/2026 11:29:19] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 11:29:19] "GET /api/.env HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 11:29:19] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 11:29:19] "GET /.env HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 11:29:19] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 11:29:19] "GET /.git-credentials HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 11:29:19] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 11:29:19] "GET /backend/.env HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 11:29:19] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 11:29:19] "GET /terraform.tfstate HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 11:29:19] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 11:29:19] "GET /.env.bak HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 11:29:19] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 11:29:19] "GET /.npmrc HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 11:29:19] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 11:29:19] "GET /app/.env HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 11:29:19] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 11:29:19] "GET /info.php HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 11:29:19] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 11:29:19] "GET /.env.development HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 11:29:19] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 11:29:19] "GET /.env.prod HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 11:29:19] "GET /.git/config HTTP/1.1" 200 -
+45.148.10.125 - - [12/Aug/2026 11:29:20] "GET /.git/HEAD HTTP/1.1" 200 -
+45.148.10.125 - - [12/Aug/2026 11:29:20] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 11:29:20] "GET /.aws/credentials HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 11:29:20] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 11:29:20] "GET /actuator/env HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 11:29:20] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 11:29:20] "GET /appsettings.json HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 11:29:20] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 11:29:20] "GET /phpinfo.php HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 11:29:20] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 11:29:20] "GET /.env.local HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 11:29:20] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 11:29:20] "GET /.env.production HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 11:29:20] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 11:29:20] "GET /.env.staging HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 11:29:20] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 11:29:20] "GET /.env.old HTTP/1.1" 404 -
+45.148.10.125 - - [12/Aug/2026 11:29:20] code 404, message File not found
+45.148.10.125 - - [12/Aug/2026 11:29:20] "GET /.env.backup HTTP/1.1" 404 -
+192.53.121.228 - - [12/Aug/2026 11:38:46] code 400, message Bad request version ('À\\x14À')
+192.53.121.228 - - [12/Aug/2026 11:38:46] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03s\x802ëÈ\x09Ô`Y\x86¾`T\x0f#rSfpuÝ·\x80P\x1cm´èâ\x02\x04i\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" 400 -
+192.53.121.228 - - [12/Aug/2026 11:38:46] code 400, message Bad request version ('À\\x14À')
+192.53.121.228 - - [12/Aug/2026 11:38:46] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x96Ô{\x0c¨OaÜ\x05\x8f\x99\x91'.\x03\x18@\x97[yÊ×,[äÐ¡ö/y\x834\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" 400 -
+192.53.121.228 - - [12/Aug/2026 11:38:46] "GET / HTTP/1.1" 200 -
+192.53.121.228 - - [12/Aug/2026 11:38:46] code 404, message File not found
+192.53.121.228 - - [12/Aug/2026 11:38:46] "GET /download/powershell/ HTTP/1.1" 404 -
+192.53.121.228 - - [12/Aug/2026 11:38:47] code 404, message File not found
+192.53.121.228 - - [12/Aug/2026 11:38:47] "GET /get.php HTTP/1.1" 404 -
+113.196.56.150 - - [12/Aug/2026 12:17:24] "GET / HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /Clanek-Auto.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /Clanek-Rostliny.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /Clanek-Granule.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /Clanek-Misto.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /Clanek-Klikr.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /Clanek-Misky.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /Clanek-Pamlsky.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /Homepage.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /Clanek-Postroj.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /Clanek-Ohradka.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /Clanek-Pece.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /server.log HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /Checklist.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /Clanek-Kabely.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /image-slot.js HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /support.js HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /Clanek-Prepravka.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /Clanek-Obojek.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /Clanek-Sacky.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /Clanek-Vacek.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /Clanek-Hracky.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /Clanek-Pelisek.dc.html HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('113.196.56.150', 54085)
+Traceback (most recent call last):
+  File "/usr/lib/python3.14/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 1422, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 732, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 496, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 484, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 739, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/server.py", line 942, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/shutil.py", line 257, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+113.196.56.150 - - [12/Aug/2026 12:17:25] "GET /Clanek-Predmety.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:36] "GET /Clanek-Kose.dc.html HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:37] "GET /.git/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:37] "GET /.git/HEAD HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:37] "GET /.git/index HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:37] "GET /.git/description HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:37] "GET /.git/COMMIT_EDITMSG HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:37] "GET /.git/config HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:38] "GET /.git/objects/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:38] "GET /.git/logs/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:39] "GET /.git/logs/HEAD HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:39] "GET /.git/info/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:40] "GET /.git/info/exclude HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:40] "GET /.git/hooks/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:41] "GET /.git/hooks/commit-msg.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:41] "GET /.git/hooks/pre-merge-commit.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:41] "GET /.git/hooks/pre-push.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:41] "GET /.git/hooks/pre-rebase.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:41] "GET /.git/hooks/prepare-commit-msg.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:41] "GET /.git/hooks/pre-commit.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:41] "GET /.git/hooks/pre-applypatch.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:41] "GET /.git/hooks/update.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:41] "GET /.git/hooks/fsmonitor-watchman.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:41] "GET /.git/hooks/applypatch-msg.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:41] "GET /.git/hooks/pre-receive.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:41] "GET /.git/hooks/sendemail-validate.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:41] "GET /.git/hooks/push-to-checkout.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:41] "GET /.git/hooks/post-update.sample HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:42] "GET /.git/refs/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:42] "GET /.git/objects/0c/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:43] "GET /.git/objects/0c/109ea503b977ee80997973f4a01446766517ae HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:43] "GET /.git/objects/ba/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:44] "GET /.git/objects/ba/9d56ddc3c7551bb6d8e6a43a135916d3078f6a HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:44] "GET /.git/objects/31/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:45] "GET /.git/objects/31/17c85f36ae53dfc56ad999b303700f8650584f HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:45] "GET /.git/objects/0e/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:46] "GET /.git/objects/0e/f39c7c8abb98182c48ca3a964d28cc993a5643 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:46] "GET /.git/objects/b7/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:47] "GET /.git/objects/b7/c1caee3effc9c520c9a74a8599678d14cbf73b HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:48] "GET /.git/objects/65/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:48] "GET /.git/objects/65/0f37951947b438e9c148921038a6a37cc49f6a HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:49] "GET /.git/objects/74/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:49] "GET /.git/objects/74/f3056b205f8e699a04901b23333f563f353690 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:49] "GET /.git/objects/74/36263b28696bf8ef99cc92b2051c85ab1b0d09 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:50] "GET /.git/objects/1b/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:50] "GET /.git/objects/1b/bf8f108a4cefa91e173678c6c428bae1995cb3 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:51] "GET /.git/objects/f7/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:51] "GET /.git/objects/f7/32939ddad9be927dab3e8dddc9bc4ba1b88ef8 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:52] "GET /.git/objects/4a/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:52] "GET /.git/objects/4a/db910d4e24fe92f2311caff26b4089f4651b75 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:53] "GET /.git/objects/aa/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:53] "GET /.git/objects/aa/e0596a3280487a7e0ea21d206f94cff7f69fba HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:54] "GET /.git/objects/d7/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:55] "GET /.git/objects/d7/3a2047b2b13b9f6fbe9d0241f3ed755c231299 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:55] "GET /.git/objects/66/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:56] "GET /.git/objects/66/c4ba7108ac6660c20f0bc831a8bd3c3379e93c HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:56] "GET /.git/objects/ac/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:57] "GET /.git/objects/ac/5ccec38740264889f887f0f7208fe7bd39f220 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:57] "GET /.git/objects/9c/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:58] "GET /.git/objects/9c/707af3000d91b9374af57008f994acbf3a6a4e HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:59] "GET /.git/objects/pack/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:17:59] "GET /.git/objects/2a/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:00] "GET /.git/objects/2a/282c2be0a61576a81f56bb2f312e33229a46fc HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:00] "GET /.git/objects/0d/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:01] "GET /.git/objects/0d/fd4751a3df3fed6dcc596f406a2dd646a412cc HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:01] "GET /.git/objects/12/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:02] "GET /.git/objects/12/e78d9880eb5188c39d2100953caed942a88dc5 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:02] "GET /.git/objects/47/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:03] "GET /.git/objects/47/362da01914d8f7e2dd93281e18c6596c96f3b3 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:03] "GET /.git/objects/8b/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:04] "GET /.git/objects/8b/b73a0fe682f9d9e84441cb9186fd66bbce3db8 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:05] "GET /.git/objects/4f/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:05] "GET /.git/objects/4f/17001601b158e723af89914a47e95754812554 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:06] "GET /.git/objects/0b/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:06] "GET /.git/objects/0b/d375430ed70613e638a7c66220feee4b882322 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:07] "GET /.git/objects/f2/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:07] "GET /.git/objects/f2/1dda7a3c71f87fc14ac2555cd2e36b7f873435 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:08] "GET /.git/objects/e6/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:08] "GET /.git/objects/e6/f59685244a920731a171c70e52884d70a8bed5 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:09] "GET /.git/objects/84/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:09] "GET /.git/objects/84/82de94c4c394405580d7de418d6834dd960252 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:10] "GET /.git/objects/info/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:10] "GET /.git/objects/e9/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:11] "GET /.git/objects/e9/5c638ccfdcfeef309c9912cf8dc9f4b5320c6f HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:12] "GET /.git/objects/19/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:12] "GET /.git/objects/19/4c5869ca57046c3594aa6b06505b139bd26d70 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:13] "GET /.git/objects/5e/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:13] "GET /.git/objects/5e/4f285258b88e1e7d711d96c369f6c68b0b7f14 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:14] "GET /.git/objects/44/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:14] "GET /.git/objects/44/050a1b3d23410479ceeda20385177a75ac064c HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:15] "GET /.git/objects/36/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:15] "GET /.git/objects/36/0e1354c76755a467b57a6a904bddcccd07958c HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:16] "GET /.git/objects/40/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:16] "GET /.git/objects/40/a4d9a91987291fa21074503dd49e35501e67f4 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:17] "GET /.git/objects/71/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:17] "GET /.git/objects/71/5f03eacccf911ac3f5d22e84a281db1e471c3f HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:18] "GET /.git/objects/72/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:19] "GET /.git/objects/72/c2c8b104007bd00f289cbb996eac263ba601c5 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:19] "GET /.git/objects/c6/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:20] "GET /.git/objects/c6/fa82d54a794eb9d7556f9cd93e7676b7aa1054 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:20] "GET /.git/objects/9f/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:21] "GET /.git/objects/9f/db910738d3235bb46263903e2968e0154b6aa4 HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:21] "GET /.git/logs/refs/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:22] "GET /.git/refs/heads/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:22] "GET /.git/refs/heads/main HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:23] "GET /.git/refs/remotes/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:24] "GET /.git/refs/tags/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:24] "GET /.git/logs/refs/heads/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:25] "GET /.git/logs/refs/heads/main HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:25] "GET /.git/logs/refs/remotes/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:26] "GET /.git/refs/remotes/origin/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:26] "GET /.git/refs/remotes/origin/main HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:27] "GET /.git/logs/refs/remotes/origin/ HTTP/1.1" 200 -
+113.196.56.150 - - [12/Aug/2026 12:18:28] "GET /.git/logs/refs/remotes/origin/main HTTP/1.1" 200 -
+45.205.1.247 - - [12/Aug/2026 12:19:31] "GET / HTTP/1.1" 200 -
+45.205.1.247 - - [12/Aug/2026 12:19:32] code 404, message File not found
+45.205.1.247 - - [12/Aug/2026 12:19:32] "GET /favicon.ico HTTP/1.1" 404 -
+185.226.92.110 - - [12/Aug/2026 12:25:43] code 404, message File not found
+185.226.92.110 - - [12/Aug/2026 12:25:43] "GET /login HTTP/1.1" 404 -
+62.60.130.193 - - [12/Aug/2026 12:42:37] "GET / HTTP/1.1" 200 -
+91.231.89.175 - - [12/Aug/2026 12:44:45] code 400, message Bad request version ('À#À¬À®À+À')
+91.231.89.175 - - [12/Aug/2026 12:44:45] "\x16\x03\x03\x02b\x01\x00\x02^\x03\x03N\x84ÚÂÝi³©Z\x8a\x1aR\x18>ô·±®øáÏ«åÐ\x07?gî1/l« \x0dì\x93ÐiÕQ:>ë\x93¢\x14ð´©9=ñó3p\x0f¾¡5\x0e9bë$\x01\x00\x8a\x00\x16\x003\x00gÀ\x9eÀ¢\x00\x9e\x009\x00kÀ\x9fÀ£\x00\x9f\x00E\x00¾\x00\x88\x00Ä\x00\x9aÀ\x08À\x09À#À¬À®À+À" 400 -
+91.231.89.174 - - [12/Aug/2026 12:44:49] "GET / HTTP/1.1" 200 -
+91.196.152.43 - - [12/Aug/2026 12:47:22] code 404, message File not found
+91.196.152.43 - - [12/Aug/2026 12:47:22] "GET /favicon.ico HTTP/1.1" 404 -
+52.180.137.77 - - [12/Aug/2026 13:00:04] code 404, message File not found
+52.180.137.77 - - [12/Aug/2026 13:00:04] "GET /actuator/health HTTP/1.1" 404 -
+47.251.29.173 - - [12/Aug/2026 13:31:58] code 400, message Bad request version ('À\\x13À')
+47.251.29.173 - - [12/Aug/2026 13:31:58] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03I\x06²ù¼\x99iÀYûøºe-\x83Ud]\x0e\x8d·b8´gÆÝ9dZ8f gÁ\x81i³öòË°©\x19NÖ½\x95g|püé<Z¡\x90T·é¥8'O;\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À" 400 -
+47.251.29.173 - - [12/Aug/2026 13:32:09] "GET / HTTP/1.1" 200 -
+47.251.29.173 - - [12/Aug/2026 13:32:09] "GET / HTTP/1.1" 200 -
+5.61.209.44 - - [12/Aug/2026 14:06:15] code 404, message File not found
+5.61.209.44 - - [12/Aug/2026 14:06:15] "GET /SDK/webLanguage HTTP/1.1" 404 -
+94.154.43.99 - - [12/Aug/2026 14:06:59] code 404, message File not found
+94.154.43.99 - - [12/Aug/2026 14:06:59] "GET /login HTTP/1.1" 404 -
+5.61.209.92 - - [12/Aug/2026 14:09:17] code 404, message File not found
+5.61.209.92 - - [12/Aug/2026 14:09:17] "GET /SDK/webLanguage HTTP/1.1" 404 -
+3.131.220.121 - - [12/Aug/2026 14:11:04] "GET / HTTP/1.1" 200 -
+3.131.220.121 - - [12/Aug/2026 14:11:20] "GET / HTTP/1.1" 200 -
+3.131.220.121 - - [12/Aug/2026 14:13:00] code 400, message Bad request version ('À\\x14À')
+3.131.220.121 - - [12/Aug/2026 14:13:00] "\x16\x03\x01\x01\x00\x01\x00\x00ü\x03\x03v\x0e®\x87þC1åX®\x11×Ë\x00¤\x0f-¡ÜK?R¾þ\x99GÏ\x96ËöÜ? \x86\x1bC0Wr\x87\x96\x15Óå\x98Ú\x8a\x0e,Ô\x80\x90ÄW}NOWá\x0f\x09[uE\x95\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" 400 -
+3.131.220.121 - - [12/Aug/2026 14:13:26] code 400, message Bad request version ('À\\x14À')
+3.131.220.121 - - [12/Aug/2026 14:13:26] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x91\x16&ç,~oÖù°þAÔ\x00\x01¡Ã\x9f¥²lA:©\x9dS'\x96å×\x8c\x7f ÿ\x17\x07\x86Ì¹^.PÕ\x1b"'\x11å\x81\x95\x9b\x17\x07=»U_7Þ<\x91sI7\x19\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" 400 -
+137.184.226.250 - - [12/Aug/2026 14:49:13] "GET / HTTP/1.1" 200 -
+103.209.253.28 - - [12/Aug/2026 15:36:20] code 404, message File not found
+103.209.253.28 - - [12/Aug/2026 15:36:20] "GET /.env HTTP/1.1" 404 -
+45.198.224.26 - - [12/Aug/2026 15:44:46] code 404, message File not found
+45.198.224.26 - - [12/Aug/2026 15:44:46] "GET /login HTTP/1.1" 404 -
+5.61.209.44 - - [12/Aug/2026 15:47:21] code 404, message File not found
+5.61.209.44 - - [12/Aug/2026 15:47:21] "GET /SDK/webLanguage HTTP/1.1" 404 -
+147.182.149.28 - - [12/Aug/2026 15:49:18] code 400, message Bad request version ('À#À¬À®À+À')
+147.182.149.28 - - [12/Aug/2026 15:49:18] "\x16\x03\x03\x01¦\x01\x00\x01¢\x03\x03\x8eÊÊ\x00ºåâÌ/Ë\x9d\x14\x8d\x0c*?C¯½5?(º\x11¶Ã\x9f\x90ªÔéÒ Õo«üQty@ôGW.»ÃõnûÑ\x8a >¾OW\x12Å\x07\x7fÜ\x1b\x9bÿ\x00\x8a\x00\x16\x003\x00gÀ\x9eÀ¢\x00\x9e\x009\x00kÀ\x9fÀ£\x00\x9f\x00E\x00¾\x00\x88\x00Ä\x00\x9aÀ\x08À\x09À#À¬À®À+À" 400 -
+147.182.149.28 - - [12/Aug/2026 15:49:18] code 400, message Bad request version ('À\\x9c\\x00<\\x00/\\x00')
+147.182.149.28 - - [12/Aug/2026 15:49:18] "\x16\x03\x03\x01¦\x01\x00\x01¢\x03\x03îkÞð¢9/!ôGAÆõN|Á)\x92WK$w\x14\x9dá\x1e\x04_¾\x1e\x91\x14 ¹À(cGå×\x1fqóå£l>Ì5ãqúiÚ©O>\x8fòEµ\x99æÝb\x00\x8a\x00\x05\x00\x04\x00\x07\x00À\x00\x84\x00º\x00A\x00\x9dÀ¡À\x9d\x00=\x005\x00\x9cÀ À\x9c\x00<\x00/\x00" 400 -
+147.182.149.28 - - [12/Aug/2026 15:49:18] code 400, message Bad request version ('&\\x13mE¸«')
+147.182.149.28 - - [12/Aug/2026 15:49:18] "\x16\x03\x03\x01W\x01\x00\x01S\x03\x03]ÝÕªq\x1fRrÙ¹jò\x11Y\x1fÎ\x07÷ß÷ý¹.°Hof4üÆµ\x0e Ú\x85&\x13mE¸«" 400 -
+147.182.149.28 - - [12/Aug/2026 15:49:19] code 400, message Bad request version ("\\x00\\x90\\x81\\x86+\\x99ùX\\x0e,\\x9dý\\x8a¦\\x95º\\x00DÀ\\x13À'À/À\\x14À(À0À`ÀaÀvÀwÌ¨\\x13\\x05\\x13\\x04\\x13\\x03Ì\\x13À\\x11\\x00")
+147.182.149.28 - - [12/Aug/2026 15:49:19] "\x16\x03\x03\x01I\x01\x00\x01E\x03\x03\x8eL» \x06¥\x92p\x9cÿLÎÈ(\x98<XP\x02¿ìVs·º®\x0f»\x8e\x1c\x97_ ¨)¹à\x9bUü\x91\x83åº\x01v8\x9d\x85\x00\x90\x81\x86+\x99ùX\x0e,\x9dý\x8a¦\x95º\x00DÀ\x13À'À/À\x14À(À0À`ÀaÀvÀwÌ¨\x13\x05\x13\x04\x13\x03Ì\x13À\x11\x00" 400 -
+147.182.149.28 - - [12/Aug/2026 15:49:19] code 400, message Bad request syntax ('\\x16\\x03\\x03\\x01\\x9a\\x01\\x00\\x01\\x96\\x03\\x03m4ã2ò\\x11ã/ü3¨\\x01\\x04,°çl')
+147.182.149.28 - - [12/Aug/2026 15:49:19] "\x16\x03\x03\x01\x9a\x01\x00\x01\x96\x03\x03m4ã2ò\x11ã/ü3¨\x01\x04,°çl" 400 -
+147.182.149.28 - - [12/Aug/2026 15:49:19] code 400, message Bad request version ('À#À¬À®À+À')
+147.182.149.28 - - [12/Aug/2026 15:49:19] "\x16\x03\x02\x01\x9b\x01\x00\x01\x97\x03\x02_G0z\x0d\x95?´\x1c\x05\x1b!¥p\x8by\x86ª[N|ýª¢Ö\x01ÆïÌ\x09é\x9e \x87òÚ@\x10\x85õ±`?\x87èÏåÏ\x88\x0f21»)\x8b\x1ft±OìM0p\x04í\x00\x8a\x00\x16\x003\x00gÀ\x9eÀ¢\x00\x9e\x009\x00kÀ\x9fÀ£\x00\x9f\x00E\x00¾\x00\x88\x00Ä\x00\x9aÀ\x08À\x09À#À¬À®À+À" 400 -
+147.182.149.28 - - [12/Aug/2026 15:49:20] code 400, message Bad request syntax ('\\x16\\x03\\x01\\x01¨\\x01\\x00\\x01¤\\x03\\x03\\x08\\x99f¹0\\x93¿\\x83ÙL¤Ê')
+147.182.149.28 - - [12/Aug/2026 15:49:20] "\x16\x03\x01\x01¨\x01\x00\x01¤\x03\x03\x08\x99f¹0\x93¿\x83ÙL¤Ê" 400 -
+147.182.149.28 - - [12/Aug/2026 15:49:20] code 400, message Bad request version ('¯d\\x16OÃteM0e¹¬.')
+147.182.149.28 - - [12/Aug/2026 15:49:20] "\x16\x03\x01\x01¨\x01\x00\x01¤\x03\x03¶?\x86\x16\x0fæóMn4\x04\x09\x16!\x12\x1e\x08¹ã¢·y\x11lëÁ0\x18ì\x88¨\x13 ¯d\x16OÃteM0e¹¬." 400 -
+147.182.149.28 - - [12/Aug/2026 15:49:20] code 400, message Bad request version ('À#À¬À®À+À')
+147.182.149.28 - - [12/Aug/2026 15:49:20] "\x16\x03\x01\x01\x9e\x01\x00\x01\x9a\x03\x03Êi\x83\x03\x0d\x82Å½\x8fÎóg\x9bjó\x8fb_ÐQòúæyúþÏÒ\x0b\x8eºð ÖÒIÍ\x86»\x84³z\\\x1dZðL<©-\x90\x98Y(%~Ö,Y\x9b[ó\x93Lè\x00\x80\x00\x16\x003\x00gÀ\x9eÀ¢\x00\x9e\x009\x00kÀ\x9fÀ£\x00\x9f\x00E\x00¾\x00\x88\x00Ä\x00\x9aÀ\x08À\x09À#À¬À®À+À" 400 -
+147.182.149.28 - - [12/Aug/2026 15:49:20] code 400, message Bad request version ('Táñ6ßé\\x00"¸¦;Ð\\x80N@+³\\x130Ðk¤q\\x11Q\\xadåRÐ\\x00\\x8cJJÀ\\x12À\\x13À\\x07À\\'Ì\\x14À/\\x13\\x01À\\x14\\x13\\x02À(Ì©À0ÀsÀ`ÀrÀaÀ,ÀvÀ¯ÀwÀ\\xadÌ¨À$\\x13\\x05À')
+147.182.149.28 - - [12/Aug/2026 15:49:20] "\x16\x03\x01\x01µ\x01\x00\x01±\x03\x03íesÆZü­\x03I«\x82\x04Y¿Ég°dDn\x82"ä?le\x92\x9f\x8b)Õi <8\x1cTáñ6ßé\x00"¸¦;Ð\x80N@+³\x130Ðk¤q\x11Q­åRÐ\x00\x8cJJÀ\x12À\x13À\x07À'Ì\x14À/\x13\x01À\x14\x13\x02À(Ì©À0ÀsÀ`ÀrÀaÀ,ÀvÀ¯ÀwÀ­Ì¨À$\x13\x05À" 400 -
+147.182.149.28 - - [12/Aug/2026 15:49:21] code 400, message Bad request version ('À\\x13À')
+147.182.149.28 - - [12/Aug/2026 15:49:21] "\x16\x03\x01\x05Ú\x01\x00\x05Ö\x03\x03\x08µt~ck¬Å¥\x80\x0bÔU`º\x88N\x89Î&\x91\x83¹¯oKK¥nÜ¥\x8e )\x1ejÄd3Ò\x15;¨ù\x0c\x90¶½Ú\x8b¼\x88n\x8e\x06i\x96Ì\x90§t¦Ã½\x95\x002À+À/À,À0Ì©Ì¨À\x09À\x13À" 400 -
+147.182.149.28 - - [12/Aug/2026 15:49:21] code 400, message Bad request version ('\\x00\\x02\\x01\\x00ÿ\\x01\\x00\\x01\\x00\\x00\\x17\\x00\\x00\\x00\\x12\\x00\\x00\\x00\\x05\\x00\\x05\\x01\\x00\\x00\\x00\\x00\\x00')
+147.182.149.28 - - [12/Aug/2026 15:49:21] "\x16\x03\x01\x05®\x01\x00\x05ª\x03\x03»ZùË8vË\x9c¶\x11\x94\x87º®s\x87\x10`\x0dÌ\x05\x1dõà#ê¥\x8b\x12\x97â0 Ø=\x84\x0e®cùÂW`\x17#tàPÝ©V³\x9a´Å§u\x16ð@¼D*î$\x00\x06\x13\x01\x13\x02\x13\x03\x01\x00\x05[\x00\x0b\x00\x02\x01\x00ÿ\x01\x00\x01\x00\x00\x17\x00\x00\x00\x12\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00" 400 -
+66.132.195.126 - - [12/Aug/2026 15:50:38] "GET / HTTP/1.1" 200 -
+66.132.172.103 - - [12/Aug/2026 15:50:58] code 400, message Bad request version ('À\\x14À')
+66.132.172.103 - - [12/Aug/2026 15:50:58] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x0d>¾\x12d;<½á\x92VÃàM\x86\x8d8]kª©AÚ\x80\x9fBþÏ\x9d¯§\x86 !{Æ÷\x02è\x15ÈNzQG¿Ï"óú\x8cÏÚ\x00JêO%l×Ë4\x1fîW\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" 400 -
+66.132.172.103 - - [12/Aug/2026 15:51:00] "GET / HTTP/1.1" 200 -
+66.132.172.103 - - [12/Aug/2026 15:51:06] code 505, message Invalid HTTP version (2.0)
+66.132.172.103 - - [12/Aug/2026 15:51:06] "PRI * HTTP/2.0" 505 -
+66.132.172.103 - - [12/Aug/2026 15:51:21] code 404, message File not found
+66.132.172.103 - - [12/Aug/2026 15:51:21] "GET /favicon.ico HTTP/1.1" 404 -
+66.132.172.103 - - [12/Aug/2026 15:58:15] "GET / HTTP/1.1" 200 -
+66.132.172.103 - - [12/Aug/2026 16:03:46] code 400, message Bad HTTP/0.9 request type ('\\x16\\x03\\x01\\x00î\\x01\\x00\\x00ê\\x03\\x03Á\\x99Õâª')
+66.132.172.103 - - [12/Aug/2026 16:03:46] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03Á\x99Õâª\x1f\x15\x15JV\x8b" 400 -
+66.132.172.103 - - [12/Aug/2026 16:03:47] code 404, message File not found
+66.132.172.103 - - [12/Aug/2026 16:03:47] "GET /sitemap.xml HTTP/1.1" 404 -
