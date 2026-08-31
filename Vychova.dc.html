@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #F6F1E4; font-family: 'Karla', sans-serif; }
+    a { color: #C96A4E; text-decoration: none; }
+    a:hover { color: #2D5F4C; }
+    ::selection { background: #E0A83E; color: #2B241C; }
+    .article-card {
+      display: block;
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 4px 20px rgba(43,36,28,0.08);
+      padding: 28px;
+      transition: box-shadow 0.2s, transform 0.2s;
+      color: #2B241C;
+    }
+    .article-card:hover {
+      box-shadow: 0 8px 32px rgba(43,36,28,0.14);
+      transform: translateY(-2px);
+      color: #2B241C;
+    }
+  </style>
+</helmet>
+
+<div style="background:#F6F1E4; color:#2B241C; overflow-x:hidden; position:relative;">
+
+  <!-- NAV -->
+  <nav style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:20px clamp(20px,5vw,64px); flex-wrap:wrap; position:relative; z-index:5;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:22px; color:#2B241C;">
+      <svg width="30" height="30" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#2D5F4C"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#2D5F4C"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#2D5F4C"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#2D5F4C"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; align-items:center; gap:clamp(12px,3vw,32px); flex-wrap:wrap; font-size:16px; font-weight:600;">
+      <a href="Vychova.dc.html" style="color:#C96A4E; border-bottom:2px solid #C96A4E; padding-bottom:2px;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#2B241C;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#2B241C;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#2B241C;">O nás</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section style="max-width:1180px; margin:0 auto; padding:clamp(32px,6vw,72px) clamp(20px,5vw,64px) clamp(20px,4vw,36px);">
+    <p style="font-family:'Space Mono',monospace; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; color:#C96A4E; margin:0 0 18px;">Výchova</p>
+    <h1 style="font-family:'Fraunces',serif; font-weight:700; font-style:italic; font-size:clamp(38px,5.5vw,62px); line-height:1.06; margin:0 0 22px; max-width:22ch;">Výchova, která funguje,<br>protože psovi rozumí</h1>
+    <p style="font-size:clamp(17px,2vw,20px); line-height:1.65; color:#2B241C; max-width:60ch; margin:0;">Od prvních dnů doma až po každodenní soužití — průvodce postaveného na pozitivním posílení, trpělivosti a vzájemné důvěře. Bez trestů, bez trhání, bez "dominance".</p>
+  </section>
+
+  <!-- TRAIL CONNECTOR -->
+  <div style="display:flex; justify-content:center; margin:clamp(12px,3vw,24px) 0 0;">
+    <svg width="40" height="60" viewBox="0 0 40 60" fill="none">
+      <path d="M20 0 V18" stroke="#C96A4E" stroke-width="3" stroke-dasharray="1 10" stroke-linecap="round"/>
+      <circle cx="20" cy="38" r="17" fill="#C7D3B6"/>
+      <g transform="translate(20,38)"><ellipse cx="0" cy="4" rx="7" ry="5.5" fill="#2D5F4C"/><ellipse cx="-6.5" cy="-4" rx="2.8" ry="3.6" fill="#2D5F4C"/><ellipse cx="0" cy="-7" rx="3" ry="3.8" fill="#2D5F4C"/><ellipse cx="6.5" cy="-4" rx="2.8" ry="3.6" fill="#2D5F4C"/></g>
+      <path d="M20 55 V60" stroke="#C96A4E" stroke-width="3" stroke-dasharray="1 10" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- SEKCE: PRVNÍ DNY DOMA -->
+  <section style="max-width:1180px; margin:0 auto; padding:clamp(20px,3vw,32px) clamp(20px,5vw,64px) clamp(40px,6vw,64px);">
+
+    <div style="display:flex; align-items:baseline; gap:16px; flex-wrap:wrap; margin-bottom:10px;">
+      <p style="font-family:'Space Mono',monospace; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; color:#C96A4E; margin:0;">Kapitola 1</p>
+      <span style="font-family:'Space Mono',monospace; font-size:13px; color:#2D5F4C; background:#C7D3B6; border-radius:999px; padding:2px 12px;">5 článků</span>
+    </div>
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:clamp(26px,3.5vw,38px); margin:0 0 10px;">První dny doma</h2>
+    <p style="font-size:16px; line-height:1.6; color:#2B241C; margin:0 0 32px; max-width:64ch; opacity:0.85;">Týden dva po příchodu štěněte domů rozhoduje o základním nastavení vztahu. Pomalejší start, jasnější výsledky.</p>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:20px;">
+
+      <!-- Karta 1 -->
+      <a href="Clanek-Rozjezd.dc.html" class="article-card">
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:18px;">
+          <span style="font-family:'Space Mono',monospace; font-weight:700; font-size:13px; color:#C96A4E; background:#F6F1E4; width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">01</span>
+          <span style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.05em; text-transform:uppercase; color:#2D5F4C;">Prostředí</span>
+        </div>
+        <h3 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; line-height:1.25; margin:0 0 12px; color:#2B241C;">Klidný rozjezd bez návštěv</h3>
+        <p style="font-size:15px; line-height:1.6; color:#2B241C; opacity:0.8; margin:0 0 18px;">Proč prvních 7–14 dní patří jen vám a psovi — a jak to komunikovat rodině a přátelům.</p>
+        <span style="font-weight:700; font-size:15px; color:#C96A4E;">Přečíst →</span>
+      </a>
+
+      <!-- Karta 2 -->
+      <a href="Clanek-Rezim.dc.html" class="article-card">
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:18px;">
+          <span style="font-family:'Space Mono',monospace; font-weight:700; font-size:13px; color:#C96A4E; background:#F6F1E4; width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">02</span>
+          <span style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.05em; text-transform:uppercase; color:#2D5F4C;">Rutina</span>
+        </div>
+        <h3 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; line-height:1.25; margin:0 0 12px; color:#2B241C;">Nastavený režim krmení</h3>
+        <p style="font-size:15px; line-height:1.6; color:#2B241C; opacity:0.8; margin:0 0 18px;">Pevný čas jídla dává štěněti předvídatelnost — základ klidného chování a spolehlivého venčení.</p>
+        <span style="font-weight:700; font-size:15px; color:#C96A4E;">Přečíst →</span>
+      </a>
+
+      <!-- Karta 3 -->
+      <a href="Clanek-Vylety.dc.html" class="article-card">
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:18px;">
+          <span style="font-family:'Space Mono',monospace; font-weight:700; font-size:13px; color:#C96A4E; background:#F6F1E4; width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">03</span>
+          <span style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.05em; text-transform:uppercase; color:#2D5F4C;">Venčení</span>
+        </div>
+        <h3 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; line-height:1.25; margin:0 0 12px; color:#2B241C;">První krátké výlety ven</h3>
+        <p style="font-size:15px; line-height:1.6; color:#2B241C; opacity:0.8; margin:0 0 18px;">Jak dávkovat podněty, aby první zkušenosti s ulicí byly bezpečné a pozitivní — ne zahltění.</p>
+        <span style="font-weight:700; font-size:15px; color:#C96A4E;">Přečíst →</span>
+      </a>
+
+      <!-- Karta 4 -->
+      <a href="Clanek-Samota.dc.html" class="article-card">
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:18px;">
+          <span style="font-family:'Space Mono',monospace; font-weight:700; font-size:13px; color:#C96A4E; background:#F6F1E4; width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">04</span>
+          <span style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.05em; text-transform:uppercase; color:#2D5F4C;">Samostatnost</span>
+        </div>
+        <h3 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; line-height:1.25; margin:0 0 12px; color:#2B241C;">Zvykání na samotu</h3>
+        <p style="font-size:15px; line-height:1.6; color:#2B241C; opacity:0.8; margin:0 0 18px;">Postupné nácviky krátkých odloučení od prvního dne — prevence separační úzkosti ještě než se rozvine.</p>
+        <span style="font-weight:700; font-size:15px; color:#C96A4E;">Přečíst →</span>
+      </a>
+
+      <!-- Karta 5 -->
+      <a href="Clanek-Sledovani.dc.html" class="article-card">
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:18px;">
+          <span style="font-family:'Space Mono',monospace; font-weight:700; font-size:13px; color:#C96A4E; background:#F6F1E4; width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">05</span>
+          <span style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.05em; text-transform:uppercase; color:#2D5F4C;">Pozorování</span>
+        </div>
+        <h3 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; line-height:1.25; margin:0 0 12px; color:#2B241C;">Sledování spánku a jídla</h3>
+        <p style="font-size:15px; line-height:1.6; color:#2B241C; opacity:0.8; margin:0 0 18px;">Co jsou normální vzorce a kdy volat veterináře — jednoduchý zápisník do prvních dvou týdnů.</p>
+        <span style="font-weight:700; font-size:15px; color:#C96A4E;">Přečíst →</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- TRAIL CONNECTOR -->
+  <div style="display:flex; justify-content:center; margin:clamp(8px,2vw,16px) 0;">
+    <svg width="40" height="60" viewBox="0 0 40 60" fill="none">
+      <path d="M20 0 V18" stroke="#C96A4E" stroke-width="3" stroke-dasharray="1 10" stroke-linecap="round"/>
+      <circle cx="20" cy="38" r="17" fill="#C7D3B6"/>
+      <g transform="translate(20,38)"><ellipse cx="0" cy="4" rx="7" ry="5.5" fill="#C96A4E"/><ellipse cx="-6.5" cy="-4" rx="2.8" ry="3.6" fill="#C96A4E"/><ellipse cx="0" cy="-7" rx="3" ry="3.8" fill="#C96A4E"/><ellipse cx="6.5" cy="-4" rx="2.8" ry="3.6" fill="#C96A4E"/></g>
+      <path d="M20 55 V60" stroke="#C96A4E" stroke-width="3" stroke-dasharray="1 10" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- SEKCE: PRŮBĚŽNÁ PÉČE -->
+  <section style="max-width:1180px; margin:0 auto; padding:clamp(12px,2vw,20px) clamp(20px,5vw,64px) clamp(40px,6vw,64px);">
+
+    <div style="display:flex; align-items:baseline; gap:16px; flex-wrap:wrap; margin-bottom:10px;">
+      <p style="font-family:'Space Mono',monospace; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; color:#2D5F4C; margin:0;">Kapitola 2</p>
+      <span style="font-family:'Space Mono',monospace; font-size:13px; color:#2D5F4C; background:#C7D3B6; border-radius:999px; padding:2px 12px;">5 článků</span>
+    </div>
+    <h2 style="font-family:'Fraunces',serif; font-weight:700; font-size:clamp(26px,3.5vw,38px); margin:0 0 10px;">Průběžná péče — napořád</h2>
+    <p style="font-size:16px; line-height:1.6; color:#2B241C; margin:0 0 32px; max-width:64ch; opacity:0.85;">Výchova nekončí po prvním měsíci. Tyhle návyky se udržují celý psí život — a dělají z každodenního soužití radost.</p>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:20px;">
+
+      <!-- Karta 1 -->
+      <a href="Clanek-PravidelnyVet.dc.html" class="article-card">
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:18px;">
+          <div style="width:34px; height:34px; border-radius:50%; background:#2D5F4C; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F6F1E4" stroke-width="2.5"><path d="M12 8v8M8 12h8"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <span style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.05em; text-transform:uppercase; color:#2D5F4C;">Zdraví</span>
+        </div>
+        <h3 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; line-height:1.25; margin:0 0 12px; color:#2B241C;">Pravidelné veterinární prohlídky</h3>
+        <p style="font-size:15px; line-height:1.6; color:#2B241C; opacity:0.8; margin:0 0 18px;">Preventivní péče jako základ dobré kondice — co kontrolovat, jak často a jak se u lékaře chovat s nervózním psem.</p>
+        <span style="font-weight:700; font-size:15px; color:#2D5F4C;">Přečíst →</span>
+      </a>
+
+      <!-- Karta 2 -->
+      <a href="Clanek-Socializace.dc.html" class="article-card">
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:18px;">
+          <div style="width:34px; height:34px; border-radius:50%; background:#2D5F4C; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F6F1E4" stroke-width="2.5"><circle cx="9" cy="7" r="4"/><circle cx="17" cy="9" r="3"/><path d="M2 21v-1a7 7 0 0 1 14 0v1"/><path d="M22 21v-1a5 5 0 0 0-5-5"/></svg>
+          </div>
+          <span style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.05em; text-transform:uppercase; color:#2D5F4C;">Chování</span>
+        </div>
+        <h3 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; line-height:1.25; margin:0 0 12px; color:#2B241C;">Průběžná socializace</h3>
+        <p style="font-size:15px; line-height:1.6; color:#2B241C; opacity:0.8; margin:0 0 18px;">Setkání s lidmi, psy, zvuky a situacemi nekončí v 16 týdnech — jak pokračovat bezpečně a v tempu psa.</p>
+        <span style="font-weight:700; font-size:15px; color:#2D5F4C;">Přečíst →</span>
+      </a>
+
+      <!-- Karta 3 -->
+      <a href="Clanek-UdrzovaniOckovani.dc.html" class="article-card">
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:18px;">
+          <div style="width:34px; height:34px; border-radius:50%; background:#2D5F4C; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F6F1E4" stroke-width="2.5"><path d="M4 12l6 6L20 6"/></svg>
+          </div>
+          <span style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.05em; text-transform:uppercase; color:#2D5F4C;">Zdraví</span>
+        </div>
+        <h3 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; line-height:1.25; margin:0 0 12px; color:#2B241C;">Udržování očkování a odčervení</h3>
+        <p style="font-size:15px; line-height:1.6; color:#2B241C; opacity:0.8; margin:0 0 18px;">Přehled přeočkování, antiparazitika a co zapsat do průkazu — bez zbytečné byrokracie.</p>
+        <span style="font-weight:700; font-size:15px; color:#2D5F4C;">Přečíst →</span>
+      </a>
+
+      <!-- Karta 4 -->
+      <a href="Clanek-Pohyb.dc.html" class="article-card">
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:18px;">
+          <div style="width:34px; height:34px; border-radius:50%; background:#2D5F4C; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F6F1E4" stroke-width="2.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <span style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.05em; text-transform:uppercase; color:#2D5F4C;">Aktivita</span>
+        </div>
+        <h3 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; line-height:1.25; margin:0 0 12px; color:#2B241C;">Pohyb a mentální stimulace</h3>
+        <p style="font-size:15px; line-height:1.6; color:#2B241C; opacity:0.8; margin:0 0 18px;">Unavený pes je spokojený pes — jak kombinovat fyzickou zátěž s cvičením mozkových závitů.</p>
+        <span style="font-weight:700; font-size:15px; color:#2D5F4C;">Přečíst →</span>
+      </a>
+
+      <!-- Karta 5 -->
+      <a href="Clanek-ZmenyVChování.dc.html" class="article-card">
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:18px;">
+          <div style="width:34px; height:34px; border-radius:50%; background:#2D5F4C; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F6F1E4" stroke-width="2.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </div>
+          <span style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.05em; text-transform:uppercase; color:#2D5F4C;">Pozorování</span>
+        </div>
+        <h3 style="font-family:'Fraunces',serif; font-weight:700; font-size:20px; line-height:1.25; margin:0 0 12px; color:#2B241C;">Sledování změn chování</h3>
+        <p style="font-size:15px; line-height:1.6; color:#2B241C; opacity:0.8; margin:0 0 18px;">Jak poznat, že se něco mění — signály, které nestojí za to přehlédnout, a co s nimi dělat.</p>
+        <span style="font-weight:700; font-size:15px; color:#2D5F4C;">Přečíst →</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- TRAIL CONNECTOR -->
+  <div style="display:flex; justify-content:center; margin:clamp(8px,2vw,16px) 0;">
+    <svg width="40" height="60" viewBox="0 0 40 60" fill="none">
+      <path d="M20 0 V18" stroke="#C96A4E" stroke-width="3" stroke-dasharray="1 10" stroke-linecap="round"/>
+      <circle cx="20" cy="38" r="17" fill="#E0A83E"/>
+      <g transform="translate(20,38)"><ellipse cx="0" cy="4" rx="7" ry="5.5" fill="#2B241C"/><ellipse cx="-6.5" cy="-4" rx="2.8" ry="3.6" fill="#2B241C"/><ellipse cx="0" cy="-7" rx="3" ry="3.8" fill="#2B241C"/><ellipse cx="6.5" cy="-4" rx="2.8" ry="3.6" fill="#2B241C"/></g>
+      <path d="M20 55 V60" stroke="#C96A4E" stroke-width="3" stroke-dasharray="1 10" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- BLOK: FILOZOFIE POZITIVNÍ VÝCHOVY -->
+  <section style="max-width:1180px; margin:0 auto; padding:clamp(12px,2vw,20px) clamp(20px,5vw,64px) clamp(48px,7vw,80px);">
+    <div style="background:#2D5F4C; border-radius:32px; padding:clamp(32px,5vw,60px);">
+
+      <p style="font-family:'Space Mono',monospace; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; color:#E0A83E; margin:0 0 20px;">Filozofie pozitivní výchovy</p>
+      <h2 style="font-family:'Fraunces',serif; font-weight:700; font-style:italic; font-size:clamp(26px,3.5vw,40px); color:#F6F1E4; margin:0 0 28px; max-width:26ch; line-height:1.15;">Co stojí za každým krokem v této sekci</h2>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:clamp(20px,3vw,32px); margin-bottom:clamp(28px,4vw,44px);">
+
+        <div>
+          <div style="width:40px; height:3px; background:#E0A83E; border-radius:2px; margin-bottom:16px;"></div>
+          <h3 style="font-family:'Fraunces',serif; font-size:19px; color:#F6F1E4; margin:0 0 10px;">Pozitivní posílení</h3>
+          <p style="font-size:15px; line-height:1.65; color:#C7D3B6; margin:0;">Odměňujeme to, co chceme vidět víc. Pamlsek, chvála nebo hra — čím dřív přijde odměna po žádoucím chování, tím silnější spojení vznikne.</p>
+        </div>
+
+        <div>
+          <div style="width:40px; height:3px; background:#E0A83E; border-radius:2px; margin-bottom:16px;"></div>
+          <h3 style="font-family:'Fraunces',serif; font-size:19px; color:#F6F1E4; margin:0 0 10px;">Žádné tresty</h3>
+          <p style="font-size:15px; line-height:1.65; color:#C7D3B6; margin:0;">Trest nezlehčuje nežádoucí chování — jen přidává strach a narušuje důvěru. Místo trestu hledáme příčinu a nabídneme jiné řešení.</p>
+        </div>
+
+        <div>
+          <div style="width:40px; height:3px; background:#E0A83E; border-radius:2px; margin-bottom:16px;"></div>
+          <h3 style="font-family:'Fraunces',serif; font-size:19px; color:#F6F1E4; margin:0 0 10px;">Calming signals</h3>
+          <p style="font-size:15px; line-height:1.65; color:#C7D3B6; margin:0;">Psi mají přirozený jazyk zklidňovacích signálů — odvrácení pohledu, zívnutí, pomalý pohyb. Rozumět jim je základ férovéhokomunikace.</p>
+        </div>
+
+        <div>
+          <div style="width:40px; height:3px; background:#E0A83E; border-radius:2px; margin-bottom:16px;"></div>
+          <h3 style="font-family:'Fraunces',serif; font-size:19px; color:#F6F1E4; margin:0 0 10px;">Vztah nad výsledkem</h3>
+          <p style="font-size:15px; line-height:1.65; color:#C7D3B6; margin:0;">Cílem není "poslušný pes". Cílem je pes, který vám důvěřuje, cítí se bezpečně a rád s vámi spolupracuje — protože to za to stojí i pro něj.</p>
+        </div>
+
+      </div>
+
+      <!-- Citát -->
+      <div style="border-top:1px solid rgba(199,211,182,0.3); padding-top:clamp(24px,3vw,36px);">
+        <blockquote style="margin:0; padding:0;">
+          <p style="font-family:'Fraunces',serif; font-style:italic; font-size:clamp(18px,2.2vw,24px); line-height:1.55; color:#F6F1E4; margin:0 0 16px; max-width:58ch;">"Don't think of it as 'training' — think of it as building a mutual language. The animal is trying to figure out what you want, and you're trying to figure out what it's saying."</p>
+          <footer style="font-family:'Space Mono',monospace; font-size:13px; color:#E0A83E; letter-spacing:0.04em;">— Karen Pryor, <em style="font-style:normal; color:#C7D3B6;">Don't Shoot the Dog</em></footer>
+        </blockquote>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#2B241C; padding:clamp(32px,5vw,56px) clamp(20px,5vw,64px); display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between; align-items:center;">
+    <a href="Homepage.dc.html" style="display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:700; font-size:20px; color:#F6F1E4;">
+      <svg width="26" height="26" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="26" rx="10" ry="8" fill="#E0A83E"/><ellipse cx="9" cy="12" rx="4" ry="5" fill="#E0A83E"/><ellipse cx="20" cy="7" rx="4.2" ry="5.4" fill="#E0A83E"/><ellipse cx="31" cy="12" rx="4" ry="5" fill="#E0A83E"/></svg>
+      Pozitivní pes
+    </a>
+    <div style="display:flex; gap:24px; flex-wrap:wrap; font-size:15px;">
+      <a href="Vychova.dc.html" style="color:#E0A83E; font-weight:600;">Výchova</a>
+      <a href="Vybaveni-a-recenze.dc.html" style="color:#C7D3B6;">Vybavení a recenze</a>
+      <a href="Checklist.dc.html" style="color:#C7D3B6;">Checklist</a>
+      <a href="O-nas.dc.html" style="color:#C7D3B6;">O nás</a>
+    </div>
+    <p style="font-family:'Space Mono',monospace; font-size:13px; color:#C7D3B6; margin:0;">© 2026 Pozitivní pes</p>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>
