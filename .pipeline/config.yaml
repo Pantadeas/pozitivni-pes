@@ -1,0 +1,55 @@
+# Pozitivní pes — pipeline konfigurace
+# Definition of Done, severity routing, risk tier pravidla
+
+definition_of_done:
+  - automated_gate_pass      # scripts/gate.sh vrátí exit 0
+  - no_blocking_domain_findings  # domain-review.json nemá BLOCKER
+  - clean_git_state          # žádné uncommitted changes na branchi
+
+max_attempts: 3
+budget_usd_per_run: 2.00   # max $ za jeden agent run (cca 700k tokenů)
+
+severity_routing:
+  BLOCKER: stop_pipeline     # automatické zastavení, human musí zasáhnout
+  HIGH: human_accept         # → ⏸ HUMAN:ACCEPT_FINDINGS
+  MEDIUM: human_accept       # → ⏸ HUMAN:ACCEPT_FINDINGS
+  LOW: report_only           # jen zapsat do reportu, pokračovat
+  INFO: report_only
+
+risk_tier_rules:
+  # L — high-risk areas (override na M/S pokud nesedí)
+  L:
+    file_patterns:
+      - "support.js"
+      - "image-slot.js"
+    keyword_patterns:
+      - "nav.*přidat\|nav.*odebrat\|navigation.*change"
+      - "design systém\|color.*change\|font.*change"
+    page_patterns:
+      - "O-nas.dc.html"
+
+  # S — safe isolated changes
+  S:
+    description: "Překlep, nefunkční odkaz, drobná CSS úprava jedné stránky, jeden odstavec"
+    keyword_patterns:
+      - "překlep\|typo\|broken link\|nefunkční odkaz\|spacing\|margin\|padding"
+
+  # M — default pro vše ostatní
+  M:
+    description: "Nový článek, aktualizace článku, hub stránka, Checklist"
+
+# Logy
+token_log_schema:
+  fields:
+    - run_id
+    - task_id
+    - agent
+    - phase
+    - attempt
+    - tokens_in
+    - tokens_out
+    - cost_usd
+    - duration_s
+    - result        # PASS | FAIL | CHECKPOINT
+    - gate_pass     # true | false | null
+    - files_changed
