@@ -177,10 +177,12 @@ def _write_live_status(agent: str, phase: str, elapsed: float, tokens_out: int =
 
 def run_agent(agent_name: str, prompt: str, timeout: int = 300, add_dir: bool = False) -> tuple[str, int, int, float]:
     """Spustí claude -p --agent <name>, vrátí (text, tokens_in, tokens_out, duration)."""
+    import select as _select
     cmd = [
         "claude", "-p", prompt,
         "--agent", agent_name,
-        "--output-format", "json",
+        "--output-format", "stream-json",
+        "--verbose",
     ]
     if add_dir:
         cmd += ["--add-dir", str(REPO)]
@@ -192,39 +194,62 @@ def run_agent(agent_name: str, prompt: str, timeout: int = 300, add_dir: bool = 
         text=True, cwd=str(REPO)
     )
 
-    # Live status ticker — čas elapsed, bez blokování
-    import threading
-    def _live_updater():
-        while proc.poll() is None:
-            _write_live_status(agent_name, agent_name, time.time() - t0)
-            time.sleep(3)
-    threading.Thread(target=_live_updater, daemon=True).start()
+    stdout_lines = []
+    tokens_out_live = 0
+    deadline = t0 + timeout
 
-    try:
-        stdout_raw, stderr_raw = proc.communicate(timeout=timeout)
-    except subprocess.TimeoutExpired:
-        proc.kill()
-        proc.communicate()
-        LIVE_STATUS_FILE.unlink(missing_ok=True)
-        raise
+    while True:
+        now = time.time()
+        if now > deadline:
+            proc.kill()
+            proc.communicate()
+            LIVE_STATUS_FILE.unlink(missing_ok=True)
+            raise subprocess.TimeoutExpired(cmd, timeout)
 
+        # Non-blocking check: espera max 0.5s por datos en stdout
+        ready, _, _ = _select.select([proc.stdout], [], [], 0.5)
+        if ready:
+            line = proc.stdout.readline()
+            if line:
+                line = line.strip()
+                if line:
+                    stdout_lines.append(line)
+                    try:
+                        ev = json.loads(line)
+                        if ev.get("type") == "assistant" and "message" in ev:
+                            usage = ev["message"].get("usage", {})
+                            tokens_out_live = usage.get("output_tokens", tokens_out_live)
+                    except Exception:
+                        pass
+                    _write_live_status(agent_name, agent_name, now - t0, tokens_out_live)
+        else:
+            # Sin datos — verificar si el proceso terminó
+            if proc.poll() is not None:
+                break
+            _write_live_status(agent_name, agent_name, now - t0, tokens_out_live)
+
+    proc.wait()
     duration = time.time() - t0
     LIVE_STATUS_FILE.unlink(missing_ok=True)
 
     if proc.returncode != 0:
-        raise RuntimeError(f"claude exited {proc.returncode}: {stderr_raw[:500]}")
+        stderr = proc.stderr.read()
+        raise RuntimeError(f"claude exited {proc.returncode}: {stderr[:500]}")
 
-    # Parsuj JSON výstup
+    # Najdi finální result event
     text = ""
     tokens_in = tokens_out = 0
-    try:
-        ev = json.loads(stdout_raw)
-        text = ev.get("result", "")
-        usage = ev.get("usage", {})
-        tokens_in = usage.get("input_tokens", 0) + usage.get("cache_read_input_tokens", 0)
-        tokens_out = usage.get("output_tokens", 0)
-    except Exception:
-        text = stdout_raw  # fallback
+    for line in reversed(stdout_lines):
+        try:
+            ev = json.loads(line)
+            if ev.get("type") == "result":
+                text = ev.get("result", "")
+                usage = ev.get("usage", {})
+                tokens_in = usage.get("input_tokens", 0) + usage.get("cache_read_input_tokens", 0)
+                tokens_out = usage.get("output_tokens", 0)
+                break
+        except Exception:
+            continue
 
     return text, tokens_in, tokens_out, duration
 
@@ -488,9 +513,9 @@ def phase_coherence(state: dict):
         f"Zkontrolované soubory: {', '.join(changed)}\n\n"
         f"OBSAH SOUBORŮ (vše máš níže, nečti žádné další soubory):\n{file_contents}\n\n"
         f"Zkontroluj konzistenci terminologie, tónu a struktury POUZE v těchto souborech. "
-        f"Výsledek zapiš jako JSON do souboru coherence-report.json pomocí bash."
+        f"Výsledek zapiš jako JSON do souboru `coherence-report.json` pomocí Write tool."
     )
-    text, tin, tout, dur = run_agent("coherence-reviewer", prompt, timeout=120, add_dir=False)
+    text, tin, tout, dur = run_agent("coherence-reviewer", prompt, timeout=300, add_dir=False)
     report = _extract_json(text) or {"status": "PASS", "issues": [], "raw": text}
     COHERENCE_REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2))
     status = report.get("status", "PASS")
@@ -554,10 +579,10 @@ def phase_qa(state: dict):
         + (f"design.md:\n{design}\n\n" if design else "")
         + f"Změněné soubory ({len(changed_html)}):\n{file_contents}\n\n"
         "Zkontroluj acceptance kritéria z design.md. "
-        "Výsledek zapiš jako JSON do qa-report.json pomocí bash. "
+        "Výsledek zapiš jako JSON do `qa-report.json` pomocí Write tool. "
         "Nečti žádné další soubory — vše máš výše."
     )
-    text, tin, tout, dur = run_agent("qa-agent", prompt, timeout=120, add_dir=False)
+    text, tin, tout, dur = run_agent("qa-agent", prompt, timeout=300, add_dir=False)
     # Extrahuj JSON z odpovědi
     qa_json = _extract_json(text) or {"status": "PASS", "findings": [], "raw": text}
     QA_REPORT.write_text(json.dumps(qa_json, indent=2, ensure_ascii=False))
@@ -588,9 +613,9 @@ def phase_domain_review(state: dict):
         + (f"RED LINES (zakázaný obsah):\n{red_lines}\n\n" if red_lines else "")
         + f"Změněné soubory:\n{file_contents2}\n\n"
         "Zkontroluj: žádné red-line témata (dominance, nucení, flooding), force-free obsah. "
-        "Výsledek zapiš jako JSON do domain-review.json. Nečti další soubory."
+        "Výsledek zapiš jako JSON do `domain-review.json` pomocí Write tool. Nečti další soubory."
     )
-    text, tin, tout, dur = run_agent("domain-reviewer", prompt, timeout=120, add_dir=False)
+    text, tin, tout, dur = run_agent("domain-reviewer", prompt, timeout=300, add_dir=False)
     dr_json = _extract_json(text) or {"status": "PASS", "red_line_triggered": False, "findings": [], "raw": text}
     DOMAIN_REVIEW.write_text(json.dumps(dr_json, indent=2, ensure_ascii=False))
     log_tokens(state, "domain-reviewer", "domain_review", dr_json.get("status", "PASS"), tin, tout, dur)
