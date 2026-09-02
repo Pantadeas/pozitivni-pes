@@ -480,18 +480,27 @@ def phase_coherence(state: dict):
         ["git", "diff", "--name-only", "main...HEAD"],
         capture_output=True, text=True, cwd=str(REPO)
     )
-    changed = [f for f in diff.stdout.strip().splitlines() if f.endswith(".html")]
+    changed = [f for f in diff.stdout.strip().splitlines() if f.endswith(".dc.html")]
     if not changed:
-        # Fallback: všechny html soubory v repozitáři
-        changed = [p.name for p in REPO.glob("*.dc.html")]
+        # Fallback: jen nové soubory z tohoto tasku
+        changed = [p.name for p in REPO.glob("*.dc.html") if p.stat().st_mtime > (time.time() - 86400)]
+
+    # Vloż obsah souborů přímo do promptu — agent nemusí číst repo
+    file_contents = ""
+    for fname in changed:
+        fpath = REPO / fname
+        if fpath.exists():
+            content = fpath.read_text(encoding="utf-8")[:8000]  # max 8KB per file
+            file_contents += f"\n\n--- {fname} ---\n{content}"
 
     prompt = (
         f"Proveď coherence review pro task '{state['task_id']}'.\n\n"
-        f"Zkontroluj tyto soubory: {', '.join(changed)}\n\n"
-        f"Přečti každý soubor a zkontroluj konzistenci terminologie, tónu a struktury "
-        f"napříč všemi soubory. Vrať výsledek jako JSON do souboru coherence-report.json."
+        f"Zkontrolované soubory: {', '.join(changed)}\n\n"
+        f"OBSAH SOUBORŮ (vše máš níže, nečti žádné další soubory):\n{file_contents}\n\n"
+        f"Zkontroluj konzistenci terminologie, tónu a struktury POUZE v těchto souborech. "
+        f"Výsledek zapiš jako JSON do souboru coherence-report.json pomocí bash."
     )
-    text, tin, tout, dur = run_agent("coherence-reviewer", prompt, timeout=600, add_dir=False)
+    text, tin, tout, dur = run_agent("coherence-reviewer", prompt, timeout=120, add_dir=False)
     report = _extract_json(text) or {"status": "PASS", "issues": [], "raw": text}
     COHERENCE_REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2))
     status = report.get("status", "PASS")
@@ -537,13 +546,28 @@ def phase_qa(state: dict):
     acceptance = ACCEPTANCE_FILE.read_text() if ACCEPTANCE_FILE.exists() else ""
     run_id = state["run_id"]
     task_id = state["task_id"]
+    # Vlož obsah změněných souborů přímo do promptu
+    diff_files = subprocess.run(
+        ["git", "diff", "--name-only", "main...HEAD"],
+        capture_output=True, text=True, cwd=str(REPO)
+    ).stdout.strip().splitlines()
+    changed_html = [f for f in diff_files if f.endswith(".dc.html")]
+    file_contents = ""
+    for fname in changed_html:
+        fpath = REPO / fname
+        if fpath.exists():
+            content = fpath.read_text(encoding="utf-8")[:8000]
+            file_contents += f"\n\n--- {fname} ---\n{content}"
+
     prompt = (
         f"Proveď QA pro task '{task_id}' (run_id: {run_id}).\n\n"
         + (f"design.md:\n{design}\n\n" if design else "")
-        + (f"ACCEPTANCE.md:\n{acceptance}\n\n" if acceptance else "")
-        + "Přečti změněné soubory a napiš qa-report.json podle formátu z CLAUDE.md."
+        + f"Změněné soubory ({len(changed_html)}):\n{file_contents}\n\n"
+        "Zkontroluj acceptance kritéria z design.md. "
+        "Výsledek zapiš jako JSON do qa-report.json pomocí bash. "
+        "Nečti žádné další soubory — vše máš výše."
     )
-    text, tin, tout, dur = run_agent("qa-agent", prompt, timeout=300, add_dir=True)
+    text, tin, tout, dur = run_agent("qa-agent", prompt, timeout=120, add_dir=False)
     # Extrahuj JSON z odpovědi
     qa_json = _extract_json(text) or {"status": "PASS", "findings": [], "raw": text}
     QA_REPORT.write_text(json.dumps(qa_json, indent=2, ensure_ascii=False))
@@ -556,12 +580,27 @@ def phase_domain_review(state: dict):
     print("  🐾 DOMAIN REVIEWER — kontrola force-free souladu...")
     run_id = state["run_id"]
     task_id = state["task_id"]
+    diff_files2 = subprocess.run(
+        ["git", "diff", "--name-only", "main...HEAD"],
+        capture_output=True, text=True, cwd=str(REPO)
+    ).stdout.strip().splitlines()
+    changed_html2 = [f for f in diff_files2 if f.endswith(".dc.html")]
+    red_lines = (REPO / "knowledge" / "red-lines.md").read_text() if (REPO / "knowledge" / "red-lines.md").exists() else ""
+    file_contents2 = ""
+    for fname in changed_html2:
+        fpath = REPO / fname
+        if fpath.exists():
+            content = fpath.read_text(encoding="utf-8")[:6000]
+            file_contents2 += f"\n\n--- {fname} ---\n{content}"
+
     prompt = (
-        f"Proveď domain review pro task '{task_id}' (run_id: {run_id}).\n"
-        f"Přečti knowledge/red-lines.md, knowledge/domain-knowledge.md a změněné .dc.html soubory. "
-        f"Napiš domain-review.json."
+        f"Proveď domain review pro task '{task_id}' (run_id: {run_id}).\n\n"
+        + (f"RED LINES (zakázaný obsah):\n{red_lines}\n\n" if red_lines else "")
+        + f"Změněné soubory:\n{file_contents2}\n\n"
+        "Zkontroluj: žádné red-line témata (dominance, nucení, flooding), force-free obsah. "
+        "Výsledek zapiš jako JSON do domain-review.json. Nečti další soubory."
     )
-    text, tin, tout, dur = run_agent("domain-reviewer", prompt, timeout=300, add_dir=True)
+    text, tin, tout, dur = run_agent("domain-reviewer", prompt, timeout=120, add_dir=False)
     dr_json = _extract_json(text) or {"status": "PASS", "red_line_triggered": False, "findings": [], "raw": text}
     DOMAIN_REVIEW.write_text(json.dumps(dr_json, indent=2, ensure_ascii=False))
     log_tokens(state, "domain-reviewer", "domain_review", dr_json.get("status", "PASS"), tin, tout, dur)
