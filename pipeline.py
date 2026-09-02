@@ -53,6 +53,7 @@ SEQUENCES = {
         "planner",
         "HUMAN:APPROVE_DESIGN",
         "implementer",
+        "coherence",
         "gate",
         "qa",
         "domain_review",
@@ -66,6 +67,7 @@ SEQUENCES = {
         "planner",
         "HUMAN:APPROVE_DESIGN",
         "implementer",
+        "coherence",
         "gate",
         "qa",
         "domain_review",
@@ -76,8 +78,10 @@ SEQUENCES = {
     ],
 }
 
+COHERENCE_REPORT = REPO / "coherence-report.json"
+
 AGENT_MAP = {
-    "researcher": "content-planner",   # L: researcher role handled by content-planner with research flag
+    "researcher": "researcher",
     "planner": "content-planner",
     "implementer": "web-developer",
     "qa": "qa-agent",
@@ -156,29 +160,99 @@ def log_tokens(state: dict, agent: str, phase: str, result: str,
 
 # ── Claude runner ─────────────────────────────────────────────────────────────
 
-def run_agent(agent_name: str, prompt: str, timeout: int = 300) -> tuple[str, int, int]:
-    """Spustí claude -p --agent <name> a vrátí (text, tokens_in, tokens_out)."""
+LIVE_STATUS_FILE = PIPELINE_DIR / "live_status.json"
+
+
+def _write_live_status(agent: str, phase: str, elapsed: float, tokens_out: int = 0):
+    try:
+        LIVE_STATUS_FILE.write_text(json.dumps({
+            "agent": agent, "phase": phase,
+            "elapsed_s": round(elapsed),
+            "tokens_out_so_far": tokens_out,
+            "ts": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        }))
+    except Exception:
+        pass
+
+
+def run_agent(agent_name: str, prompt: str, timeout: int = 300, add_dir: bool = False) -> tuple[str, int, int, float]:
+    """Spustí claude -p --agent <name>, streamuje výstup, vrátí (text, tokens_in, tokens_out, duration)."""
     cmd = [
         "claude", "-p", prompt,
         "--agent", agent_name,
-        "--output-format", "json",
-        "--add-dir", str(REPO),
+        "--output-format", "stream-json",
+        "--verbose",
     ]
+    if add_dir:
+        cmd += ["--add-dir", str(REPO)]
     t0 = time.time()
-    result = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout, cwd=str(REPO))
+    _write_live_status(agent_name, agent_name, 0)
+
+    proc = subprocess.Popen(
+        cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+        text=True, cwd=str(REPO)
+    )
+
+    stdout_lines = []
+    tokens_out_live = 0
+    deadline = t0 + timeout
+
+    while True:
+        elapsed = time.time() - t0
+        if time.time() > deadline:
+            proc.kill()
+            LIVE_STATUS_FILE.unlink(missing_ok=True)
+            raise subprocess.TimeoutExpired(cmd, timeout)
+
+        line = proc.stdout.readline()
+        if not line:
+            if proc.poll() is not None:
+                break
+            time.sleep(0.1)
+            _write_live_status(agent_name, agent_name, elapsed, tokens_out_live)
+            continue
+
+        line = line.strip()
+        if not line:
+            continue
+        stdout_lines.append(line)
+
+        # Parse streaming JSON for live token count
+        try:
+            ev = json.loads(line)
+            if ev.get("type") == "assistant" and "message" in ev:
+                usage = ev["message"].get("usage", {})
+                tokens_out_live = usage.get("output_tokens", tokens_out_live)
+            elif ev.get("type") == "result":
+                pass  # final result — exit loop naturally
+        except Exception:
+            pass
+
+        _write_live_status(agent_name, agent_name, elapsed, tokens_out_live)
+
+    proc.wait()
     duration = time.time() - t0
+    LIVE_STATUS_FILE.unlink(missing_ok=True)
 
-    if result.returncode != 0:
-        raise RuntimeError(f"claude exited {result.returncode}: {result.stderr[:500]}")
+    if proc.returncode != 0:
+        stderr = proc.stderr.read()
+        raise RuntimeError(f"claude exited {proc.returncode}: {stderr[:500]}")
 
-    data = json.loads(result.stdout)
-    if data.get("is_error"):
-        raise RuntimeError(f"Claude API error: {data.get('result', data)}")
+    # Najdi finální result event
+    text = ""
+    tokens_in = tokens_out = 0
+    for line in reversed(stdout_lines):
+        try:
+            ev = json.loads(line)
+            if ev.get("type") == "result":
+                text = ev.get("result", "")
+                usage = ev.get("usage", {})
+                tokens_in = usage.get("input_tokens", 0) + usage.get("cache_read_input_tokens", 0)
+                tokens_out = usage.get("output_tokens", 0)
+                break
+        except Exception:
+            continue
 
-    text = data.get("result", "")
-    usage = data.get("usage", {})
-    tokens_in = usage.get("input_tokens", 0) + usage.get("cache_read_input_tokens", 0)
-    tokens_out = usage.get("output_tokens", 0)
     return text, tokens_in, tokens_out, duration
 
 # ── Git helpers ───────────────────────────────────────────────────────────────
@@ -250,17 +324,12 @@ def phase_researcher(state: dict):
     print("  🔍 RESEARCHER — prohledává oblast tasku...")
     task = TASK_FILE.read_text()
     prompt = (
-        f"Jsi researcher pro web Pozitivní pes. Přečti TASK.md a prozkoumej oblast.\n\n"
-        f"TASK.md:\n{task}\n\n"
-        f"Napiš research.md — přehled relevantních faktů, zdrojů a kontextu, "
-        f"který bude content-planner potřebovat pro design. "
-        f"Zaměř se na: existující stránky v repo, relevantní doménové znalosti, "
-        f"potenciální edge cases."
+        f"Přečti TASK.md a CLAUDE.md. Prozkoumej oblast tasku na webu a v repo. "
+        f"Napiš research.md.\n\nTASK.md:\n{task}"
     )
-    t0 = time.time()
-    text, tin, tout, dur = run_agent("content-planner", prompt, timeout=300)
+    text, tin, tout, dur = run_agent("researcher", prompt, timeout=600, add_dir=True)
     RESEARCH_FILE.write_text(text)
-    log_tokens(state, "content-planner/researcher", "researcher", "PASS", tin, tout, dur)
+    log_tokens(state, "researcher", "researcher", "PASS", tin, tout, dur)
     print(f"  → research.md vytvořen ({tin+tout:,} tokenů)")
 
 
@@ -275,27 +344,198 @@ def phase_planner(state: dict):
         + "\nPiš design.md přesně podle formátu v CLAUDE.md."
     )
     t0 = time.time()
-    text, tin, tout, dur = run_agent("content-planner", prompt, timeout=300)
+    text, tin, tout, dur = run_agent("content-planner", prompt, timeout=300, add_dir=True)
     DESIGN_FILE.write_text(text)
     log_tokens(state, "content-planner", "planner", "PASS", tin, tout, dur)
     print(f"  → design.md vytvořen ({tin+tout:,} tokenů)")
+
+
+def _extract_article_spec(design_text: str, fname: str) -> str:
+    """Vytáhne z design.md část relevantní pro daný soubor."""
+    # Zkus najít sekci podle názvu souboru (bez .dc.html)
+    base = fname.replace(".dc.html", "").replace("Clanek-", "")
+    lines = design_text.splitlines()
+    start = None
+    for i, line in enumerate(lines):
+        if base.lower() in line.lower() and line.startswith(("####", "###", "##")):
+            start = i
+            break
+    if start is None:
+        # Fallback — celá sekce Obsah článků
+        for i, line in enumerate(lines):
+            if "Obsah článků" in line or "### 3." in line:
+                start = i
+                break
+    if start is None:
+        return design_text[:3000]  # krajní fallback
+
+    # Čti do další sekce stejné nebo vyšší úrovně
+    level = len(lines[start]) - len(lines[start].lstrip("#"))
+    result = []
+    for line in lines[start:]:
+        if result and line.startswith("#"):
+            cur_level = len(line) - len(line.lstrip("#"))
+            if cur_level <= level:
+                break
+        result.append(line)
+    return "\n".join(result)
+
+
+def _parse_files_from_design(design_text: str) -> list[str]:
+    """Parsuje seznam souborů ke změně z design.md (sekce '## Soubory ke změně')."""
+    files = []
+    in_section = False
+    for line in design_text.splitlines():
+        if "## Soubory ke změně" in line or "## Soubory ke" in line:
+            in_section = True
+            continue
+        if in_section:
+            if line.startswith("##"):
+                break
+            # Řádky jako "- `Vychova.dc.html` — ..." nebo "- `Clanek-X.dc.html` — ..."
+            m = re.search(r'`([^`]+\.(?:dc\.html|html|js|css))`', line)
+            if m:
+                files.append(m.group(1))
+    return files
 
 
 def phase_implementer(state: dict):
     print(f"  🛠  IMPLEMENTER — implementuje na branchi {state['branch']}...")
     ensure_branch(state)
     design = DESIGN_FILE.read_text() if DESIGN_FILE.exists() else TASK_FILE.read_text()
-    prompt = (
-        f"Přečti CLAUDE.md a design.md a implementuj změny.\n\n"
-        f"design.md:\n{design}\n\n"
-        f"Jsi na branchi {state['branch']}. Po implementaci commitni změny s "
-        f"'feat: ' prefixem. Pak spusť scripts/gate.sh a oprav co failuje (max 2 iterace)."
+
+    # Per-file split: každý soubor dostane vlastní volání agenta
+    files = _parse_files_from_design(design)
+    if not files:
+        # Fallback: jediné volání (starý chování)
+        files = ["(všechny soubory z design.md)"]
+
+    # Zjisti co už bylo hotovo z předchozích attempts
+    already_done = set()
+    if TOKEN_LOG.exists():
+        with TOKEN_LOG.open() as f:
+            for line in f:
+                try:
+                    rec = json.loads(line)
+                    if rec.get("run_id") == state["run_id"] and rec.get("phase", "").startswith("implementer:") and rec.get("result") == "PASS":
+                        already_done.add(rec["phase"].replace("implementer:", ""))
+                except Exception:
+                    pass
+
+    remaining = [f for f in files if f not in already_done]
+    if already_done:
+        print(f"  → přeskakuji {len(already_done)} hotových: {', '.join(already_done)}")
+    print(f"  → {len(remaining)}/{len(files)} soubor(ů) zbývá: {', '.join(remaining)}")
+
+    total_in = total_out = 0
+    # Přečti šablonu jednou — Python ji předá v promptu, agent nemusí číst repo
+    template_file = REPO / "Clanek-Pelisek.dc.html"
+    template = template_file.read_text() if template_file.exists() else ""
+    vychova_file = REPO / "Vychova.dc.html"
+
+    for i, fname in enumerate(remaining, len(already_done) + 1):
+        print(f"  [{i}/{len(files)}] {fname}...")
+        state["current_file"] = fname
+        state["current_file_idx"] = i
+        state["total_files"] = len(files)
+        save_state(state)
+
+        is_new_article = fname.startswith("Clanek-")
+        is_vychova = fname == "Vychova.dc.html"
+
+        if is_new_article:
+            article_spec = _extract_article_spec(design, fname)
+            prompt = (
+                f"Napiš HTML soubor `{fname}`.\n\n"
+                f"ŠABLONA — zkopíruj strukturu přesně:\n```html\n{template}\n```\n\n"
+                f"OBSAH PRO TENTO ČLÁNEK:\n{article_spec}\n\n"
+                f"Kicker: 'Kooperativní péče'. Zpětný odkaz: Vychova.dc.html. "
+                f"Zdroje: prázdné, jen komentář. Žádné vymyšlené URL.\n"
+                f"Write do `{fname}`, pak: git add {fname} && git commit -m 'feat: {fname}'"
+            )
+            text, tin, tout, dur = run_agent("article-writer", prompt, timeout=180, add_dir=False)
+            agent_name = "article-writer"
+        elif is_vychova:
+            vychova_current = vychova_file.read_text() if vychova_file.exists() else ""
+            prompt = (
+                f"Uprav soubor `Vychova.dc.html` — přidej sekci Kooperativní péče.\n\n"
+                f"AKTUÁLNÍ OBSAH:\n```html\n{vychova_current}\n```\n\n"
+                f"CO PŘIDAT (z design.md):\n{_extract_article_spec(design, 'Vychova.dc.html')}\n\n"
+                f"Vlož novou sekci Kapitola 3 mezi konec Kapitoly 2 a blok Filozofie. Zbytek NEMEŇ.\n"
+                f"Použij Write pro zápis celého souboru. Pak git add + commit 'feat: Vychova.dc.html'. Hotovo."
+            )
+            text, tin, tout, dur = run_agent("web-developer", prompt, timeout=720, add_dir=False)
+            agent_name = "web-developer"
+        else:
+            prompt = (
+                f"Implementuj soubor `{fname}` dle design.md.\n\n"
+                f"design.md:\n{design}\n\n"
+                f"Jsi na branchi {state['branch']}. Git add + commit 'feat: {fname}'. Hotovo."
+            )
+            text, tin, tout, dur = run_agent("web-developer", prompt, timeout=720, add_dir=False)
+            agent_name = "web-developer"
+
+        total_in += tin
+        total_out += tout
+        log_tokens(state, agent_name, f"implementer:{fname}", "PASS", tin, tout, dur,
+                   files_changed=_count_changed_files())
+        state.pop("current_file", None)
+        save_state(state)
+        print(f"    → hotovo ({tin+tout:,} tok)")
+
+    state.pop("current_file", None)
+    state.pop("current_file_idx", None)
+    state.pop("total_files", None)
+    save_state(state)
+    print(f"  → implementace celkem ({total_in+total_out:,} tokenů)")
+
+
+def phase_coherence(state: dict):
+    print("  🔗 COHERENCE REVIEW — kontrola konzistence terminologie a tónu...")
+    # Sbírám změněné soubory z branchi (oproti main)
+    diff = subprocess.run(
+        ["git", "diff", "--name-only", "main...HEAD"],
+        capture_output=True, text=True, cwd=str(REPO)
     )
-    t0 = time.time()
-    text, tin, tout, dur = run_agent("web-developer", prompt, timeout=600)
-    log_tokens(state, "web-developer", "implementer", "PASS", tin, tout, dur,
-               files_changed=_count_changed_files())
-    print(f"  → implementace hotova ({tin+tout:,} tokenů)")
+    changed = [f for f in diff.stdout.strip().splitlines() if f.endswith(".html")]
+    if not changed:
+        # Fallback: všechny html soubory v repozitáři
+        changed = [p.name for p in REPO.glob("*.dc.html")]
+
+    prompt = (
+        f"Proveď coherence review pro task '{state['task_id']}'.\n\n"
+        f"Zkontroluj tyto soubory: {', '.join(changed)}\n\n"
+        f"Přečti každý soubor a zkontroluj konzistenci terminologie, tónu a struktury "
+        f"napříč všemi soubory. Vrať výsledek jako JSON do souboru coherence-report.json."
+    )
+    text, tin, tout, dur = run_agent("coherence-reviewer", prompt, timeout=300, add_dir=True)
+    report = _extract_json(text) or {"status": "PASS", "issues": [], "raw": text}
+    COHERENCE_REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2))
+    status = report.get("status", "PASS")
+    log_tokens(state, "coherence-reviewer", "coherence", status, tin, tout, dur)
+    issues = report.get("issues", [])
+    highs = [i for i in issues if i.get("severity") == "HIGH"]
+    print(f"  → {status} | {len(issues)} issues ({len(highs)} HIGH)")
+    if highs:
+        for h in highs:
+            print(f"    ⚠ [{h['type']}] {h['file']}: {h['description'][:80]}")
+
+
+def phase_coherence_periodic():
+    """Periodická kontrola celého webu — jen návrhy, nikdy neupravuje soubory."""
+    print("  🔗 COHERENCE PERIODIC — prochází celý web...")
+    all_html = sorted(REPO.glob("*.dc.html"))
+    prompt = (
+        f"Proveď periodickou coherence kontrolu celého webu Pozitivní pes.\n\n"
+        f"Projdi VŠECHNY soubory: {', '.join(p.name for p in all_html)}\n\n"
+        f"Hledej: nekonzistentní terminologii napříč stránkami, rozdíly v tónu, "
+        f"strukturální nesrovnalosti. Výstup ulož do coherence-proposals.md jako "
+        f"markdown seznam návrhů (bez JSON). Nikdy neupravuj html soubory."
+    )
+    text, tin, tout, dur = run_agent("coherence-reviewer", prompt, timeout=600, add_dir=True)
+    proposals_file = REPO / "coherence-proposals.md"
+    proposals_file.write_text(text)
+    print(f"  → návrhy uloženy do coherence-proposals.md ({tin+tout:,} tok)")
 
 
 def phase_gate(state: dict) -> bool:
@@ -320,7 +560,7 @@ def phase_qa(state: dict):
         + (f"ACCEPTANCE.md:\n{acceptance}\n\n" if acceptance else "")
         + "Přečti změněné soubory a napiš qa-report.json podle formátu z CLAUDE.md."
     )
-    text, tin, tout, dur = run_agent("qa-agent", prompt, timeout=300)
+    text, tin, tout, dur = run_agent("qa-agent", prompt, timeout=300, add_dir=True)
     # Extrahuj JSON z odpovědi
     qa_json = _extract_json(text) or {"status": "PASS", "findings": [], "raw": text}
     QA_REPORT.write_text(json.dumps(qa_json, indent=2, ensure_ascii=False))
@@ -338,7 +578,7 @@ def phase_domain_review(state: dict):
         f"Přečti knowledge/red-lines.md, knowledge/domain-knowledge.md a změněné .dc.html soubory. "
         f"Napiš domain-review.json."
     )
-    text, tin, tout, dur = run_agent("domain-reviewer", prompt, timeout=300)
+    text, tin, tout, dur = run_agent("domain-reviewer", prompt, timeout=300, add_dir=True)
     dr_json = _extract_json(text) or {"status": "PASS", "red_line_triggered": False, "findings": [], "raw": text}
     DOMAIN_REVIEW.write_text(json.dumps(dr_json, indent=2, ensure_ascii=False))
     log_tokens(state, "domain-reviewer", "domain_review", dr_json.get("status", "PASS"), tin, tout, dur)
@@ -356,7 +596,7 @@ def phase_release(state: dict):
         f"Spusť git log a git diff pro přehled. "
         f"Napiš release-report.md — nemerge, nepush."
     )
-    text, tin, tout, dur = run_agent("release-manager", prompt, timeout=180)
+    text, tin, tout, dur = run_agent("release-manager", prompt, timeout=180, add_dir=True)
     RELEASE_REPORT.write_text(text)
     log_tokens(state, "release-manager", "release", "PASS", tin, tout, dur)
     print(f"  → release-report.md ({tin+tout:,} tokenů)")
@@ -407,13 +647,24 @@ def _count_changed_files() -> int:
 
 def _detect_risk_tier(task_text: str) -> str:
     """Heuristika pro detekci risk tieru z TASK.md. Human může přepsat."""
-    l_patterns = ["support.js", "image-slot.js", "O-nas.dc.html",
-                  "nav ", "navigation", "design systém", "architektur"]
+    import re
+    # Explicitní override v TASK.md: řádek "RISK: M" / "RISK: L" / "RISK: S"
+    explicit = re.search(r'^RISK:\s*([SML])', task_text, re.MULTILINE | re.IGNORECASE)
+    if explicit:
+        return explicit.group(1).upper()
+    # L: explicitně riziková oblast
+    l_triggers = ["support.js", "image-slot.js", "O-nas.dc.html",
+                  "design systém", "architektur", "přejmenovat soubor"]
+    # nav triggernuje L jen pokud jde o změnu nav (ne "nav zůstává", "nav se nemění")
+    nav_change = re.search(r'nav.{0,20}(přidat|odebrat|změn|upravit|update)', task_text, re.I)
+    if nav_change:
+        l_triggers.append("_nav_change_detected")
+
     s_patterns = ["překlep", "typo", "broken link", "nefunkční odkaz",
                   "spacing", "drobná", "jeden odstavec", "oprav"]
 
     text_lower = task_text.lower()
-    if any(p.lower() in text_lower for p in l_patterns):
+    if any(p.lower() in text_lower for p in l_triggers) or nav_change:
         return "L"
     if any(p.lower() in text_lower for p in s_patterns):
         return "S"
@@ -421,11 +672,70 @@ def _detect_risk_tier(task_text: str) -> str:
 
 # ── Commands ──────────────────────────────────────────────────────────────────
 
+LOCK_FILE = PIPELINE_DIR / "pipeline.lock"
+
+
+def _acquire_lock() -> bool:
+    """Vrátí True pokud se podařilo získat lock (žádný jiný run neběží)."""
+    if LOCK_FILE.exists():
+        try:
+            pid = int(LOCK_FILE.read_text().strip())
+            import os as _os
+            _os.kill(pid, 0)  # process exists?
+            return False  # stále běží
+        except (ProcessLookupError, ValueError):
+            LOCK_FILE.unlink(missing_ok=True)  # stale lock
+    LOCK_FILE.write_text(str(os.getpid()))
+    return True
+
+
+def _release_lock():
+    LOCK_FILE.unlink(missing_ok=True)
+
+
+def _hourly_tokens_used() -> int:
+    """Tokeny spotřebované za poslední hodinu (z token_log.jsonl)."""
+    if not TOKEN_LOG.exists():
+        return 0
+    cutoff = datetime.datetime.now(datetime.timezone.utc).timestamp() - 3600
+    total = 0
+    with TOKEN_LOG.open() as f:
+        for line in f:
+            try:
+                rec = json.loads(line)
+                ts = datetime.datetime.fromisoformat(rec.get("ts", "")).timestamp()
+                if ts >= cutoff:
+                    total += rec.get("tokens_in", 0) + rec.get("tokens_out", 0)
+            except Exception:
+                pass
+    return total
+
+
+HOURLY_TOKEN_CAP = int(os.environ.get("PIPELINE_HOURLY_CAP", "450000"))
+
+
 def cmd_run():
     """Spustí nebo pokračuje v pipeline."""
+    if not _acquire_lock():
+        print("Pipeline již běží (lock existuje), přeskakuji.")
+        sys.exit(0)
+
+    try:
+        _cmd_run_inner()
+    finally:
+        _release_lock()
+
+
+def _cmd_run_inner():
     if not TASK_FILE.exists():
         print("ERROR: TASK.md nenalezen. Vytvoř ho nejdřív.")
         sys.exit(1)
+
+    # Hodinový cap
+    used = _hourly_tokens_used()
+    if used >= HOURLY_TOKEN_CAP:
+        print(f"⏳ Hodinový cap dosažen ({used:,}/{HOURLY_TOKEN_CAP:,} tok) — cron to zkusí znovu.")
+        sys.exit(0)
 
     state = load_state()
 
@@ -504,6 +814,8 @@ def _run_sequence(state: dict):
                 phase_planner(state)
             elif phase == "implementer":
                 phase_implementer(state)
+            elif phase == "coherence":
+                phase_coherence(state)
             elif phase == "gate":
                 gate_ok = phase_gate(state)
                 if not gate_ok:
@@ -623,7 +935,7 @@ def cmd_curator():
         "Přečti aktuální soubory, vyhledej nové poznatky z ověřených zdrojů, "
         "doplň nebo uprav záznamy s datem a zdrojem. Neupravuj nic jiného."
     )
-    text, tin, tout, dur = run_agent("domain-knowledge-curator", prompt, timeout=600)
+    text, tin, tout, dur = run_agent("domain-knowledge-curator", prompt, timeout=600, add_dir=True)
     print(text[:500])
     print(f"\n→ Hotovo ({tin+tout:,} tokenů, ${(tin*3+tout*15)/1e6:.4f})")
 
@@ -649,6 +961,7 @@ COMMANDS = {
     "status": cmd_status,
     "gate": cmd_gate,
     "curator": cmd_curator,
+    "coherence": lambda: phase_coherence_periodic(),
     "reset": cmd_reset,
 }
 
