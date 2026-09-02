@@ -513,7 +513,7 @@ def phase_coherence(state: dict):
         f"Zkontrolované soubory: {', '.join(changed)}\n\n"
         f"OBSAH SOUBORŮ (vše máš níže, nečti žádné další soubory):\n{file_contents}\n\n"
         f"Zkontroluj konzistenci terminologie, tónu a struktury POUZE v těchto souborech. "
-        f"Výsledek zapiš jako JSON do souboru `coherence-report.json` pomocí Write tool."
+        f"Vrať výsledek jako JSON přímo v odpovědi (pipeline ho uloží)."
     )
     text, tin, tout, dur = run_agent("coherence-reviewer", prompt, timeout=300, add_dir=False)
     report = _extract_json(text) or {"status": "PASS", "issues": [], "raw": text}
@@ -579,7 +579,7 @@ def phase_qa(state: dict):
         + (f"design.md:\n{design}\n\n" if design else "")
         + f"Změněné soubory ({len(changed_html)}):\n{file_contents}\n\n"
         "Zkontroluj acceptance kritéria z design.md. "
-        "Výsledek zapiš jako JSON do `qa-report.json` pomocí Write tool. "
+        "Vrať výsledek jako JSON přímo v odpovědi. "
         "Nečti žádné další soubory — vše máš výše."
     )
     text, tin, tout, dur = run_agent("qa-agent", prompt, timeout=300, add_dir=False)
@@ -613,7 +613,7 @@ def phase_domain_review(state: dict):
         + (f"RED LINES (zakázaný obsah):\n{red_lines}\n\n" if red_lines else "")
         + f"Změněné soubory:\n{file_contents2}\n\n"
         "Zkontroluj: žádné red-line témata (dominance, nucení, flooding), force-free obsah. "
-        "Výsledek zapiš jako JSON do `domain-review.json` pomocí Write tool. Nečti další soubory."
+        "Vrať výsledek jako JSON přímo v odpovědi. Nečti další soubory."
     )
     text, tin, tout, dur = run_agent("domain-reviewer", prompt, timeout=300, add_dir=False)
     dr_json = _extract_json(text) or {"status": "PASS", "red_line_triggered": False, "findings": [], "raw": text}
