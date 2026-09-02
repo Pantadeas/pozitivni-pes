@@ -508,7 +508,7 @@ def phase_coherence(state: dict):
         f"Přečti každý soubor a zkontroluj konzistenci terminologie, tónu a struktury "
         f"napříč všemi soubory. Vrať výsledek jako JSON do souboru coherence-report.json."
     )
-    text, tin, tout, dur = run_agent("coherence-reviewer", prompt, timeout=300, add_dir=True)
+    text, tin, tout, dur = run_agent("coherence-reviewer", prompt, timeout=600, add_dir=False)
     report = _extract_json(text) or {"status": "PASS", "issues": [], "raw": text}
     COHERENCE_REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2))
     status = report.get("status", "PASS")
