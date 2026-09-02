@@ -176,7 +176,7 @@ def _write_live_status(agent: str, phase: str, elapsed: float, tokens_out: int =
 
 
 def run_agent(agent_name: str, prompt: str, timeout: int = 300, add_dir: bool = False) -> tuple[str, int, int, float]:
-    """Spustí claude -p --agent <name>, streamuje výstup, vrátí (text, tokens_in, tokens_out, duration)."""
+    """Spustí claude -p --agent <name>, vrátí (text, tokens_in, tokens_out, duration)."""
     cmd = [
         "claude", "-p", prompt,
         "--agent", agent_name,
@@ -193,55 +193,38 @@ def run_agent(agent_name: str, prompt: str, timeout: int = 300, add_dir: bool = 
         text=True, cwd=str(REPO)
     )
 
-    stdout_lines = []
-    tokens_out_live = 0
-    deadline = t0 + timeout
+    # Live status updater — běží v threadu, neblokuje communicate()
+    import threading
+    def _live_updater():
+        while proc.poll() is None:
+            elapsed = time.time() - t0
+            _write_live_status(agent_name, agent_name, elapsed)
+            time.sleep(2)
 
-    while True:
-        elapsed = time.time() - t0
-        if time.time() > deadline:
-            proc.kill()
-            LIVE_STATUS_FILE.unlink(missing_ok=True)
-            raise subprocess.TimeoutExpired(cmd, timeout)
+    t = threading.Thread(target=_live_updater, daemon=True)
+    t.start()
 
-        line = proc.stdout.readline()
-        if not line:
-            if proc.poll() is not None:
-                break
-            time.sleep(0.1)
-            _write_live_status(agent_name, agent_name, elapsed, tokens_out_live)
-            continue
+    try:
+        stdout_raw, stderr_raw = proc.communicate(timeout=timeout)
+    except subprocess.TimeoutExpired:
+        proc.kill()
+        proc.communicate()  # flush pipes
+        LIVE_STATUS_FILE.unlink(missing_ok=True)
+        raise
 
-        line = line.strip()
-        if not line:
-            continue
-        stdout_lines.append(line)
-
-        # Parse streaming JSON for live token count
-        try:
-            ev = json.loads(line)
-            if ev.get("type") == "assistant" and "message" in ev:
-                usage = ev["message"].get("usage", {})
-                tokens_out_live = usage.get("output_tokens", tokens_out_live)
-            elif ev.get("type") == "result":
-                pass  # final result — exit loop naturally
-        except Exception:
-            pass
-
-        _write_live_status(agent_name, agent_name, elapsed, tokens_out_live)
-
-    proc.wait()
     duration = time.time() - t0
     LIVE_STATUS_FILE.unlink(missing_ok=True)
 
     if proc.returncode != 0:
-        stderr = proc.stderr.read()
-        raise RuntimeError(f"claude exited {proc.returncode}: {stderr[:500]}")
+        raise RuntimeError(f"claude exited {proc.returncode}: {stderr_raw[:500]}")
 
     # Najdi finální result event
     text = ""
     tokens_in = tokens_out = 0
-    for line in reversed(stdout_lines):
+    for line in reversed(stdout_raw.splitlines()):
+        line = line.strip()
+        if not line:
+            continue
         try:
             ev = json.loads(line)
             if ev.get("type") == "result":
