@@ -180,8 +180,7 @@ def run_agent(agent_name: str, prompt: str, timeout: int = 300, add_dir: bool = 
     cmd = [
         "claude", "-p", prompt,
         "--agent", agent_name,
-        "--output-format", "stream-json",
-        "--verbose",
+        "--output-format", "json",
     ]
     if add_dir:
         cmd += ["--add-dir", str(REPO)]
@@ -193,22 +192,19 @@ def run_agent(agent_name: str, prompt: str, timeout: int = 300, add_dir: bool = 
         text=True, cwd=str(REPO)
     )
 
-    # Live status updater — běží v threadu, neblokuje communicate()
+    # Live status ticker — čas elapsed, bez blokování
     import threading
     def _live_updater():
         while proc.poll() is None:
-            elapsed = time.time() - t0
-            _write_live_status(agent_name, agent_name, elapsed)
-            time.sleep(2)
-
-    t = threading.Thread(target=_live_updater, daemon=True)
-    t.start()
+            _write_live_status(agent_name, agent_name, time.time() - t0)
+            time.sleep(3)
+    threading.Thread(target=_live_updater, daemon=True).start()
 
     try:
         stdout_raw, stderr_raw = proc.communicate(timeout=timeout)
     except subprocess.TimeoutExpired:
         proc.kill()
-        proc.communicate()  # flush pipes
+        proc.communicate()
         LIVE_STATUS_FILE.unlink(missing_ok=True)
         raise
 
@@ -218,23 +214,17 @@ def run_agent(agent_name: str, prompt: str, timeout: int = 300, add_dir: bool = 
     if proc.returncode != 0:
         raise RuntimeError(f"claude exited {proc.returncode}: {stderr_raw[:500]}")
 
-    # Najdi finální result event
+    # Parsuj JSON výstup
     text = ""
     tokens_in = tokens_out = 0
-    for line in reversed(stdout_raw.splitlines()):
-        line = line.strip()
-        if not line:
-            continue
-        try:
-            ev = json.loads(line)
-            if ev.get("type") == "result":
-                text = ev.get("result", "")
-                usage = ev.get("usage", {})
-                tokens_in = usage.get("input_tokens", 0) + usage.get("cache_read_input_tokens", 0)
-                tokens_out = usage.get("output_tokens", 0)
-                break
-        except Exception:
-            continue
+    try:
+        ev = json.loads(stdout_raw)
+        text = ev.get("result", "")
+        usage = ev.get("usage", {})
+        tokens_in = usage.get("input_tokens", 0) + usage.get("cache_read_input_tokens", 0)
+        tokens_out = usage.get("output_tokens", 0)
+    except Exception:
+        text = stdout_raw  # fallback
 
     return text, tokens_in, tokens_out, duration
 
