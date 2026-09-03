@@ -210,20 +210,22 @@ def run_agent(agent_name: str, prompt: str, timeout: int = 300, add_dir: bool = 
         ready, _, _ = _select.select([proc.stdout], [], [], 0.5)
         if ready:
             line = proc.stdout.readline()
+            if not line:
+                # EOF — stdout uzavřen, process skončil
+                break
+            line = line.strip()
             if line:
-                line = line.strip()
-                if line:
-                    stdout_lines.append(line)
-                    try:
-                        ev = json.loads(line)
-                        if ev.get("type") == "assistant" and "message" in ev:
-                            usage = ev["message"].get("usage", {})
-                            tokens_out_live = usage.get("output_tokens", tokens_out_live)
-                    except Exception:
-                        pass
-                    _write_live_status(agent_name, agent_name, now - t0, tokens_out_live)
+                stdout_lines.append(line)
+                try:
+                    ev = json.loads(line)
+                    if ev.get("type") == "assistant" and "message" in ev:
+                        usage = ev["message"].get("usage", {})
+                        tokens_out_live = usage.get("output_tokens", tokens_out_live)
+                except Exception:
+                    pass
+                _write_live_status(agent_name, agent_name, now - t0, tokens_out_live)
         else:
-            # Sin datos — verificar si el proceso terminó
+            # Žádná data — zkontroluj zda process skončil
             if proc.poll() is not None:
                 break
             _write_live_status(agent_name, agent_name, now - t0, tokens_out_live)
@@ -501,21 +503,23 @@ def phase_coherence(state: dict):
         changed = [p.name for p in REPO.glob("*.dc.html") if p.stat().st_mtime > (time.time() - 86400)]
 
     # Vloż obsah souborů přímo do promptu — agent nemusí číst repo
+    # Extrahuj klíčové části (kicker, H1, H2, perex) — stačí pro kontrolu konzistence
     file_contents = ""
     for fname in changed:
         fpath = REPO / fname
         if fpath.exists():
-            content = fpath.read_text(encoding="utf-8")[:8000]  # max 8KB per file
+            content = fpath.read_text(encoding="utf-8")[:3000]  # prvních 3KB (kicker, H1, H2)
             file_contents += f"\n\n--- {fname} ---\n{content}"
 
     prompt = (
         f"Proveď coherence review pro task '{state['task_id']}'.\n\n"
         f"Zkontrolované soubory: {', '.join(changed)}\n\n"
-        f"OBSAH SOUBORŮ (vše máš níže, nečti žádné další soubory):\n{file_contents}\n\n"
-        f"Zkontroluj konzistenci terminologie, tónu a struktury POUZE v těchto souborech. "
-        f"Vrať výsledek jako JSON přímo v odpovědi (pipeline ho uloží)."
+        f"ÚVODY SOUBORŮ (kicker, H1, H2 — stačí pro terminologii a strukturu):\n{file_contents}\n\n"
+        f"Zkontroluj: (1) kicker je stejný 'Kooperativní péče' ve všech 4 článcích, "
+        f"(2) zpětné linky vedou na Vychova.dc.html, (3) konzistentní terminologie. "
+        f"Vrať výsledek jako JSON přímo v odpovědi."
     )
-    text, tin, tout, dur = run_agent("coherence-reviewer", prompt, timeout=300, add_dir=False)
+    text, tin, tout, dur = run_agent("coherence-reviewer", prompt, timeout=600, add_dir=False)
     report = _extract_json(text) or {"status": "PASS", "issues": [], "raw": text}
     COHERENCE_REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2))
     status = report.get("status", "PASS")
@@ -561,28 +565,21 @@ def phase_qa(state: dict):
     acceptance = ACCEPTANCE_FILE.read_text() if ACCEPTANCE_FILE.exists() else ""
     run_id = state["run_id"]
     task_id = state["task_id"]
-    # Vlož obsah změněných souborů přímo do promptu
     diff_files = subprocess.run(
         ["git", "diff", "--name-only", "main...HEAD"],
         capture_output=True, text=True, cwd=str(REPO)
     ).stdout.strip().splitlines()
     changed_html = [f for f in diff_files if f.endswith(".dc.html")]
-    file_contents = ""
-    for fname in changed_html:
-        fpath = REPO / fname
-        if fpath.exists():
-            content = fpath.read_text(encoding="utf-8")[:8000]
-            file_contents += f"\n\n--- {fname} ---\n{content}"
 
     prompt = (
         f"Proveď QA pro task '{task_id}' (run_id: {run_id}).\n\n"
-        + (f"design.md:\n{design}\n\n" if design else "")
-        + f"Změněné soubory ({len(changed_html)}):\n{file_contents}\n\n"
-        "Zkontroluj acceptance kritéria z design.md. "
-        "Vrať výsledek jako JSON přímo v odpovědi. "
-        "Nečti žádné další soubory — vše máš výše."
+        + (f"ACCEPTANCE.md:\n{acceptance}\n\n" if acceptance else "")
+        + (f"design.md:\n{design[:3000]}\n\n" if design else "")
+        + f"Zkontroluj VŠECHNY tyto soubory (načti je nástrojem Read — jsou plné, nezkrácené):\n"
+        + "\n".join(f"  - {f}" for f in changed_html) + "\n\n"
+        "Každý soubor přečti celý. Vrať výsledek jako JSON přímo v odpovědi."
     )
-    text, tin, tout, dur = run_agent("qa-agent", prompt, timeout=300, add_dir=False)
+    text, tin, tout, dur = run_agent("qa-agent", prompt, timeout=300, add_dir=True)
     # Extrahuj JSON z odpovědi
     qa_json = _extract_json(text) or {"status": "PASS", "findings": [], "raw": text}
     QA_REPORT.write_text(json.dumps(qa_json, indent=2, ensure_ascii=False))
@@ -601,21 +598,16 @@ def phase_domain_review(state: dict):
     ).stdout.strip().splitlines()
     changed_html2 = [f for f in diff_files2 if f.endswith(".dc.html")]
     red_lines = (REPO / "knowledge" / "red-lines.md").read_text() if (REPO / "knowledge" / "red-lines.md").exists() else ""
-    file_contents2 = ""
-    for fname in changed_html2:
-        fpath = REPO / fname
-        if fpath.exists():
-            content = fpath.read_text(encoding="utf-8")[:6000]
-            file_contents2 += f"\n\n--- {fname} ---\n{content}"
 
     prompt = (
         f"Proveď domain review pro task '{task_id}' (run_id: {run_id}).\n\n"
-        + (f"RED LINES (zakázaný obsah):\n{red_lines}\n\n" if red_lines else "")
-        + f"Změněné soubory:\n{file_contents2}\n\n"
-        "Zkontroluj: žádné red-line témata (dominance, nucení, flooding), force-free obsah. "
-        "Vrať výsledek jako JSON přímo v odpovědi. Nečti další soubory."
+        + (f"RED LINES (absolutní zákazy):\n{red_lines}\n\n" if red_lines else "")
+        + f"Zkontroluj VŠECHNY tyto soubory (načti je nástrojem Read — jsou plné):\n"
+        + "\n".join(f"  - {f}" for f in changed_html2) + "\n\n"
+        "Každý soubor přečti celý. Hledej red-line porušení a force-free problémy. "
+        "Vrať výsledek jako JSON přímo v odpovědi."
     )
-    text, tin, tout, dur = run_agent("domain-reviewer", prompt, timeout=300, add_dir=False)
+    text, tin, tout, dur = run_agent("domain-reviewer", prompt, timeout=300, add_dir=True)
     dr_json = _extract_json(text) or {"status": "PASS", "red_line_triggered": False, "findings": [], "raw": text}
     DOMAIN_REVIEW.write_text(json.dumps(dr_json, indent=2, ensure_ascii=False))
     log_tokens(state, "domain-reviewer", "domain_review", dr_json.get("status", "PASS"), tin, tout, dur)
